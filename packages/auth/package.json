@@ -1,0 +1,24 @@
+{
+  "name": "@pmigov/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@pmigov/db": "workspace:*",
+    "@pmigov/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@pmigov/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
