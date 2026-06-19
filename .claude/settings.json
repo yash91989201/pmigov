@@ -1,5 +1,35 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(bun run check*)",
+      "Bash(bun run check-types*)",
+      "Bash(bun run fix*)",
+      "Bash(bun run db:*)",
+      "Bash(bun run build*)",
+      "Bash(bun run dev*)",
+      "Bash(bun install*)",
+      "Bash(docker compose *)",
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(find . *)",
+      "Bash(ls *)",
+      "Bash(openssl rand *)",
+      "Bash(cat *)"
+    ]
+  },
   "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "echo $CLAUDE_TOOL_INPUT | grep -q '\\.env[^.]' && echo 'BLOCKED: Direct .env edits are not allowed. Update packages/env/src/server.ts or web.ts instead, then set the value in apps/web/.env manually.' && exit 2 || exit 0",
+            "type": "command"
+          }
+        ],
+        "matcher": "Edit|Write"
+      }
+    ],
     "PostToolUse": [
       {
         "hooks": [
