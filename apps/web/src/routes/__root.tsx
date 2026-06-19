@@ -1,4 +1,5 @@
 import { Toaster } from "@pmigov/ui/components/sonner";
+import { TooltipProvider } from "@pmigov/ui/components/tooltip";
 import type { QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import {
@@ -52,15 +53,17 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
 
 function RootDocument() {
 	return (
-		<html className="dark" lang="en">
+		<html className="light" lang="en">
 			<head>
 				<HeadContent />
 			</head>
 			<body>
-				<div className="grid h-svh grid-rows-[auto_1fr]">
-					<Header />
-					<Outlet />
-				</div>
+				<TooltipProvider>
+					<div className="grid h-svh grid-rows-[auto_1fr]">
+						<Header />
+						<Outlet />
+					</div>
+				</TooltipProvider>
 				<Toaster richColors />
 				<TanStackRouterDevtools position="bottom-left" />
 				<ReactQueryDevtools buttonPosition="bottom-right" position="bottom" />
