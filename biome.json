@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "vcs": {
-    "enabled": false,
+    "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": false
+    "useIgnoreFile": true
   },
   "files": {
     "ignoreUnknown": false,
@@ -82,13 +82,29 @@
   },
   "overrides": [
     {
-      "includes": ["apps/web/src/routes/**"],
+      "includes": ["apps/web/src/routes/**/*"],
       "linter": {
         "rules": {
           "style": {
             "useFilenamingConvention": "off"
           }
         }
+      }
+    },
+    {
+      "includes": ["apps/web/server/**/*"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUndeclaredVariables": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["packages/ui/**/*"],
+      "linter": {
+        "enabled": false
       }
     }
   ],

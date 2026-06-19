@@ -57,9 +57,12 @@ Last commit: <hash> <message>
 
 ## Step 5 — Task Discovery
 
-Ask: **"What are we working on today?"**
+Read `tasks.md` from the project root.
 
-Once the user describes the task:
+- If it has pending (`[ ]`) or in-progress (`[~]`) tasks, display them under a **Pending Tasks** heading and ask: **"Which task should we tackle, or is there something new?"**
+- If `tasks.md` is empty or has no active tasks, ask: **"What are we working on today?"**
+
+Once the user confirms the task:
 1. Read the relevant files (route, procedure, schema — whatever is affected)
 2. Build a concrete implementation plan with file paths and steps
 3. Confirm: **"Does this plan look right?"**
