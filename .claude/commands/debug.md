@@ -27,7 +27,7 @@ Determine which layer the error originates from:
 
 ## Step 3 — Trace the Call Stack
 
-For the identified layer, read the relevant files and trace:
+For the identified layer, read the relevant files and trace: 
 
 ```
 Route/Component → Server Fn / Loader → oRPC Procedure → Drizzle Query → DB
@@ -68,3 +68,5 @@ If the error was runtime: describe how to reproduce the fix confirmation.
 ## Step 8 — Suggest Regression Test
 
 If applicable, suggest what test would prevent this regression.
+
+<!-- hii -->
