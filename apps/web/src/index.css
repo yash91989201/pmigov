@@ -1,1 +1,32 @@
 @import "@pmigov/ui/globals.css";
+
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+.certification-marquee-track {
+	animation: marquee 35s linear infinite;
+}
+
+.secondary-cta-gradient {
+	color: transparent;
+	background-image: linear-gradient(
+		135deg,
+		#200f3b 0%,
+		#4a2d6e 45%,
+		#9a7349 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.certification-marquee-track {
+		animation: none;
+	}
+}

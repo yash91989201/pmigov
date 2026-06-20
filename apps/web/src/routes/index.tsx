@@ -1,4 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Community } from "@/components/home/community";
+import { CpmaiPromo } from "@/components/home/cpmai-promo";
+import { Hero } from "@/components/home/hero";
+import { MembershipCta } from "@/components/home/membership-cta";
+import { NearbyChapters } from "@/components/home/nearby-chapters";
+import { Network } from "@/components/home/network";
+import { Resources } from "@/components/home/resources";
+import { SecondaryCta } from "@/components/home/secondary-cta";
+import { WhyChooseUs } from "@/components/home/why-choose-us";
 
 export const Route = createFileRoute("/")({
 	component: RouteComponent,
@@ -6,9 +15,16 @@ export const Route = createFileRoute("/")({
 
 function RouteComponent() {
 	return (
-		<div className="container mx-auto max-w-3xl px-4 py-2">
-			<h1 className="font-bold text-2xl">Home</h1>
-			<p className="text-muted-foreground">Page under construction.</p>
-		</div>
+		<main>
+			<Hero />
+			<WhyChooseUs />
+			<MembershipCta />
+			<Resources />
+			<CpmaiPromo />
+			<Community />
+			<NearbyChapters />
+			<Network />
+			<SecondaryCta />
+		</main>
 	);
 }
