@@ -11,11 +11,9 @@ import {
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { createMiddleware } from "@tanstack/react-start";
 import { evlogErrorHandler } from "evlog/nitro/v3";
-
+import { Footer } from "@/components/footer";
 import type { orpc } from "@/utils/orpc";
-
 import Header from "../components/header";
-
 import appCss from "../index.css?url";
 export interface RouterAppContext {
 	orpc: typeof orpc;
@@ -62,6 +60,7 @@ function RootDocument() {
 					<div className="grid h-svh grid-rows-[auto_1fr]">
 						<Header />
 						<Outlet />
+						<Footer />
 					</div>
 				</TooltipProvider>
 				<Toaster richColors />
