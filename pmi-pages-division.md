@@ -1,63 +1,71 @@
 # PMI Site Clone — Page Division
 
-> **Total Unique Pages:** ~123
-> **Split:** Yashraj (62) | Ashish (61)
-
----
-
 ## Yashraj — Content & Education
 
-### Certifications (17)
+### Home Page (1)
 
-- [ ] /certifications
-- [ ] /certifications/certified-associate-capm
-- [ ] /certifications/project-management-pmp
-- [ ] /certifications/program-management-pgmp
-- [ ] /certifications/portfolio-management-pfmp
-- [ ] /certifications/construction
-- [ ] /certifications/agile-acp
-- [ ] /certifications/risk-management-rmp
-- [ ] /certifications/business-analysis-pba
-- [ ] /certifications/scheduling-sp
-- [ ] /certifications/pmo-certified-professional-pmi-pmocp
-- [ ] /certifications/ai-project-management-cpmai
-- [ ] /certifications/sustainability-cspp
-- [ ] /certifications/certification-resources/digital-badges
-- [ ] /certifications/certification-resources/maintain
-- [ ] /certifications/certification-resources/registry
-- [ ] /certifications/certification-resources/faq
+- [ ] `/` — match reference (pmi.org) layout & sections
 
-### Learning (20)
+### Certifications (1 template + slugs)
 
-- [ ] /learning/exam-prep
-- [ ] /learning/online-courses
-- [ ] /learning/free-online-courses
-- [ ] /learning/authorized-training-partners
-- [ ] /learning/webinars
-- [ ] /events/pmi-training
-- [ ] /learning/academic-programs
-- [ ] /learning/library
-- [ ] /learning/ai-in-project-management
-- [ ] /learning/agile
-- [ ] /learning/careers
-- [ ] /learning/change-management
-- [ ] /learning/delivering-more
-- [ ] /learning/giga-projects
-- [ ] /learning/project-management-offices
-- [ ] /learning/project-and-product-management
-- [ ] /learning/sustainability
-- [ ] /learning/thought-leadership
-- [ ] /learning/brightline
-- [ ] /learning/project-management-journal
+> Use a single template with dynamic `[slug]` routing. All cert pages generated from one template.
 
-### Standards (4)
+**Main:**
 
-- [ ] /standards
-- [ ] /standards/pmbok
-- [ ] /standards/about
-- [ ] /dcpdp/sku/DP001
+- [ ] `/certifications`
 
-### Resources (10)
+**Dynamic slug pages** (`/certifications/[slug]`):
+
+- [ ] certified-associate-capm
+- [ ] project-management-pmp
+- [ ] program-management-pgmp
+- [ ] portfolio-management-pfmp
+- [ ] construction
+- [ ] agile-acp
+- [ ] risk-management-rmp
+- [ ] business-analysis-pba
+- [ ] scheduling-sp
+- [ ] pmo-certified-professional-pmi-pmocp
+- [ ] ai-project-management-cpmai
+- [ ] sustainability-cspp
+
+**Certification resources** (`/certifications/certification-resources/[slug]`):
+
+- [ ] digital-badges
+- [ ] maintain
+- [ ] registry
+- [ ] faq
+
+### Learning — "Explore by Type" Only (1 template + slugs)
+
+> Use a single template with dynamic `[slug]` routing. Only pages that appear in the "Explore by type" section of the learning dropdown on pmi.org.
+
+**Main:**
+
+- [ ] `/learning`
+
+**Dynamic slug pages** (`/learning/[slug]`):
+
+- [ ] exam-prep
+- [ ] online-courses
+- [ ] free-online-courses
+- [ ] authorized-training-partners
+- [ ] webinars
+- [ ] academic-programs
+- [ ] library
+- [ ] ai-in-project-management
+- [ ] agile
+- [ ] careers
+- [ ] change-management
+- [ ] delivering-more
+- [ ] giga-projects
+- [ ] project-management-offices
+- [ ] project-and-product-management
+- [ ] sustainability
+- [ ] thought-leadership
+- [ ] brightline
+
+### Resources (8)
 
 - [ ] /infinity
 - [ ] /insights
@@ -67,22 +75,12 @@
 - [ ] /ai-today-podcast
 - [ ] /career-navigator
 - [ ] /military
-- [ ] /learning/academic-sponsored-research
-- [ ] /learning/careers
 
-### About PMI (11)
+### About PMI — Single Page (1)
 
-- [ ] /about/annual-reports
-- [ ] /about/our-legacy
-- [ ] /about/board-of-directors
-- [ ] /about/impact
-- [ ] /about/culture-and-diversity
-- [ ] /about/ethics
-- [ ] /about/press-media
-- [ ] /about/press-media/kit
-- [ ] /about/what-is-a-project-manager
-- [ ] /about/what-is-project-management
-- [ ] /about/what-is-a-project
+> Single consolidated page pulling content from select reference about pages.
+
+- [ ] `/about`
 
 ---
 
@@ -90,79 +88,61 @@
 
 ### General / Utility (8)
 
-- [ ] /
-- [ ] /store/
-- [ ] /store/checkout/cart
-- [ ] /account-login
-- [ ] /account-registration
-- [ ] /sitemap-page
+- [ ] /sitemap
 - [ ] /privacy
-- [ ] /official-mobile-app
+- [ ] /accessibility
+- [ ] /terms
+- [ ] /purchasing-terms
 
-### Membership (16)
+### Membership — Single Page (1)
+
+> Consolidated single page instead of multiple reference pages.
 
 - [ ] /membership
-- [ ] /dcpdp/sku/memb-b-01
-- [ ] /dcpdp/sku/memb-b-02
-- [ ] /membership/chapters
-- [ ] /membership/faq
-- [ ] /membership/business-reading-center
-- [ ] /membership/benefits
-- [ ] /membership/chapters/asia-pacific
-- [ ] /membership/chapters/europe
-- [ ] /membership/chapters/middle-east-north-africa
-- [ ] /membership/chapters/south-asia
-- [ ] /membership/chapters/sub-saharan-africa
-- [ ] /membership/chapters/latin-america
-- [ ] /membership/chapters/north-america
-- [ ] <https://my.pmi.org/membership>
-- [ ] <https://community.pmi.org/>
 
-### Get Involved (11)
+### Events (1 template + slugs)
 
-- [ ] /volunteer
-- [ ] /volunteer#individual
-- [ ] /volunteer#team
-- [ ] /volunteer#non-profits
-- [ ] /volunteer/leadership-institute
-- [ ] /volunteer/social-impact
-- [ ] /pmi-educational-foundation/
-- [ ] /volunteer/project-managers-without-borders
-- [ ] /volunteer/sustainability-goals
-- [ ] <https://volunteer.pmi.org/>
-- [ ] <https://pmoga.pmi.org/>
+> Use a single template with dynamic `[slug]` routing.
 
-### Events (8)
+**Main:**
 
-- [ ] /events
-- [ ] /events/pmxpo
-- [ ] /events/speaking-opportunities
-- [ ] /about/event-sponsorship
-- [ ] <https://events.pmi.org/flow/pmi/gsdetroit26/landing/page/home>
-- [ ] <https://events.pmi.org/flow/pmi/gssseoul26/landing/page/home>
-- [ ] <https://events.pmi.org/flow/pmi/gsscapetown26/landing/page/home>
-- [ ] <https://events.pmi.org/flow/pmi/pmiagile26/landing/page/home>
+- [ ] `/events`
 
-### PMI for Organizations (18)
+**Dynamic slug pages** (`/events/[slug]`):
 
-- [ ] /business-solutions/commercial-partners
-- [ ] /business-solutions/pmp-project-management-certification
-- [ ] /business-solutions/transformation
-- [ ] /business-solutions/commercial-partners/enterprise-membership
-- [ ] /business-solutions/the-global-executive-council
-- [ ] /business-solutions/talent-management
-- [ ] /about/advertising-sponsorship
-- [ ] /business-solutions/commercial-partners/pmi-infinity-for-organizations
-- [ ] /events/pmi-training/pmi-training-team-training
-- [ ] /business-solutions/academic-institutions
-- [ ] /business-solutions/construction
-- [ ] /business-solutions/government-activities-advocacy
-- [ ] /healthcare
-- [ ] /business-solutions/human-resources
-- [ ] /creative-agencies
-- [ ] /business-solutions/non-profits
-- [ ] /business-solutions/become-an-authorized-training-partner
-- [ ] /business-solutions/commercial-partners/research-and-insights
-- [ ] /business-solutions/case-studies
-- [ ] /business-solutions/enterprise-newsletter
-- [ ] /business-solutions/agile-technical-solutions
+- [ ] pmxpo
+- [ ] speaking-opportunities
+- [ ] events-group-registration
+- [ ] pmi-training
+
+### Business Solutions (1 template + slugs)
+
+> Use a single template with dynamic `[slug]` routing. Only `/business-solutions/*` routes kept.
+
+**Main:**
+
+- [ ] `/business-solutions`
+
+**Dynamic slug pages** (`/business-solutions/[slug]`):
+
+- [ ] pmp-project-management-certification
+- [ ] transformation
+- [ ] the-global-executive-council
+- [ ] talent-management
+- [ ] academic-institutions
+- [ ] construction
+- [ ] government-activities-advocacy
+- [ ] human-resources
+- [ ] non-profits
+- [ ] become-an-authorized-training-partner
+- [ ] case-studies
+- [ ] enterprise-newsletter
+- [ ] agile-technical-solutions
+
+**Commercial partners** (`/business-solutions/commercial-partners/[slug]`):
+
+- [ ] enterprise-membership
+- [ ] pmi-infinity-for-organizations
+- [ ] research-and-insights
+
+---
