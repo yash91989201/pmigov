@@ -16,7 +16,12 @@
       "Bash(ls *)",
       "Bash(openssl rand *)",
       "Bash(cat *)",
-      "Bash(bun biome *)"
+      "Bash(bun biome *)",
+      "Bash(mkdir -p /private/tmp/claude-501/-Users-ashishpandey-Work-WorkHolo-pmigov/24d4910a-25b6-4573-bdd3-64c50c927998/scratchpad/pmi-screenshots)",
+      "Bash(bun add *)",
+      "Bash(bunx playwright *)",
+      "Bash(node pmi-capture.js)",
+      "Bash(bun remove *)"
     ]
   },
   "hooks": {
