@@ -9,7 +9,6 @@ import {
 import { cn } from "@pmigov/ui/lib/utils";
 import {
 	IconChevronRight,
-	IconExternalLink,
 	IconMenu,
 	IconSearch,
 	IconX,
@@ -38,30 +37,61 @@ const NAV_ITEMS: readonly NavItem[] = [
 			{
 				title: "Core",
 				links: [
-					{ label: "CAPM", href: "/certifications/certified-associate-capm" },
-					{ label: "PMP", href: "/certifications/project-management-pmp" },
-					{ label: "PgMP", href: "/certifications/program-management-pgmp" },
-					{ label: "PfMP", href: "/certifications/portfolio-management-pfmp" },
-					{ label: "All", href: "/certifications" },
+					{
+						label: "Certified Associate In Project Management (CAPM)",
+						href: "/certifications/certified-associate-capm",
+					},
+					{
+						label: "Project Management Professional (PMP)",
+						href: "/certifications/project-management-pmp",
+					},
+					{
+						label: "Program Management Professional (PgMP)",
+						href: "/certifications/program-management-pgmp",
+					},
+					{
+						label: "Portfolio Management Professional (PfMP)",
+						href: "/certifications/portfolio-management-pfmp",
+					},
+					{ label: "All Certifications", href: "/certifications" },
 				],
 			},
 			{
 				title: "Specialized",
 				links: [
-					{ label: "PMI-CP", href: "/certifications/construction" },
-					{ label: "PMI-ACP", href: "/certifications/agile-acp" },
-					{ label: "PMI-RMP", href: "/certifications/risk-management-rmp" },
 					{
-						label: "PMI-PMOCP",
+						label: "PMI Construction Professional (PMI-CP)",
+						href: "/certifications/construction",
+					},
+					{
+						label: "PMI Agile Certified Practitioner (PMI-ACP)",
+						href: "/certifications/agile-acp",
+					},
+					{
+						label: "PMI Risk Management Professional (PMI-RMP)",
+						href: "/certifications/risk-management-rmp",
+					},
+					{
+						label: "PMI PMO Certified Professional (PMI-PMOCP)",
 						href: "/certifications/pmo-certified-professional-pmi-pmocp",
 					},
-					{ label: "PMI-PBA", href: "/certifications/business-analysis-pba" },
-					{ label: "PMI-SP", href: "/certifications/scheduling-sp" },
 					{
-						label: "PMI-CPMAI",
+						label: "PMI Professional In Business Analysis (PMI-PBA)",
+						href: "/certifications/business-analysis-pba",
+					},
+					{
+						label: "PMI Scheduling Professional (PMI-SP)",
+						href: "/certifications/scheduling-sp",
+					},
+					{
+						label:
+							"PMI Certified Professional In AI Project Management (PMI-CPMAI)",
 						href: "/certifications/ai-project-management-cpmai",
 					},
-					{ label: "CSPP", href: "/certifications/sustainability-cspp" },
+					{
+						label: "Certified Sustainable Project Professional (CSPP)",
+						href: "/certifications/sustainability-cspp",
+					},
 				],
 			},
 			{
@@ -400,7 +430,7 @@ const NAV_ITEMS: readonly NavItem[] = [
 ];
 
 const LINK_BASE =
-	"flex items-center gap-1 text-foreground/80 text-sm leading-snug transition-colors hover:text-primary";
+	"flex items-center gap-1 text-gray-600 text-sm leading-snug hover:underline";
 
 function NavLinkItem({ link }: { link: NavLink }) {
 	return (
@@ -413,9 +443,6 @@ function NavLinkItem({ link }: { link: NavLink }) {
 			to={link.href as never}
 		>
 			{link.label}
-			{link.external ? (
-				<IconExternalLink aria-hidden="true" className="h-3 w-3 opacity-60" />
-			) : null}
 		</Link>
 	);
 }
@@ -481,34 +508,45 @@ function PrimaryNav({ onOpenMobile }: { onOpenMobile: () => void }) {
 				>
 					<IconMenu className="h-5 w-5" />
 				</button>
-				<NavigationMenu className="hidden md:flex">
+				<NavigationMenu
+					className="hidden md:flex"
+					popupClassName="rounded-none"
+				>
 					<NavigationMenuList>
 						{NAV_ITEMS.map((item) => (
 							<NavigationMenuItem key={item.label}>
 								<NavigationMenuTrigger
 									className={cn(
 										navigationMenuTriggerStyle(),
-										"h-12 rounded-sm px-3 text-sm"
+										"h-12 rounded-none px-3 text-sm hover:bg-primary hover:text-white data-[open]:bg-primary data-[popup-open]:bg-primary data-[open]:text-white data-[popup-open]:text-white data-[open]:hover:bg-primary data-[popup-open]:hover:bg-primary"
 									)}
 								>
 									{item.label}
 								</NavigationMenuTrigger>
-								<NavigationMenuContent>
-									<div className="flex w-[800px] gap-10 p-6">
-										{item.groups.map((group) => (
-											<div className="min-w-40" key={group.title}>
-												<h3 className="mb-3 font-bold text-primary text-xs uppercase tracking-wider">
-													{group.title}
-												</h3>
-												<ul className="flex flex-col gap-2">
-													{group.links.map((link) => (
-														<li key={`${group.title}-${link.label}`}>
-															<NavLinkItem link={link} />
-														</li>
-													))}
-												</ul>
-											</div>
-										))}
+								<NavigationMenuContent className="!rounded-none !shadow-none !ring-0 !border-0">
+									<div className="w-[800px] p-6">
+										{item.label === "Certifications" && (
+											<h2 className="mb-4 font-bold text-gray-900 text-lg">
+												Professional Certification
+											</h2>
+										)}
+										<div className="flex gap-10">
+											{item.groups.map((group) => (
+												<div className="min-w-40" key={group.title}>
+													<h3 className="mb-2 font-bold text-gray-900 text-sm">
+														{group.title}
+													</h3>
+													<div className="mb-3 h-px w-full bg-primary" />
+													<ul className="flex flex-col gap-2">
+														{group.links.map((link) => (
+															<li key={`${group.title}-${link.label}`}>
+																<NavLinkItem link={link} />
+															</li>
+														))}
+													</ul>
+												</div>
+											))}
+										</div>
 									</div>
 								</NavigationMenuContent>
 							</NavigationMenuItem>
@@ -592,8 +630,9 @@ function MobileSheet({
 										<div className="bg-gray-50 px-4 pt-1 pb-3">
 											{item.groups.map((group) => (
 												<div className="py-2" key={group.title}>
-													<h4 className="mb-1 font-bold text-[11px] text-primary uppercase tracking-wider">
+													<h4 className="mb-1 flex items-center gap-2 font-bold text-gray-900 text-xs">
 														{group.title}
+														<span className="h-0.5 w-4 bg-primary" />
 													</h4>
 													<ul className="flex flex-col gap-1.5">
 														{group.links.map((link) => (
