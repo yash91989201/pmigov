@@ -3,6 +3,7 @@
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/outfit";
+@import "@fontsource-variable/dm-sans";
 @source "../../../apps/**/*.{ts,tsx}";
 @source "../**/*.{ts,tsx}";
 
@@ -41,6 +42,11 @@
 	--sidebar-accent-foreground: oklch(0.218 0.008 223.9);
 	--sidebar-border: oklch(0.925 0.005 214.3);
 	--sidebar-ring: oklch(0.723 0.014 214.4);
+	/* PMI design tokens — extracted from pmi.org CSS */
+	--pmi-surface-primary: rgb(255, 255, 255);
+	--pmi-surface-secondary: #f8f5f0;
+	--pmi-text-primary: rgb(32, 15, 59); /* colors-off-black-800 */
+	--pmi-rounded-md: 24px; /* scale-24 */
 }
 
 .dark {
@@ -118,6 +124,14 @@
 	--radius-3xl: calc(var(--radius) + 12px);
 	--radius-4xl: calc(var(--radius) + 16px);
 	--font-heading: "Outfit Variable", sans-serif;
+	--font-aeonik: "DM Sans Variable", "DM Sans", Arial, sans-serif;
+	/* PMI surface + text colors as Tailwind utilities */
+	--color-pmi-surface-primary: var(--pmi-surface-primary);
+	--color-pmi-surface-secondary: var(--pmi-surface-secondary);
+	--color-pmi-text-primary: var(--pmi-text-primary);
+	/* PMI heading sizes from pmi.org DSM */
+	--text-header-xl: 3.5rem; /* 56px — sm breakpoint */
+	--text-header-md: 2.25rem; /* 36px — mobile */
 }
 
 @layer base {

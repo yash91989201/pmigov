@@ -630,7 +630,7 @@ export default function Header() {
 	const [bannerOpen, setBannerOpen] = useState(true);
 	return (
 		<>
-			<header>
+			<header className="z-50">
 				{bannerOpen && (
 					<AnnouncementBanner onClose={() => setBannerOpen(false)} />
 				)}

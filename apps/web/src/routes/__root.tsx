@@ -57,7 +57,8 @@ function RootDocument() {
 			</head>
 			<body>
 				<TooltipProvider>
-					<div className="flex min-h-svh flex-col">
+					<div className="grid min-h-svh grid-rows-[auto_1fr_auto]">
+
 						<Header />
 						<Outlet />
 						<Footer />

@@ -110,10 +110,11 @@
 
 **Dynamic slug pages** (`/events/[slug]`):
 
-- [ ] pmxpo
-- [ ] speaking-opportunities
-- [ ] events-group-registration
-- [ ] pmi-training
+- [x] pmxpo
+- [x] speaking-opportunities
+- [x] events-group-registration
+- [ ] pmi-training -- Not making this Because we had to make all the ecart realated thing
+- [x] events main page
 
 ### Business Solutions (1 template + slugs)
 
@@ -121,28 +122,29 @@
 
 **Main:**
 
-- [ ] `/business-solutions`
+- [x] `/business-solutions`
 
 **Dynamic slug pages** (`/business-solutions/[slug]`):
 
-- [ ] pmp-project-management-certification
-- [ ] transformation
-- [ ] the-global-executive-council
-- [ ] talent-management
-- [ ] academic-institutions
-- [ ] construction
-- [ ] government-activities-advocacy
-- [ ] human-resources
-- [ ] non-profits
-- [ ] become-an-authorized-training-partner
-- [ ] case-studies
-- [ ] enterprise-newsletter
-- [ ] agile-technical-solutions
+- [x] pmp-project-management-certification
+- [x] transformation
+- [x] the-global-executive-council
+- [x] talent-management
+- [x] academic-institutions
+- [x] construction
+- [x] government-activities-advocacy
+- [x] human-resources
+- [x] non-profits
+- [ ] become-an-authorized-training-partner. -- Reason for not making this page is because it is connected to 8-10 more pages which can noot be built yet
+- [x] case-studies
+- [x] enterprise-newsletter
+- [x] agile-technical-solutions
 
 **Commercial partners** (`/business-solutions/commercial-partners/[slug]`):
 
-- [ ] enterprise-membership
-- [ ] pmi-infinity-for-organizations
-- [ ] research-and-insights
+- [x] enterprise-membership
+- [x] pmi-infinity-for-organizations
+- [ ] research-and-insights -- Not built becuase it has around 16 new pages connected 
+
 
 ---
