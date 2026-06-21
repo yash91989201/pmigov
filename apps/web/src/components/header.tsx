@@ -12,7 +12,6 @@ import {
 	IconExternalLink,
 	IconMenu,
 	IconSearch,
-	IconShoppingCart,
 	IconX,
 } from "@tabler/icons-react";
 import { Link } from "@tanstack/react-router";
@@ -461,42 +460,10 @@ function TopUtilityBar() {
 						width={131}
 					/>
 				</Link>
-				<div className="hidden items-center gap-5 md:flex">
-					<select
-						className="rounded border border-gray-300 bg-white px-3 py-1.5 text-gray-700 text-xs hover:border-gray-400"
-						defaultValue="en"
-					>
-						<option value="en">Select Language</option>
-						<option value="es">Español</option>
-						<option value="fr">Français</option>
-					</select>
-					<Link
-						className="text-gray-700 text-sm hover:text-primary"
-						to="/store"
-					>
-						Store
-					</Link>
-					<button
-						aria-label="Cart"
-						className="relative text-gray-700 hover:text-primary"
-						type="button"
-					>
-						<IconShoppingCart className="h-4 w-4" />
-					</button>
-					<div aria-hidden="true" className="h-4 w-px bg-gray-300" />
-					<Link
-						className="text-gray-700 text-sm hover:text-primary"
-						to="/login"
-					>
-						Log in
-					</Link>
-					<Link
-						className="rounded border border-primary px-3 py-1.5 font-semibold text-primary text-xs tracking-wide hover:bg-primary hover:text-primary-foreground"
-						to="/account-registration"
-					>
-						Register
-					</Link>
-				</div>
+
+				<Link className="text-gray-700 text-sm hover:text-primary" to="/login">
+					Log in
+				</Link>
 			</div>
 		</div>
 	);
@@ -651,13 +618,6 @@ function MobileSheet({
 						to="/login"
 					>
 						Log in
-					</Link>
-					<Link
-						className="flex-1 rounded bg-primary px-3 py-2 text-center font-semibold text-primary-foreground text-sm"
-						onClick={onClose}
-						to="/account-registration"
-					>
-						Register
 					</Link>
 				</div>
 			</div>

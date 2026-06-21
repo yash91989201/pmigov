@@ -1,8 +1,17 @@
-import { IconExternalLink } from "@tabler/icons-react";
+import { Button } from "@pmigov/ui/components/button";
+import {
+	IconBrandLinkedin,
+	IconBrandTiktok,
+	IconBrandYoutube,
+	IconExternalLink,
+} from "@tabler/icons-react";
 import { Link } from "@tanstack/react-router";
 
+const FOOTER_LINK_CLASS =
+	"h-auto max-w-full items-start justify-start whitespace-normal p-0 text-left font-normal text-[#200f3b] text-xs break-words no-underline hover:text-[#4a2d6e] hover:underline";
+
 const EXT_ICON = (
-	<IconExternalLink aria-hidden="true" className="h-3 w-3 opacity-60" />
+	<IconExternalLink aria-hidden="true" className="size-3 shrink-0 opacity-60" />
 );
 
 const FOOTER_COLUMNS = [
@@ -115,95 +124,167 @@ const FOOTER_COLUMNS = [
 			{ label: "Careers", href: "/about/careers" },
 		],
 	},
-];
+	{
+		title: "Support",
+		links: [
+			{ label: "Contact Us", href: "/support" },
+			{ label: "Store Help", href: "/store-help" },
+		],
+	},
+] as const;
 
 const LEGAL_LINKS = [
 	{ label: "Accessibility", href: "/accessibility" },
 	{ label: "Privacy", href: "/privacy" },
 	{ label: "Sitemap", href: "/sitemap" },
-	{ label: "Terms of use", href: "/terms-of-use" },
+	{ label: "Terms of use", href: "/terms" },
 	{ label: "Purchasing Terms", href: "/purchasing-terms" },
 	{
 		label: "Advertising & Sponsorship",
 		href: "/about/advertising-sponsorship",
 	},
-];
+] as const;
+
+const SOCIAL_LINKS = [
+	{
+		label: "YouTube",
+		href: "https://www.youtube.com/user/pminstitute",
+		icon: IconBrandYoutube,
+	},
+	{
+		label: "LinkedIn",
+		href: "https://www.linkedin.com/company/pminstitute",
+		icon: IconBrandLinkedin,
+	},
+	{
+		label: "TikTok",
+		href: "https://www.tiktok.com/@pminstitute",
+		icon: IconBrandTiktok,
+	},
+] as const;
+
+function FooterLink({
+	external,
+	href,
+	label,
+}: {
+	external?: boolean;
+	href: string;
+	label: string;
+}) {
+	if (external) {
+		return (
+			<Button
+				className={FOOTER_LINK_CLASS}
+				nativeButton={false}
+				render={<a href={href} rel="noopener noreferrer" target="_blank" />}
+				variant="link"
+			>
+				<span className="inline-flex max-w-full flex-wrap items-start gap-x-1 gap-y-0.5 leading-snug">
+					<span className="break-words">{label}</span>
+					{EXT_ICON}
+				</span>
+			</Button>
+		);
+	}
+
+	return (
+		<Button
+			className={FOOTER_LINK_CLASS}
+			nativeButton={false}
+			render={<Link to={href as never} />}
+			variant="link"
+		>
+			<span className="break-words">{label}</span>
+		</Button>
+	);
+}
 
 export function Footer() {
 	return (
-		<footer className="border-gray-200 border-t bg-white">
-			<div className="px-6 pt-10 pb-8">
-				<div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
-					{/* Link columns */}
-					<div className="lg:col-span-9">
-						<div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
-							{FOOTER_COLUMNS.map((column) => (
-								<div key={column.title}>
-									<h3 className="mb-3 font-bold text-gray-900 text-sm">
-										{column.title}
-									</h3>
-									<ul className="flex flex-col gap-1.5">
-										{column.links.map((link) => (
-											<li key={link.label}>
-												<Link
-													className="flex items-center gap-1 text-gray-600 text-xs leading-snug transition-colors hover:text-primary"
-													rel={
-														link.external ? "noopener noreferrer" : undefined
-													}
-													target={link.external ? "_blank" : undefined}
-													to={link.href as never}
-												>
-													{link.label}
-													{link.external ? EXT_ICON : null}
-												</Link>
-											</li>
-										))}
-									</ul>
-								</div>
-							))}
+		<footer className="border-primary border-t bg-white">
+			<div className="w-full px-6 pt-12 pb-10 md:px-10">
+				<div className="grid grid-cols-2 gap-x-6 gap-y-10 text-left sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
+					{FOOTER_COLUMNS.map((column) => (
+						<div key={column.title}>
+							<h3 className="mb-4 font-bold text-[#200f3b] text-sm">
+								{column.title}
+							</h3>
+							<ul className="flex flex-col gap-2.5">
+								{column.links.map((link) => (
+									<li key={link.label}>
+										<FooterLink
+											external={link.external}
+											href={link.href}
+											label={link.label}
+										/>
+									</li>
+								))}
+							</ul>
 						</div>
-					</div>
+					))}
 
-					{/* Support */}
-					<div className="lg:col-span-3">
-						<h3 className="mb-3 font-bold text-gray-900 text-sm">Support</h3>
-						<ul className="flex flex-col gap-1.5">
-							<li>
-								<Link
-									className="text-gray-600 text-xs transition-colors hover:text-primary"
-									to="/support"
-								>
-									Contact Us
-								</Link>
-							</li>
-							<li>
-								<Link
-									className="text-gray-600 text-xs transition-colors hover:text-primary"
-									to="/store-help"
-								>
-									Store Help
-								</Link>
-							</li>
-						</ul>
+					<div className="col-span-2 flex flex-col gap-6 sm:col-span-3 md:col-span-4 lg:col-span-1">
+						<Link className="inline-flex items-center gap-3" to="/">
+							<img
+								alt="Project Management Institute"
+								className="h-10 w-auto"
+								height={40}
+								src="/logo.webp"
+								width={131}
+							/>
+						</Link>
+
+						<div className="border-[#d4cbc3] border-t" />
+
+						<p className="font-bold font-heading text-4xl text-[#200f3b] leading-none">
+							PMI®
+						</p>
+
+						<div className="flex flex-col gap-3">
+							<p className="font-bold text-[#200f3b] text-sm">Stay Connected</p>
+							<div className="flex flex-wrap items-center gap-3">
+								{SOCIAL_LINKS.map(({ href, icon: Icon, label }) => (
+									<Button
+										aria-label={label}
+										className="size-9 rounded-full text-[#200f3b] hover:bg-[#200f3b]/10 hover:text-[#200f3b]"
+										key={label}
+										nativeButton={false}
+										render={
+											<a
+												href={href}
+												rel="noopener noreferrer"
+												target="_blank"
+											/>
+										}
+										size="icon-sm"
+										variant="ghost"
+									>
+										<Icon aria-hidden="true" className="size-5" />
+									</Button>
+								))}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			{/* Bottom bar */}
-			<div className="border-gray-200 border-t">
-				<div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-4 sm:flex-row">
-					<nav className="flex flex-wrap items-center gap-4">
+			<div className="border-[#d4cbc3] border-t">
+				<div className="flex w-full flex-col items-start justify-between gap-4 px-6 py-5 md:flex-row md:px-10">
+					<nav className="flex flex-wrap items-start gap-x-5 gap-y-2">
 						{LEGAL_LINKS.map((link) => (
-							<Link
-								className="text-gray-600 text-xs transition-colors hover:text-primary"
+							<Button
+								className="h-auto max-w-full items-start justify-start whitespace-normal break-words p-0 text-left font-normal text-[#200f3b] text-xs no-underline hover:text-[#4a2d6e] hover:underline"
 								key={link.label}
-								to={link.href as never}
+								nativeButton={false}
+								render={<Link to={link.href as never} />}
+								variant="link"
 							>
 								{link.label}
-							</Link>
+							</Button>
 						))}
 					</nav>
-					<p className="text-gray-500 text-xs">
+					<p className="text-[#6b5b7b] text-xs">
 						© 2026 Project Management Institute
 					</p>
 				</div>

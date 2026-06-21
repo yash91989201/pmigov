@@ -35,7 +35,7 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "My App",
+				title: "Home of Project Management | Project Management Institute",
 			},
 		],
 		links: [
@@ -58,6 +58,7 @@ function RootDocument() {
 			<body>
 				<TooltipProvider>
 					<div className="grid min-h-svh grid-rows-[auto_1fr_auto]">
+
 						<Header />
 						<Outlet />
 						<Footer />
