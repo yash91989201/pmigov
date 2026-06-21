@@ -1,14 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/purchasing-terms")({
-	component: RouteComponent,
+	beforeLoad: () => {
+		throw redirect({ to: "/about/purchasing-terms-and-conditions" });
+	},
+	component: () => null,
 });
-
-function RouteComponent() {
-	return (
-		<div className="container mx-auto max-w-3xl px-4 py-8">
-			<h1 className="font-bold text-2xl">Purchasing Terms</h1>
-			<p className="mt-2 text-muted-foreground">Placeholder page</p>
-		</div>
-	);
-}
