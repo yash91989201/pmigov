@@ -39,7 +39,7 @@ const NAV_ITEMS: readonly NavItem[] = [
 				links: [
 					{
 						label: "Certified Associate In Project Management (CAPM)",
-						href: "/certifications/certified-associate-capm",
+						href: "/certifications/certified-associate-in-project-management-capm",
 					},
 					{
 						label: "Project Management Professional (PMP)",

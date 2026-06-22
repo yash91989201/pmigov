@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
 
 function RouteComponent() {
 	return (
-		<main>
+		<main className="overflow-x-hidden">
 			<Hero />
 			<WhyChooseUs />
 			<MembershipCta />
