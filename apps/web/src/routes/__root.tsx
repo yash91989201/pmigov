@@ -24,7 +24,7 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
 	server: {
 		middleware: [createMiddleware().server(evlogErrorHandler)],
 	},
-
+	ssr: false,
 	head: () => ({
 		meta: [
 			{
@@ -58,7 +58,6 @@ function RootDocument() {
 			<body>
 				<TooltipProvider>
 					<div className="grid min-h-svh grid-rows-[auto_1fr_auto]">
-
 						<Header />
 						<Outlet />
 						<Footer />
