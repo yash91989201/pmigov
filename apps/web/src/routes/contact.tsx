@@ -15,7 +15,7 @@ import {
 	IconX,
 } from "@tabler/icons-react";
 import { formOptions } from "@tanstack/react-form";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
@@ -34,14 +34,6 @@ const subjectOptions = [
 	"Volunteering",
 	"Partnership",
 	"Other",
-];
-
-const certificationOptions = [
-	"PMP - Project Management Professional",
-	"CAPM - Certified Associate in Project Management",
-	"PMI-ACP - Agile Certified Practitioner",
-	"PgMP - Program Management Professional",
-	"PfMP - Portfolio Management Professional",
 ];
 
 const formOpts = formOptions({
@@ -113,6 +105,13 @@ function ContactComponent() {
 		e.stopPropagation();
 		setSelectedCerts((prev) => prev.filter((c) => c !== cert));
 	};
+
+	const { data: certificationsData } = useQuery(
+		queryUtils.certifications.listActive.queryOptions()
+	);
+
+	const certificationOptions =
+		certificationsData?.map((cert) => cert.name) ?? [];
 
 	const filteredCertifications = certificationOptions.filter((cert) =>
 		cert.toLowerCase().includes(certSearchQuery.toLowerCase())
