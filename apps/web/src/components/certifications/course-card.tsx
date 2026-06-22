@@ -23,7 +23,7 @@ export function CourseCard({ course }: CourseCardProps) {
 				/>
 			)}
 
-			<div className="relative flex flex-1 flex-col gap-4 bg-gradient-to-t from-white to-transparent pt-24 pb-8 px-6">
+			<div className="relative flex flex-1 flex-col gap-4 bg-gradient-to-t from-white to-transparent px-6 pt-24 pb-8">
 				{course.tags.length > 0 && (
 					<div className="flex flex-wrap gap-2">
 						{course.tags.map((tag) => {

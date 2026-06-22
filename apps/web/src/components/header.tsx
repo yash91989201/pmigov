@@ -401,6 +401,11 @@ function NavLinkItem({ link }: { link: NavLink }) {
 	);
 }
 
+const ABOUT_TRIGGER = cn(
+	navigationMenuTriggerStyle(),
+	"h-12 rounded-none px-3 text-sm hover:bg-primary hover:text-white"
+);
+
 function AnnouncementBanner({ onClose }: { onClose: () => void }) {
 	return (
 		<div className="bg-primary text-primary-foreground">
@@ -506,16 +511,18 @@ function PrimaryNav({ onOpenMobile }: { onOpenMobile: () => void }) {
 								</NavigationMenuContent>
 							</NavigationMenuItem>
 						))}
+						<NavigationMenuItem>
+							<Link
+								activeOptions={{ exact: true }}
+								activeProps={{ className: "font-semibold" }}
+								className={ABOUT_TRIGGER}
+								to="/about"
+							>
+								About
+							</Link>
+						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
-				<Link
-					activeOptions={{ exact: true }}
-					activeProps={{ className: "font-semibold" }}
-					className="flex h-12 items-center px-3 font-medium text-gray-700 text-sm hover:text-primary"
-					to="/about"
-				>
-					About
-				</Link>
 				<div className="hidden items-center gap-3 md:flex">
 					<div className="relative">
 						<input
