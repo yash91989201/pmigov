@@ -307,7 +307,7 @@ const NAV_ITEMS: readonly NavItem[] = [
 		],
 	},
 	{
-		label: "PMI for Organizations",
+		label: "PMI Gov for Organizations",
 		groups: [
 			{
 				title: "Enterprise",
@@ -333,7 +333,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 						href: "/business-solutions/the-global-executive-council",
 					},
 					{ label: "Job Board", href: "/business-solutions/talent-management" },
-					{ label: "Advertising", href: "/about/advertising-sponsorship" },
 					{
 						label: "PMI Infinity",
 						href: "/business-solutions/commercial-partners/pmi-infinity-for-organizations",
@@ -378,29 +377,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 						label: "Newsletter",
 						href: "/business-solutions/enterprise-newsletter",
 					},
-				],
-			},
-		],
-	},
-	{
-		label: "About PMI",
-		groups: [
-			{
-				title: "Who We Are",
-				links: [
-					{ label: "Annual Reports", href: "/about/annual-reports" },
-					{ label: "Our Legacy", href: "/about/our-legacy" },
-					{ label: "Board", href: "/about/board-of-directors" },
-				],
-			},
-			{
-				title: "What We Do",
-				links: [
-					{ label: "Impact & Sustainability", href: "/about/impact" },
-					{ label: "Culture & DEI", href: "/about/culture-and-diversity" },
-					{ label: "Ethics", href: "/about/ethics" },
-					{ label: "Press", href: "/about/press-media" },
-					{ label: "Media Kit", href: "/about/press-media/kit" },
 				],
 			},
 		],
@@ -532,6 +508,14 @@ function PrimaryNav({ onOpenMobile }: { onOpenMobile: () => void }) {
 						))}
 					</NavigationMenuList>
 				</NavigationMenu>
+				<Link
+					activeOptions={{ exact: true }}
+					activeProps={{ className: "font-semibold" }}
+					className="flex h-12 items-center px-3 font-medium text-gray-700 text-sm hover:text-primary"
+					to="/about"
+				>
+					About
+				</Link>
 				<div className="hidden items-center gap-3 md:flex">
 					<div className="relative">
 						<input
@@ -628,6 +612,13 @@ function MobileSheet({
 							);
 						})}
 					</ul>
+					<Link
+						className="flex w-full items-center justify-between border-gray-100 border-b px-4 py-3 font-semibold text-gray-900 text-sm hover:bg-gray-50"
+						onClick={onClose}
+						to="/about"
+					>
+						About
+					</Link>
 				</div>
 				<div className="flex items-center gap-2 border-gray-200 border-t bg-white p-4">
 					<Link

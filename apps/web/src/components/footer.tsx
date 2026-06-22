@@ -88,7 +88,7 @@ const FOOTER_COLUMNS = [
 		],
 	},
 	{
-		title: "Partner with PMI",
+		title: "Partner with PMI Gov",
 		links: [
 			{
 				label: "Enterprise and Commercial Partners",
@@ -102,22 +102,7 @@ const FOOTER_COLUMNS = [
 	},
 	{
 		title: "Organization",
-		links: [
-			{ label: "Our Mission & Vision", href: "/about/mission" },
-			{ label: "Our Purpose", href: "/about/purpose" },
-			{ label: "Our Leadership", href: "/about/board-of-directors" },
-			{ label: "The PMI Blog", href: "/blog" },
-			{
-				label: "What is Project Management?",
-				href: "/about/what-is-project-management",
-			},
-			{
-				label: "What is a Project Manager?",
-				href: "/about/what-is-a-project-manager",
-			},
-			{ label: "Press & Media", href: "/about/press-media" },
-			{ label: "Careers", href: "/about/careers" },
-		],
+		links: [{ label: "About Us", href: "/about" }],
 	},
 	{
 		title: "Support",
@@ -134,10 +119,6 @@ const LEGAL_LINKS = [
 	{ label: "Sitemap", href: "/sitemap" },
 	{ label: "Terms of use", href: "/terms" },
 	{ label: "Purchasing Terms", href: "/purchasing-terms" },
-	{
-		label: "Advertising & Sponsorship",
-		href: "/about/advertising-sponsorship",
-	},
 ] as const;
 
 function FooterLink({
@@ -212,7 +193,7 @@ export function Footer() {
 					<div className="col-span-2 flex flex-col gap-6 sm:col-span-3 md:col-span-4 lg:col-span-1">
 						<Link className="inline-flex items-center gap-3" to="/">
 							<img
-								alt="Project Management Institute"
+								alt="PMI Gov"
 								className="h-10 w-auto"
 								height={40}
 								src="/logo.webp"
@@ -223,7 +204,7 @@ export function Footer() {
 						<div className="border-[#d4cbc3] border-t" />
 
 						<p className="font-bold font-heading text-4xl text-[#200f3b] leading-none">
-							PMI®
+							PMI Gov®
 						</p>
 					</div>
 				</div>
@@ -245,7 +226,7 @@ export function Footer() {
 						))}
 					</nav>
 					<p className="text-[#6b5b7b] text-xs">
-						© 2026 Project Management Institute
+						© 2026 Project Management Institute Gov
 					</p>
 				</div>
 			</div>
