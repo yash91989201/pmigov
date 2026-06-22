@@ -21,8 +21,9 @@ services:
     restart: unless-stopped
 
   postgres:
-    image: postgres
+    image: postgres:18.4-alpine3.23
     container_name: pmigov-postgres
+    restart: unless-stopped
     environment:
       POSTGRES_DB: pmigov
       POSTGRES_USER: postgres
@@ -31,12 +32,21 @@ services:
       - "5432:5432"
     volumes:
       - pmigov_postgres_data:/var/lib/postgresql
+    command:
+      - "postgres"
+      - "-c"
+      - "wal_level=logical"
+      - "-c"
+      - "max_wal_senders=10"
+      - "-c"
+      - "max_replication_slots=12"
+      - "-c"
+      - "max_slot_wal_keep_size=4GB"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
       timeout: 5s
       retries: 5
-    restart: unless-stopped
 
 volumes:
   pmigov_postgres_data:
