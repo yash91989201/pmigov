@@ -1,14 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { orpc } from "@/utils/orpc";
+import { createFileRoute } from "@tanstack/react-router";
+import { queryUtils } from "@/utils/orpc";
 
-export const Route = createFileRoute("/dashboard/contact-responses")({
+export const Route = createFileRoute("/_auth/dashboard/contact-responses")({
 	component: ContactResponsesComponent,
 });
 
 function ContactResponsesComponent() {
 	const { data: responses, isLoading } = useQuery(
-		orpc.contact.list.queryOptions()
+		queryUtils.contact.list.queryOptions()
 	);
 
 	const isEmpty = !responses || responses.length === 0;
@@ -25,12 +25,6 @@ function ContactResponsesComponent() {
 							Manage and view inquiries from the contact form.
 						</p>
 					</div>
-					<Link
-						className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 font-medium text-[#5621b4] text-sm shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#5621b4] focus:ring-offset-2"
-						to="/dashboard"
-					>
-						← Back to Dashboard
-					</Link>
 				</div>
 
 				<div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">

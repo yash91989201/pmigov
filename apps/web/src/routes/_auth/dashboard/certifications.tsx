@@ -1,9 +1,9 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { orpc } from "@/utils/orpc";
+import { orpcClient, queryUtils } from "@/utils/orpc";
 
-export const Route = createFileRoute("/dashboard/certifications")({
+export const Route = createFileRoute("/_auth/dashboard/certifications")({
 	component: CertificationsComponent,
 });
 
@@ -234,25 +234,26 @@ function CertificationsComponent() {
 	const queryClient = useQueryClient();
 
 	const { data: certifications, isLoading } = useQuery(
-		orpc.certifications.list.queryOptions()
+		queryUtils.certifications.list.queryOptions()
 	);
 
 	const createCert = useMutation({
 		mutationFn: (data: { name: string; isActive: boolean }) =>
-			orpc.certifications.create(data),
+			orpcClient.certifications.create(data),
 		onSuccess: () =>
 			queryClient.invalidateQueries({ queryKey: ["certifications", "list"] }),
 	});
 
 	const updateCert = useMutation({
 		mutationFn: (data: { id: string; name: string; isActive: boolean }) =>
-			orpc.certifications.update(data),
+			orpcClient.certifications.update(data),
 		onSuccess: () =>
 			queryClient.invalidateQueries({ queryKey: ["certifications", "list"] }),
 	});
 
 	const removeCert = useMutation({
-		mutationFn: (data: { id: string }) => orpc.certifications.remove(data),
+		mutationFn: (data: { id: string }) =>
+			orpcClient.certifications.remove(data),
 		onSuccess: () =>
 			queryClient.invalidateQueries({ queryKey: ["certifications", "list"] }),
 	});
