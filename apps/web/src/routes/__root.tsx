@@ -46,28 +46,35 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
 		],
 	}),
 
+	shellComponent: ShellComponent,
 	component: RootDocument,
 });
 
-function RootDocument() {
+function ShellComponent({ children }: { children: React.ReactNode }) {
 	return (
 		<html className="light" lang="en">
 			<head>
 				<HeadContent />
 			</head>
 			<body>
-				<TooltipProvider>
-					<div className="grid min-h-svh grid-rows-[auto_1fr_auto]">
-						<Header />
-						<Outlet />
-						<Footer />
-					</div>
-				</TooltipProvider>
+				{children}
 				<Toaster richColors />
 				<TanStackRouterDevtools position="bottom-left" />
 				<ReactQueryDevtools buttonPosition="bottom-right" position="bottom" />
 				<Scripts />
 			</body>
 		</html>
+	);
+}
+
+function RootDocument() {
+	return (
+		<TooltipProvider>
+			<div className="grid min-h-svh grid-rows-[auto_1fr_auto]">
+				<Header />
+				<Outlet />
+				<Footer />
+			</div>
+		</TooltipProvider>
 	);
 }

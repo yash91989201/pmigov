@@ -22,4 +22,4 @@ ENV PORT=3001
 EXPOSE 3001
 
 WORKDIR /app/apps/web
-CMD ["node", ".output/server/index.mjs"]
+CMD ["bun", "run", ".output/server/index.mjs"]
