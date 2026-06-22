@@ -1,7 +1,13 @@
+import { IconCircleCheck, IconFileText } from "@tabler/icons-react";
 import { createFileRoute } from "@tanstack/react-router";
-import { CheckCircle2, FileText } from "lucide-react";
 
-import type { BoardMember } from "@/lib/types";
+type BoardMember = {
+	id: string;
+	name: string;
+	role: string;
+	bio: string;
+	imageUrl: string;
+};
 
 export const Route = createFileRoute("/about/")({
 	component: AboutComponent,
@@ -163,7 +169,7 @@ function AboutComponent() {
 					<div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
 						<div className="w-full lg:w-1/2">
 							<div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#5621b4] px-4 py-2 font-bold text-white text-xs uppercase tracking-wider">
-								<FileText size={14} />
+								<IconFileText size={14} />
 								Finance Branch Verification
 							</div>
 							<h2 className="mb-6 font-bold text-4xl text-[#1e0a45] leading-tight md:text-5xl">
@@ -177,7 +183,7 @@ function AboutComponent() {
 								every operation we undertake.
 							</p>
 							<div className="flex items-center gap-2 font-bold text-green-600 text-sm">
-								<CheckCircle2 size={18} />
+								<IconCircleCheck size={18} />
 								<span>Verified Corporate Branch Profile</span>
 							</div>
 						</div>
@@ -186,7 +192,7 @@ function AboutComponent() {
 							<div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-lg">
 								<div className="flex items-start gap-6">
 									<div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-[#5621b4]/10">
-										<FileText className="text-[#5621b4]" size={28} />
+										<IconFileText className="text-[#5621b4]" size={28} />
 									</div>
 									<div className="space-y-5">
 										<div>
