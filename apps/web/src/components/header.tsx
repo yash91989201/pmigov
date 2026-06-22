@@ -94,28 +94,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 					},
 				],
 			},
-			{
-				title: "Resources",
-				links: [
-					{
-						label: "Digital Badges",
-						href: "/certifications/certification-resources/digital-badges",
-					},
-					{
-						label: "Maintain & Renew",
-						href: "/certifications/certification-resources/maintain",
-					},
-					{
-						label: "Check a Certification",
-						href: "/certifications/certification-resources/registry",
-					},
-					{
-						label: "FAQs",
-						href: "/certifications/certification-resources/faq",
-					},
-					{ label: "Mobile App", href: "/official-mobile-app" },
-				],
-			},
 		],
 	},
 	{
@@ -456,7 +434,8 @@ function AnnouncementBanner({ onClose }: { onClose: () => void }) {
 					Certified Sustainable Project Professional (CSPP)™.{" "}
 					<Link
 						className="ml-2 inline-block rounded bg-primary/90 px-3 py-1 font-semibold text-primary-foreground text-xs hover:bg-primary/80"
-						to="/certifications/sustainability-cspp"
+						params={{ slug: "sustainability-cspp" }}
+						to="/certifications/$slug"
 					>
 						Explore CSPP™
 					</Link>

@@ -1,10 +1,5 @@
 import { Button } from "@pmigov/ui/components/button";
-import {
-	IconBrandLinkedin,
-	IconBrandTiktok,
-	IconBrandYoutube,
-	IconExternalLink,
-} from "@tabler/icons-react";
+import { IconExternalLink } from "@tabler/icons-react";
 import { Link } from "@tanstack/react-router";
 
 const FOOTER_LINK_CLASS =
@@ -145,24 +140,6 @@ const LEGAL_LINKS = [
 	},
 ] as const;
 
-const SOCIAL_LINKS = [
-	{
-		label: "YouTube",
-		href: "https://www.youtube.com/user/pminstitute",
-		icon: IconBrandYoutube,
-	},
-	{
-		label: "LinkedIn",
-		href: "https://www.linkedin.com/company/pminstitute",
-		icon: IconBrandLinkedin,
-	},
-	{
-		label: "TikTok",
-		href: "https://www.tiktok.com/@pminstitute",
-		icon: IconBrandTiktok,
-	},
-] as const;
-
 function FooterLink({
 	external,
 	href,
@@ -177,7 +154,15 @@ function FooterLink({
 			<Button
 				className={FOOTER_LINK_CLASS}
 				nativeButton={false}
-				render={<a href={href} rel="noopener noreferrer" target="_blank" />}
+				render={
+					// biome-ignore lint/a11y/useAnchorContent: visible label provided via Button children; aria-label added for SR fallback
+					<a
+						aria-label={label}
+						href={href}
+						rel="noopener noreferrer"
+						target="_blank"
+					/>
+				}
 				variant="link"
 			>
 				<span className="inline-flex max-w-full flex-wrap items-start gap-x-1 gap-y-0.5 leading-snug">
@@ -240,31 +225,6 @@ export function Footer() {
 						<p className="font-bold font-heading text-4xl text-[#200f3b] leading-none">
 							PMI®
 						</p>
-
-						<div className="flex flex-col gap-3">
-							<p className="font-bold text-[#200f3b] text-sm">Stay Connected</p>
-							<div className="flex flex-wrap items-center gap-3">
-								{SOCIAL_LINKS.map(({ href, icon: Icon, label }) => (
-									<Button
-										aria-label={label}
-										className="size-9 rounded-full text-[#200f3b] hover:bg-[#200f3b]/10 hover:text-[#200f3b]"
-										key={label}
-										nativeButton={false}
-										render={
-											<a
-												href={href}
-												rel="noopener noreferrer"
-												target="_blank"
-											/>
-										}
-										size="icon-sm"
-										variant="ghost"
-									>
-										<Icon aria-hidden="true" className="size-5" />
-									</Button>
-								))}
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
