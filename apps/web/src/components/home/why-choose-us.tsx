@@ -304,28 +304,6 @@ export function WhyChooseUs() {
 							Certifications are an excellent way to increase your earning
 							power, drive project success, and stand out from the crowd.
 						</p>
-						<a
-							className="inline-flex w-fit items-center gap-2 rounded-full border-2 px-7 py-3.5 font-medium text-base transition-colors hover:bg-black/5"
-							href="/certifications"
-							style={{ borderColor: "#200f3b", color: "#200f3b" }}
-						>
-							View All Certifications
-							<svg
-								aria-hidden="true"
-								fill="none"
-								height="18"
-								viewBox="0 0 16 16"
-								width="18"
-							>
-								<path
-									d="M3 8h10M9 4l4 4-4 4"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="1.5"
-								/>
-							</svg>
-						</a>
 					</div>
 				</div>
 			</div>

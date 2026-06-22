@@ -53,7 +53,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 						label: "Portfolio Management Professional (PfMP)",
 						href: "/certifications/portfolio-management-pfmp",
 					},
-					{ label: "All Certifications", href: "/certifications" },
 				],
 			},
 			{

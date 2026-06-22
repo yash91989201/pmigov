@@ -108,10 +108,6 @@ const sections: { heading: string; columns: SubSection[][] }[] = [
 							label: "Certification FAQs",
 							href: "/certifications/certification-resources/faq",
 						},
-						{
-							label: "Explore All Certifications",
-							href: "/certifications",
-						},
 					],
 				},
 			],
