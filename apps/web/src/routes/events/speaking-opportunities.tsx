@@ -36,7 +36,7 @@ const WHERE_CARDS = [
 		body: "PMI Leadership Institute Meetings are in-person regional events offering strategic alignment, collaborative learning, and leadership development for PMI chapter leaders across the world, speaking opportunities are reserved exclusively for active chapter leaders.",
 		link: {
 			label: "Explore LIM Opportunities",
-			href: "https://www.pmi.org/events/speaking-opportunities/lim",
+			href: "/events/speaking-opportunities",
 			external: true,
 		},
 		img: "/images/events/speaker-opportunities/lim.jpg",
@@ -1221,7 +1221,7 @@ function RouteComponent() {
 							<div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
 								<a
 									className="inline-flex h-14 items-center justify-between gap-4 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-gray-50"
-									href="https://www.pmi.org/events/speaking-opportunities/global-summit"
+									href="/events/speaking-opportunities"
 									rel="noreferrer"
 									style={{ borderColor: HD, color: HD }}
 									target="_blank"
@@ -1230,7 +1230,7 @@ function RouteComponent() {
 								</a>
 								<a
 									className="inline-flex h-14 items-center justify-between gap-4 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-gray-50"
-									href="https://www.pmi.org/events/speaking-opportunities/lim"
+									href="/events/speaking-opportunities"
 									rel="noreferrer"
 									style={{ borderColor: HD, color: HD }}
 									target="_blank"

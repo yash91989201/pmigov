@@ -140,13 +140,13 @@ const MEMBERSHIP_TYPES = [
 		name: "Professional Membership",
 		description:
 			"Unlock exclusive access to free and discounted career education, project resources, and networking opportunities.",
-		href: "https://www.pmi.org/store/checkout/cart?membership=individual",
+		href: "/membership/professional",
 	},
 	{
 		name: "Student Membership",
 		description:
 			"Launch your career for less. Full-time college or university students can join PMI at a deeply discounted rate.",
-		href: "https://www.pmi.org/store/checkout/cart?membership=student",
+		href: "/membership/student",
 	},
 	{
 		name: "Gift Membership",
@@ -509,10 +509,7 @@ function RouteComponent() {
 						thought leaders, trend-setters, and like-minded professionals
 						elevating our world through project success.
 					</p>
-					<MemberButton
-						href="https://www.pmi.org/store/checkout/cart?membership=individual"
-						size="lg"
-					/>
+					<MemberButton href="/membership/professional" size="lg" />
 				</div>
 			</div>
 
@@ -590,7 +587,6 @@ function RouteComponent() {
 					</div>
 					{/* CTA row */}
 					<div className="mt-10 flex flex-col items-start gap-4 border-white/10 border-t pt-8 sm:flex-row sm:items-center">
-						<MemberButton href="https://www.pmi.org/store/checkout/cart?membership=individual" />
 						<a
 							className="inline-flex items-center gap-1 font-aeonik font-medium text-lg text-white/80 underline-offset-4 hover:text-white hover:underline"
 							href="/membership/benefits"
@@ -716,7 +712,6 @@ function RouteComponent() {
 									of Project Professionals, and so much more.
 								</p>
 								<div className="flex flex-wrap items-center gap-4">
-									<MemberButton href="https://www.pmi.org/store/checkout/cart?membership=individual" />
 									<a
 										className="inline-flex items-center gap-1 font-aeonik font-medium text-white/80 underline-offset-4 hover:text-white hover:underline"
 										href="/membership/benefits"
@@ -740,7 +735,7 @@ function RouteComponent() {
 								</p>
 								<a
 									className="inline-flex items-center gap-2 rounded-full border border-white px-6 py-3 font-aeonik font-semibold text-white transition hover:bg-white/10"
-									href="https://www.pmi.org/store/checkout/cart?membership=trial"
+									href="/membership/trial"
 								>
 									Start 30-Day Free Trial <ChevronRight />
 								</a>
@@ -937,10 +932,7 @@ function RouteComponent() {
 						Becoming a member is easy. Jumpstart your career and take advantage
 						of member perks and discounts right away.
 					</p>
-					<MemberButton
-						href="https://www.pmi.org/store/checkout/cart?membership=individual"
-						size="lg"
-					/>
+					<MemberButton href="/membership/professional" size="lg" />
 				</div>
 			</div>
 

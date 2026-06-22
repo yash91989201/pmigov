@@ -25,7 +25,7 @@ const UPCOMING = [
 		alt: "Global Summit Seoul",
 		title: "PMI® Global Summit Series Seoul",
 		date: "10–11 June 2026",
-		href: "https://events.pmi.org/flow/pmi/gssseoul26/landing/page/home",
+		href: "/events/gs-seoul",
 	},
 	{
 		slug: "agile-2026",
@@ -33,7 +33,7 @@ const UPCOMING = [
 		alt: "Agile 2026",
 		title: "PMI® Agile 2026",
 		date: "26–28 July 2026 | National Harbor, MD, USA",
-		href: "https://events.pmi.org/flow/pmi/pmiagile26/landing/page/home",
+		href: "/events/agile-2026",
 	},
 	{
 		slug: "gs-capetown",
@@ -41,7 +41,7 @@ const UPCOMING = [
 		alt: "Global Summit Cape Town",
 		title: "PMI® Global Summit Series Cape Town",
 		date: "14–15 September 2026",
-		href: "https://events.pmi.org/flow/pmi/gsscapetown26/landing/page/home",
+		href: "/events/gs-capetown",
 	},
 	{
 		slug: "gs-detroit",
@@ -49,7 +49,7 @@ const UPCOMING = [
 		alt: "Global Summit Detroit",
 		title: "PMI® Global Summit 2026",
 		date: "October 21–24, 2026 | Detroit, MI, USA",
-		href: "https://events.pmi.org/flow/pmi/gsdetroit26/landing/page/home",
+		href: "/events/gs-detroit",
 	},
 ];
 
@@ -432,7 +432,7 @@ function RouteComponent() {
 									</p>
 									<a
 										className="inline-flex h-12 items-center gap-2 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-white/40"
-										href="https://www.pmi.org/events/pmxpo/group-registration"
+										href="/events/pmxpo"
 										rel="noreferrer"
 										style={{ borderColor: HD, color: HD }}
 										target="_blank"
@@ -512,7 +512,7 @@ function RouteComponent() {
 								</p>
 								<a
 									className="inline-flex items-center gap-1 font-aeonik font-semibold text-base hover:underline"
-									href="https://www.pmi.org/events/global-summit/2025"
+									href="/events"
 									rel="noreferrer"
 									style={{ color: HD }}
 									target="_blank"
@@ -568,7 +568,7 @@ function RouteComponent() {
 									</p>
 									<a
 										className="inline-flex h-12 items-center gap-2 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-white/60"
-										href="https://www.pmi.org/events/sponsorship"
+										href="/about/event-sponsorship"
 										rel="noreferrer"
 										style={{ borderColor: HD, color: HD }}
 										target="_blank"
@@ -652,7 +652,7 @@ function RouteComponent() {
 									</h3>
 									<a
 										className="inline-flex items-center gap-0.5 font-aeonik font-medium text-base hover:underline"
-										href="https://www.pmi.org/events/training"
+										href="/events/pmi-training"
 										rel="noreferrer"
 										style={{ color: HD }}
 										target="_blank"

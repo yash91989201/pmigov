@@ -7,12 +7,7 @@ import {
 	navigationMenuTriggerStyle,
 } from "@pmigov/ui/components/navigation-menu";
 import { cn } from "@pmigov/ui/lib/utils";
-import {
-	IconChevronRight,
-	IconMenu,
-	IconSearch,
-	IconX,
-} from "@tabler/icons-react";
+import { IconChevronRight, IconMenu, IconX } from "@tabler/icons-react";
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 
@@ -148,11 +143,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 				links: [
 					{ label: "PMBOK Guide", href: "/standards/pmbok" },
 					{ label: "Global Standards", href: "/standards" },
-					{
-						label: "PMIstandards+",
-						href: "https://dcpdp.pmi.org/",
-						external: true,
-					},
 					{ label: "About Standards", href: "/standards/about" },
 				],
 			},
@@ -163,19 +153,7 @@ const NAV_ITEMS: readonly NavItem[] = [
 		groups: [
 			{
 				title: "Connect",
-				links: [
-					{ label: "PMI Infinity", href: "/infinity" },
-					{
-						label: "Online Community",
-						href: "https://community.pmi.org",
-						external: true,
-					},
-					{
-						label: "PMO Global Alliance",
-						href: "https://pmoga.pmi.org",
-						external: true,
-					},
-				],
+				links: [{ label: "PMI Infinity", href: "/infinity" }],
 			},
 			{
 				title: "Discover",
@@ -190,11 +168,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 			{
 				title: "Career",
 				links: [
-					{
-						label: "Job Board",
-						href: "https://pmjobs.pmi.org",
-						external: true,
-					},
 					{ label: "Career Resources", href: "/learning/careers" },
 					{ label: "Career Navigator", href: "/career-navigator" },
 					{ label: "Military", href: "/military" },
@@ -209,17 +182,9 @@ const NAV_ITEMS: readonly NavItem[] = [
 				title: "Join",
 				links: [
 					{ label: "About Membership", href: "/membership" },
-					{
-						label: "PMI Membership",
-						href: "https://www.pmi.org/membership",
-						external: true,
-					},
+
 					{ label: "Chapter Membership", href: "/membership/chapters" },
-					{
-						label: "Student",
-						href: "https://www.pmi.org/membership/student",
-						external: true,
-					},
+
 					{ label: "FAQs", href: "/membership/faq" },
 				],
 			},
@@ -229,39 +194,8 @@ const NAV_ITEMS: readonly NavItem[] = [
 					{ label: "PMI Infinity", href: "/infinity" },
 					{ label: "PMBOK Guide", href: "/standards/pmbok" },
 					{ label: "All Benefits", href: "/membership/benefits" },
-					{
-						label: "Login",
-						href: "https://my.pmi.org/membership",
-						external: true,
-					},
+
 					{ label: "View Account", href: "/account" },
-				],
-			},
-		],
-	},
-	{
-		label: "Get Involved",
-		groups: [
-			{
-				title: "Volunteer",
-				links: [
-					{ label: "Volunteer", href: "/volunteer" },
-					{
-						label: "Search Opportunities",
-						href: "https://volunteer.pmi.org",
-						external: true,
-					},
-					{
-						label: "Leadership Institute",
-						href: "/volunteer/leadership-institute",
-					},
-					{ label: "Social Impact", href: "/volunteer/social-impact" },
-					{ label: "PMI Ed Foundation", href: "/pmi-educational-foundation" },
-					{
-						label: "PM Without Borders",
-						href: "/volunteer/project-managers-without-borders",
-					},
-					{ label: "UN SDGs", href: "/volunteer/sustainability-goals" },
 				],
 			},
 		],
@@ -273,16 +207,7 @@ const NAV_ITEMS: readonly NavItem[] = [
 				title: "Attend",
 				links: [
 					{ label: "2026 Events", href: "/events" },
-					{
-						label: "Global Summit 2026",
-						href: "https://events.pmi.org/global-summit-2026",
-						external: true,
-					},
-					{
-						label: "PMI Agile 2026",
-						href: "https://events.pmi.org/agile2026",
-						external: true,
-					},
+
 					{ label: "PMI Training", href: "/events/pmi-training" },
 				],
 			},
@@ -522,23 +447,6 @@ function PrimaryNav({ onOpenMobile }: { onOpenMobile: () => void }) {
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
-				<div className="hidden items-center gap-3 md:flex">
-					<div className="relative">
-						<input
-							aria-label="Search"
-							className="h-9 w-56 rounded border border-gray-300 bg-gray-50 pr-10 pl-3 text-gray-700 text-sm placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-							placeholder="Search"
-							type="search"
-						/>
-						<button
-							aria-label="Submit search"
-							className="absolute inset-y-0 right-0 flex items-center justify-center rounded-r bg-primary px-2.5 text-primary-foreground hover:bg-primary/90"
-							type="submit"
-						>
-							<IconSearch className="h-4 w-4" />
-						</button>
-					</div>
-				</div>
 			</div>
 		</nav>
 	);

@@ -168,7 +168,7 @@ function RouteComponent() {
 						management on an annual basis. Details can be found on the{" "}
 						<a
 							className="underline"
-							href="https://www.pmi.org/learning/academic-programs/pmi-educational-foundation"
+							href="/learning/academic-programs"
 							style={{ color: INK }}
 						>
 							PMIEF website
@@ -176,7 +176,7 @@ function RouteComponent() {
 						. PMIEF also offers{" "}
 						<a
 							className="underline"
-							href="https://www.pmi.org/learning/academic-programs/academic-scholarships"
+							href="/learning/academic-programs"
 							style={{ color: INK }}
 						>
 							scholarships
@@ -185,7 +185,7 @@ function RouteComponent() {
 						PM (includes certification training but excludes exam fees).{" "}
 						<a
 							className="underline"
-							href="https://www.pmi.org/volunteer/project-managers-without-borders"
+							href="/volunteer/project-managers-without-borders"
 							style={{ color: INK }}
 						>
 							Project Managers Without Borders
@@ -221,7 +221,7 @@ function RouteComponent() {
 						projects through{" "}
 						<a
 							className="underline"
-							href="https://www.pmi.org/volunteer/project-managers-without-borders"
+							href="/volunteer/project-managers-without-borders"
 							style={{ color: INK }}
 						>
 							Project Managers Without Borders (PMWB)

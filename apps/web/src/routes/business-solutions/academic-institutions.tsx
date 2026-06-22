@@ -349,7 +349,7 @@ function RouteComponent() {
 						</ul>
 						<a
 							className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full border px-6 font-medium transition hover:bg-black/5"
-							href="https://www.pmi.org/global-accreditation-center/"
+							href="/learning/academic-programs"
 							style={{ borderColor: INK, color: INK }}
 						>
 							Become Accredited
@@ -700,7 +700,7 @@ function RouteComponent() {
 					</p>
 					<a
 						className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full border px-6 font-medium transition hover:bg-black/5"
-						href="https://www.pmi.org/learning/academic-programs/network"
+						href="/learning/academic-programs"
 						style={{ borderColor: INK, color: INK }}
 					>
 						Register Now

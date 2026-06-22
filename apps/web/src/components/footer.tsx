@@ -60,16 +60,6 @@ const FOOTER_COLUMNS = [
 		title: "Community",
 		links: [
 			{
-				label: "Latest from the Community",
-				href: "https://community.pmi.org",
-				external: true,
-			},
-			{
-				label: "Discussions",
-				href: "https://community.pmi.org",
-				external: true,
-			},
-			{
 				label: "Templates",
 				href: "/insights",
 				external: true,
@@ -80,11 +70,6 @@ const FOOTER_COLUMNS = [
 				external: true,
 			},
 			{ label: "Volunteering", href: "/volunteer" },
-			{
-				label: "PMI® Merch",
-				href: "https://store.pmi.org",
-				external: true,
-			},
 		],
 	},
 	{

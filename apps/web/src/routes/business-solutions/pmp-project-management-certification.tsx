@@ -734,7 +734,7 @@ function RouteComponent() {
 							Terms of Use.{" "}
 							<a
 								className="underline"
-								href="https://www.pmi.org/about/privacy-policy"
+								href="/privacy"
 								rel="noreferrer"
 								style={{ color: VIOLET }}
 								target="_blank"

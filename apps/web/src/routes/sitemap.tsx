@@ -232,7 +232,7 @@ const sections: { heading: string; columns: SubSection[][] }[] = [
 						{ label: "PMBOK Guide", href: "/standards/pmbok" },
 						{
 							label: "PMI Standards+",
-							href: "https://www.pmi.org/dcpdp/sku/dp002",
+							href: "/standards/pmi-standards-plus",
 						},
 						{ label: "About Standards", href: "/standards/about" },
 					],
@@ -250,11 +250,11 @@ const sections: { heading: string; columns: SubSection[][] }[] = [
 						{ label: "About PMI Membership", href: "/membership" },
 						{
 							label: "Individual Membership",
-							href: "https://www.pmi.org/dcpdp/sku/101010-101662",
+							href: "/membership/professional",
 						},
 						{
 							label: "Student Membership",
-							href: "https://www.pmi.org/dcpdp/sku/101013",
+							href: "/membership/student",
 						},
 						{ label: "Chapter Membership", href: "/membership/chapters" },
 						{ label: "Membership FAQs", href: "/membership/faq" },
@@ -316,7 +316,10 @@ const sections: { heading: string; columns: SubSection[][] }[] = [
 							href: "/old-projectified-podcast",
 						},
 						{ label: "The PMI Blog", href: "/blog" },
-						{ label: "PMI Job Board", href: "https://pmjobs.pmi.org" },
+						{
+							label: "PMI Job Board",
+							href: "/business-solutions/talent-management",
+						},
 						{ label: "Career Navigator", href: "/career-navigator" },
 					],
 				},
@@ -356,7 +359,7 @@ const sections: { heading: string; columns: SubSection[][] }[] = [
 						{ label: "Volunteer", href: "/volunteer" },
 						{
 							label: "Search Volunteer Opportunities",
-							href: "https://volunteer.pmi.org",
+							href: "/volunteer",
 						},
 						{
 							label: "Leadership Institute",
@@ -368,7 +371,7 @@ const sections: { heading: string; columns: SubSection[][] }[] = [
 						},
 						{
 							label: "PMI Educational Foundation",
-							href: "https://www.pmi.org/pmi-educational-foundation",
+							href: "/pmi-educational-foundation",
 						},
 						{
 							label: "Project Managers Without Borders",

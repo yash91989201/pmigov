@@ -13,9 +13,9 @@ const DARK_BTN = "#1c1330"; // --fill-off-black-darkest
 const STATS_BG = "#2c1d57"; // dark purple stats banner
 const STATS_ACCENT = "#a07cff"; // bright violet stat numbers
 
-const POST_JOB_URL = "https://pmjobs.pmi.org/employer/post/";
-const PRICING_URL = "https://pmjobs.pmi.org/employer/pricing/";
-const JOB_SEARCH_URL = "https://pmjobs.pmi.org/home/index.cfm";
+const POST_JOB_URL = "/business-solutions/talent-management";
+const PRICING_URL = "/business-solutions/talent-management";
+const JOB_SEARCH_URL = "/business-solutions/talent-management";
 
 const TABS = [
 	{ id: "about", label: "About the PMI Job Board" },

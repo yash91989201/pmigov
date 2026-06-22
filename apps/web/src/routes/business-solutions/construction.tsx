@@ -161,7 +161,7 @@ const INSIGHTS = [
 		title: "Gigaprojects: Delivering Strategic, Massive Transformation",
 		description:
 			"Gigaprojects aren’t hard to spot: deep complexity, massive stakeholder groups, wildly ambitious scopes and a major boost to national economies. This episode discusses two–building a bridge and preserving an archaeological site.",
-		href: "https://www.pmi.org/projectified-podcast/podcasts/gigaprojects-delivering-strategic-transformation",
+		href: "/projectified-podcast",
 		img: "/images/business-solutions/construction/insights-gigaprojects.jpg",
 		cta: "Listen Now",
 	},
@@ -180,7 +180,7 @@ const INSIGHTS = [
 		title: "Cutting-Edge Technologies in Construction Projects",
 		description:
 			"From BIM to data-driven design, hear how emerging technologies are reshaping construction, along with what you need to know to keep pace.",
-		href: "https://www.pmi.org/projectified-podcast/podcasts/cutting-edge-technologies-in-construction-projects",
+		href: "/projectified-podcast",
 		img: "/images/business-solutions/construction/insights-innovation.jpg",
 		cta: "Listen Now",
 	},
@@ -1390,7 +1390,7 @@ function ContactForm() {
 				<p className="font-semibold" style={{ color: "#4f17a8" }}>
 					<a
 						className="underline hover:no-underline"
-						href="https://www.pmi.org/privacy"
+						href="/privacy"
 						rel="noopener noreferrer"
 						target="_blank"
 					>

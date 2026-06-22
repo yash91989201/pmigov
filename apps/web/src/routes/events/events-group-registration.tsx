@@ -388,7 +388,7 @@ function RouteComponent() {
 								about your inquiry.{" "}
 								<a
 									className="underline"
-									href="https://www.pmi.org/about/privacy-policy"
+									href="/privacy"
 									rel="noreferrer"
 									style={{ color: VIOLET }}
 									target="_blank"
@@ -519,7 +519,7 @@ function RouteComponent() {
 					</p>
 					<a
 						className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 font-semibold text-base transition hover:bg-gray-100"
-						href="https://www.pmi.org/membership"
+						href="/membership"
 						rel="noreferrer"
 						style={{ color: HD }}
 						target="_blank"

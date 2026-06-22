@@ -147,8 +147,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					label:
 						"Those with a PMP certification report higher median salaries than those without PMP certification―17% higher on average across the 21 countries surveyed.",
 					source: "PMI",
-					sourceUrl:
-						"https://www.pmi.org/learning/careers/project-management-salary-survey",
+					sourceUrl: "/learning/careers",
 				},
 				{
 					value: "1.7M+",
@@ -2905,24 +2904,21 @@ export const certificationPagesData: CertificationPageType[] = [
 					label:
 						"Confidence gap between sustainability executives and PMO leaders in meeting sustainability goals.",
 					source: "PMI Thought Leadership (2026)",
-					sourceUrl:
-						"https://www.pmi.org/learning/thought-leadership/executing-sustainability-strategy",
+					sourceUrl: "/learning/sustainability",
 				},
 				{
 					value: "59%",
 					label:
 						"Integration gap—most organizations haven't fully embedded sustainability across projects.",
 					source: "PMI Thought Leadership (2026)",
-					sourceUrl:
-						"https://www.pmi.org/learning/thought-leadership/executing-sustainability-strategy",
+					sourceUrl: "/learning/sustainability",
 				},
 				{
 					value: "1 in 5",
 					label:
 						"Only 20% of project professionals can confidently deliver sustainability outcomes today.",
 					source: "PMI Thought Leadership (2026)",
-					sourceUrl:
-						"https://www.pmi.org/learning/thought-leadership/executing-sustainability-strategy",
+					sourceUrl: "/learning/sustainability",
 				},
 			],
 		},

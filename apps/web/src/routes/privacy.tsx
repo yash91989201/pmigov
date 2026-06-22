@@ -67,9 +67,9 @@ function RouteComponent() {
 							our customers, and other users of our US website{" "}
 							<a
 								className="underline underline-offset-2 hover:opacity-70"
-								href="https://www.pmi.org/"
+								href="/"
 							>
-								www.pmi.org
+								PMI Gov
 							</a>{" "}
 							("<strong>US Site</strong>"), Mobile App and our China website{" "}
 							<a

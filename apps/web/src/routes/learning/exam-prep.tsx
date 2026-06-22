@@ -46,9 +46,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMP® Practice Exam",
 						description:
 							"Test your knowledge. Build your confidence. Get ready for exam-day.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/project-management-professional-(pmp)-practice-exam/el035",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/pmp-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/card-star-bg-image.webp",
 						freeForMembers: false,
 					},
 					{
@@ -56,9 +55,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMP® Exam Prep Course",
 						description:
 							"Developed and validated by PMP certification holders, this official prep course advances your project management skills and prepares you for the PMP Exam.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/project-management-professional-(pmp)-exam-prep-course/el034",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/pmp-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/card-star-bg-image.webp",
 						freeForMembers: false,
 					},
 					{
@@ -66,9 +64,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMP® PMI Study Hall® Essentials (Subscription)",
 						description:
 							"PMI Study Hall® is a digital learning tool that contains practice questions and exams and gamified activities to make studying effective and enjoyable.",
-						link: "https://www.pmi.org/shop/us/p-/digital-product/project-management-professional-(pmp)-pmi-study-hall-essentials-(subscription)-/dp013",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/pmp-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/card-star-bg-image.webp",
 						freeForMembers: false,
 					},
 				],
@@ -84,9 +81,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMP® Exam Prep Course",
 						description:
 							"Build the skills and confidence needed to succeed in modern project management and excel on the PMP® exam.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/project-management-professional-pmp-exam-prep-course/el326",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/new-pmp-mobile.jpg",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -94,9 +90,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMP® PMI Study Hall® Essentials (Subscription)",
 						description:
 							"Your all-in-one study companion. Prepare for the PMP® exam with learning refreshers, practice exams and tools that build confidence.",
-						link: "https://www.pmi.org/shop/us/p-/digital-product/pmp-pmi-study-hall-essentials-subscription/dp080",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/new-pmp-mobile.jpg",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -104,9 +99,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMP® Practice Exam",
 						description:
 							"A realistic, full-length simulation exam designed to help you assess readiness and prepare for the PMP® certification.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/project-management-professional-pmp-practice-exam-/el329",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/new-pmp-mobile.jpg",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 				],
@@ -125,9 +119,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 					"Certified Associate in Project Management (CAPM)® PMI Study Hall®",
 				description:
 					"Your all-in-one study companion. Practice, sharpen your skills, and build your readiness for the CAPM® exam.",
-				link: "https://www.pmi.org/shop/us/p-/digital-product/certified-associate-in-project-management-(capm)-pmi-study-hall-/dp037",
-				image:
-					"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/capm-mobile.png",
+				link: "/learning/online-courses",
+				image: "/assets/shared/shape-triangle-in-circle.webp",
 				freeForMembers: false,
 			},
 			{
@@ -135,9 +128,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 				title: "CAPM® Exam Prep Course",
 				description:
 					"The official prep course for the CAPM exam and fulfills the 23 hours needed to complete the application",
-				link: "https://www.pmi.org/shop/us/p-/elearning/certified-associate-in-project-management-capm-exam-prep-course/el068",
-				image:
-					"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/capm-mobile.png",
+				link: "/learning/online-courses",
+				image: "/assets/shared/shape-triangle-in-circle.webp",
 				freeForMembers: false,
 			},
 			{
@@ -145,9 +137,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 				title: "CAPM® Practice Exam",
 				description:
 					"Test your knowledge. Build your confidence. And get exam-day ready.",
-				link: "https://www.pmi.org/shop/us/p-/elearning/certified-associate-in-project-management-capm-practice-exam/el107",
-				image:
-					"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/capm-mobile.png",
+				link: "/learning/online-courses",
+				image: "/assets/shared/shape-triangle-in-circle.webp",
 				freeForMembers: false,
 			},
 		],
@@ -163,7 +154,7 @@ const EXAM_PREP_DATA: ExamSection[] = [
 				title: "The Standard for Program Management – Fifth Edition",
 				description:
 					"A comprehensive and powerful resource for program, portfolio and senior managers, as well as potential and active PgMP and PfMP certification holders.",
-				link: "https://www.pmi.org/pmbok-guide-standards/foundational/program-management-5th-edition",
+				link: "/standards/pmbok",
 				image: null,
 				freeForMembers: true,
 			},
@@ -172,7 +163,7 @@ const EXAM_PREP_DATA: ExamSection[] = [
 				title: "PMBOK® Guide",
 				description:
 					"The PMBOK® Guide—our flagship publication, now in its seventh edition—has evolved to meet your needs.",
-				link: "https://www.pmi.org/standards/pmbok",
+				link: "/standards/pmbok",
 				image: null,
 				freeForMembers: true,
 			},
@@ -194,9 +185,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-ACP® Exam Prep Course",
 						description:
 							"This official course advances your agile leadership skills and prepares you for the ACP Exam. Validated by PMI-ACPs.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-agile-certified-practitioner-(pmi-acp)-exam-prep-course/el109",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -204,9 +194,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-ACP® PMI Study Hall®",
 						description:
 							"PMI Study Hall® is a digital learning tool that contains content-specific lessons to provide certification candidates with a thorough overview of what to expect on exam day.",
-						link: "https://www.pmi.org/shop/us/p-/digital-product/pmi-agile-certified-practitioner-(pmi-acp)-pmi-study-hall%E2%80%AF-/dp036",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -214,9 +203,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-ACP® Practice Exam",
 						description:
 							"Developed by agile leaders, this official practice exam will help you prepare to sit for the PMI-ACP exam.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-agile-certified-practitioner-pmi-acp-practice-exam/el110",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 				],
@@ -231,9 +219,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-PMOCP™ Exam Prep Course",
 						description:
 							"Enhance your PMO leadership and prepare for the PMI-PMOCP Exam with this expert-developed prep course.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-pmo-certified-professional-pmi-pmocp-exam-prep-course/el175",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -241,9 +228,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-PMOCP™ Practice Exam",
 						description:
 							"Assess your readiness and strengthen your preparation with a timed practice exam built to reflect the PMI-PMOCP™ exam experience.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-project-management-office-certified-professional-pmi-pmocp-practice-exam/el361",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 				],
@@ -259,9 +245,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-CP™ Project Communications",
 						description:
 							"Today's large engineering and construction projects are incredibly complex, raising the requirements for effective communication.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-construction-professional-pmi-cp-project-communications/el156",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -269,9 +254,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-CP™ Interface Management",
 						description:
 							"Get the required skills to transform the global construction industry and bring large, complex projects to life.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-construction-professional-pmi-cp-interface-management/el016",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -279,9 +263,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-CP™ Scope & Change Order Mgmt",
 						description:
 							"Solve the challenges of scope creep and change order.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-construction-professional-pmicp-scope-and-change-order-mgmt/el015",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -289,9 +272,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-CP™ Contract & Risk Management",
 						description:
 							"This course will help you nail down new contract and risk management skills.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-construction-professional-pmi-cp-contract-and-risk-mgmt/el017",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 				],
@@ -306,9 +288,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI-RMP® Exam Prep Course",
 						description:
 							"Developed and validated by risk management professionals, this official prep course advances your risk management skills and prepares you for the PMI-RMP® exam.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-risk-management-professional-(pmi-rmp)-exam-prep-course/el170",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 					{
@@ -316,9 +297,8 @@ const EXAM_PREP_DATA: ExamSection[] = [
 						title: "PMI Risk Management Professional (PMI-RMP)® Practice Exam",
 						description:
 							"Sharpen your skills and reduce exam-day stress with the official PMI-RMP® Practice Exam.",
-						link: "https://www.pmi.org/shop/us/p-/elearning/pmi-on-demand-authorized-pmi-rmp-exam-prep/el198",
-						image:
-							"https://www.pmi.org/-/media/spx-headless/product-detail-pages/hero-backgrounds/specialized-unassociated-mobile.png",
+						link: "/learning/online-courses",
+						image: "/assets/shared/shape-triangle-in-circle.webp",
 						freeForMembers: false,
 					},
 				],
@@ -331,13 +311,11 @@ function ExamCard({ item }: { item: ExamItem }) {
 	return (
 		<div className="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 transition-shadow hover:shadow-lg">
 			{item.image && (
-				<div className="flex h-40 items-center justify-center bg-gray-100 p-4">
+				<div className="h-48 overflow-hidden bg-gray-100">
 					<img
 						alt={item.title}
-						className="max-h-full object-contain"
-						height={160}
+						className="h-full w-full object-cover"
 						src={item.image}
-						width={240}
 					/>
 				</div>
 			)}
@@ -354,29 +332,6 @@ function ExamCard({ item }: { item: ExamItem }) {
 				</div>
 				<h3 className="mb-2 font-bold text-gray-900 text-lg">{item.title}</h3>
 				<p className="mb-4 flex-1 text-gray-600 text-sm">{item.description}</p>
-				<a
-					className="mt-auto inline-flex items-center font-medium text-blue-600 hover:text-blue-800"
-					href={item.link}
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					Learn More
-					<svg
-						aria-hidden="true"
-						className="ml-1 h-4 w-4"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<title>Arrow right</title>
-						<path
-							d="M9 5l7 7-7 7"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth={2}
-						/>
-					</svg>
-				</a>
 			</div>
 		</div>
 	);

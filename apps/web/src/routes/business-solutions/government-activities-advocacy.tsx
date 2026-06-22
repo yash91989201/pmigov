@@ -36,25 +36,25 @@ const INSIGHTS = [
 		tags: ["White Paper", "Program Management"],
 		title: "Aligning DAF with Program Management Industry Standard",
 		date: "27 July 2023",
-		href: "https://www.pmi.org/business-solutions/white-papers/aligning-daf-with-program-management-industry-standard",
+		href: "/business-solutions",
 	},
 	{
 		tags: ["White Paper", "Agile"],
 		title: "Agile Regulation: Gateway to the Future",
 		date: "June 2022",
-		href: "https://www.pmi.org/business-solutions/white-papers/agile-regulation",
+		href: "/business-solutions",
 	},
 	{
 		tags: ["Case Study", "Lessons Learned"],
 		title: "Ottawa Parliamentary Precinct Renewal Case Study",
 		date: "February 2021",
-		href: "https://www.pmi.org/business-solutions/case-studies/ottawa-parliamentary-precinct-renewal-case-study",
+		href: "/business-solutions/case-studies",
 	},
 	{
 		tags: ["White Paper", "Agile"],
 		title: "Building an Agile Federal Government: A Call to Action",
 		date: "December 2020",
-		href: "https://www.pmi.org/business-solutions/white-papers/building-an-agile-federal-government",
+		href: "/business-solutions",
 	},
 ];
 

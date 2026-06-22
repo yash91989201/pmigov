@@ -79,11 +79,11 @@ function RouteComponent() {
 								you ("you", "your" or "User") governs your use of the{" "}
 								<a
 									className={linkClass}
-									href="https://www.pmi.org/"
+									href="/"
 									rel="noopener noreferrer"
 									target="_blank"
 								>
-									www.pmi.org
+									PMI Gov
 								</a>{" "}
 								web site ("Site") and/or Mobile App together with all
 								information, content, products, materials and services made
@@ -155,11 +155,11 @@ function RouteComponent() {
 									<strong>2.8</strong> "Site" refers to the website{" "}
 									<a
 										className={linkClass}
-										href="https://www.pmi.org/"
+										href="/"
 										rel="noopener noreferrer"
 										target="_blank"
 									>
-										www.pmi.org
+										PMI Gov
 									</a>
 									, owned and operated by Project Management Institute, Inc.
 								</P>
@@ -445,7 +445,7 @@ function RouteComponent() {
 								The terms and conditions governing purchases made via the{" "}
 								<a
 									className={linkClass}
-									href="http://marketplace.pmi.org/Pages/Default.aspx"
+									href="/store"
 									rel="noopener noreferrer"
 									target="_blank"
 								>

@@ -102,7 +102,7 @@ function RouteComponent() {
 						<a
 							aria-label="Share on LinkedIn"
 							className="inline-flex items-center gap-1.5 rounded px-3 py-1.5 font-semibold text-white text-xs"
-							href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.pmi.org/business-solutions/agile-technical-solutions"
+							href="https://www.linkedin.com/sharing/share-offsite/?url=https://pmigov.com/business-solutions/agile-technical-solutions"
 							rel="noopener noreferrer"
 							style={{ background: "#0a66c2" }}
 							target="_blank"
@@ -122,7 +122,7 @@ function RouteComponent() {
 						<a
 							aria-label="Share on WhatsApp"
 							className="inline-flex items-center gap-1.5 rounded px-3 py-1.5 font-semibold text-white text-xs"
-							href="https://web.whatsapp.com/send?text=https://www.pmi.org/business-solutions/agile-technical-solutions"
+							href="https://web.whatsapp.com/send?text=https://pmigov.com/business-solutions/agile-technical-solutions"
 							rel="noopener noreferrer"
 							style={{ background: "#25d366" }}
 							target="_blank"
@@ -143,7 +143,7 @@ function RouteComponent() {
 						<a
 							aria-label="Post on X"
 							className="inline-flex items-center gap-1.5 rounded px-3 py-1.5 font-semibold text-white text-xs"
-							href="https://twitter.com/intent/post?url=https://www.pmi.org/business-solutions/agile-technical-solutions"
+							href="https://twitter.com/intent/post?url=https://pmigov.com/business-solutions/agile-technical-solutions"
 							rel="noopener noreferrer"
 							style={{ background: "#000" }}
 							target="_blank"
@@ -163,7 +163,7 @@ function RouteComponent() {
 						<a
 							aria-label="Share on Facebook"
 							className="inline-flex items-center gap-1.5 rounded px-3 py-1.5 font-semibold text-white text-xs"
-							href="https://www.facebook.com/sharer.php?u=https://www.pmi.org/business-solutions/agile-technical-solutions"
+							href="https://www.facebook.com/sharer.php?u=https://pmigov.com/business-solutions/agile-technical-solutions"
 							rel="noopener noreferrer"
 							style={{ background: "#1877f2" }}
 							target="_blank"
