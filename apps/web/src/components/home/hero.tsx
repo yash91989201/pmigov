@@ -23,27 +23,6 @@ export function Hero() {
 						challenging conventional thinking on organizational change. Discover
 						why transformation efforts fail—and how real impact happens.
 					</p>
-					<a
-						className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-7 py-3.5 font-medium text-base text-gray-900 transition-colors hover:bg-white/90"
-						href="/speakers"
-					>
-						Meet the Speakers
-						<svg
-							aria-hidden="true"
-							fill="none"
-							height="18"
-							viewBox="0 0 16 16"
-							width="18"
-						>
-							<path
-								d="M3 8h10M9 4l4 4-4 4"
-								stroke="currentColor"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="1.5"
-							/>
-						</svg>
-					</a>
 				</div>
 			</div>
 		</section>
