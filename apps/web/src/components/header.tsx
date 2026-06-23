@@ -109,24 +109,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 				],
 			},
 			{
-				title: "By Topic",
-				links: [
-					{ label: "AI", href: "/learning/ai-in-project-management" },
-					{ label: "Agile", href: "/learning/agile" },
-					{ label: "Careers", href: "/learning/careers" },
-					{ label: "Change Mgmt", href: "/learning/change-management" },
-					{ label: "Delivering MORE", href: "/learning/delivering-more" },
-					{ label: "Giga Projects", href: "/learning/giga-projects" },
-					{ label: "PMOs", href: "/learning/project-management-offices" },
-					{
-						label: "Product Mgmt",
-						href: "/learning/project-and-product-management",
-					},
-					{ label: "Sustainability", href: "/learning/sustainability" },
-					{ label: "All Topics", href: "/learning/library" },
-				],
-			},
-			{
 				title: "Thought Leadership",
 				links: [
 					{ label: "Hub", href: "/learning/thought-leadership" },
@@ -163,39 +145,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 					{ label: "Shift Code Podcast", href: "/the-shift-code-podcast" },
 					{ label: "Projectified Podcast", href: "/projectified-podcast" },
 					{ label: "AI Today Podcast", href: "/ai-today-podcast" },
-				],
-			},
-			{
-				title: "Career",
-				links: [
-					{ label: "Career Resources", href: "/learning/careers" },
-					{ label: "Career Navigator", href: "/career-navigator" },
-					{ label: "Military", href: "/military" },
-				],
-			},
-		],
-	},
-	{
-		label: "Membership",
-		groups: [
-			{
-				title: "Join",
-				links: [
-					{ label: "About Membership", href: "/membership" },
-
-					{ label: "Chapter Membership", href: "/membership/chapters" },
-
-					{ label: "FAQs", href: "/membership/faq" },
-				],
-			},
-			{
-				title: "Benefits",
-				links: [
-					{ label: "PMI Infinity", href: "/infinity" },
-					{ label: "PMBOK Guide", href: "/standards/pmbok" },
-					{ label: "All Benefits", href: "/membership/benefits" },
-
-					{ label: "View Account", href: "/account" },
 				],
 			},
 		],
@@ -441,6 +390,16 @@ function PrimaryNav({ onOpenMobile }: { onOpenMobile: () => void }) {
 								activeOptions={{ exact: true }}
 								activeProps={{ className: "font-semibold" }}
 								className={ABOUT_TRIGGER}
+								to="/membership"
+							>
+								Membership
+							</Link>
+						</NavigationMenuItem>
+						<NavigationMenuItem>
+							<Link
+								activeOptions={{ exact: true }}
+								activeProps={{ className: "font-semibold" }}
+								className={ABOUT_TRIGGER}
 								to="/contact"
 							>
 								Contact
@@ -537,6 +496,13 @@ function MobileSheet({
 							);
 						})}
 					</ul>
+					<Link
+						className="flex w-full items-center justify-between border-gray-100 border-b px-4 py-3 font-semibold text-gray-900 text-sm hover:bg-gray-50"
+						onClick={onClose}
+						to="/membership"
+					>
+						Membership
+					</Link>
 					<Link
 						className="flex w-full items-center justify-between border-gray-100 border-b px-4 py-3 font-semibold text-gray-900 text-sm hover:bg-gray-50"
 						onClick={onClose}
