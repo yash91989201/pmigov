@@ -207,8 +207,10 @@ const NAV_ITEMS: readonly NavItem[] = [
 				title: "Attend",
 				links: [
 					{ label: "2026 Events", href: "/events" },
-
-					{ label: "PMI Training", href: "/events/pmi-training" },
+					{
+						label: "Group Registration",
+						href: "/events/events-group-registration",
+					},
 				],
 			},
 			{
@@ -225,7 +227,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 						label: "Speaker Opportunities",
 						href: "/events/speaking-opportunities",
 					},
-					{ label: "Sponsorship", href: "/about/event-sponsorship" },
 				],
 			},
 		],
