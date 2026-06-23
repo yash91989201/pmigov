@@ -440,9 +440,19 @@ function PrimaryNav({ onOpenMobile }: { onOpenMobile: () => void }) {
 								activeOptions={{ exact: true }}
 								activeProps={{ className: "font-semibold" }}
 								className={ABOUT_TRIGGER}
+								to="/contact"
+							>
+								Contact
+							</Link>
+						</NavigationMenuItem>
+						<NavigationMenuItem>
+							<Link
+								activeOptions={{ exact: true }}
+								activeProps={{ className: "font-semibold" }}
+								className={ABOUT_TRIGGER}
 								to="/about"
 							>
-								About
+								About Us
 							</Link>
 						</NavigationMenuItem>
 					</NavigationMenuList>
@@ -529,9 +539,16 @@ function MobileSheet({
 					<Link
 						className="flex w-full items-center justify-between border-gray-100 border-b px-4 py-3 font-semibold text-gray-900 text-sm hover:bg-gray-50"
 						onClick={onClose}
+						to="/contact"
+					>
+						Contact
+					</Link>
+					<Link
+						className="flex w-full items-center justify-between border-gray-100 border-b px-4 py-3 font-semibold text-gray-900 text-sm hover:bg-gray-50"
+						onClick={onClose}
 						to="/about"
 					>
-						About
+						About Us
 					</Link>
 				</div>
 				<div className="flex items-center gap-2 border-gray-200 border-t bg-white p-4">
