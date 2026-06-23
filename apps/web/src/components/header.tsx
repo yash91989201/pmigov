@@ -101,10 +101,10 @@ const NAV_ITEMS: readonly NavItem[] = [
 					{ label: "Free Courses", href: "/learning/free-online-courses" },
 					{
 						label: "Instructor Led",
-						href: "/learning/authorized-training-partners",
+						href: "/learning/instructor-led-training",
 					},
 					{ label: "Webinars", href: "/learning/webinars" },
-					{ label: "PMI Training", href: "/events/pmi-training" },
+					{ label: "PMI Training", href: "/learning/pmi-training" },
 					{ label: "Academic Programs", href: "/learning/academic-programs" },
 				],
 			},
