@@ -111,21 +111,13 @@ const NAV_ITEMS: readonly NavItem[] = [
 			{
 				title: "Thought Leadership",
 				links: [
-					{ label: "Hub", href: "/learning/thought-leadership" },
+					{ label: "Thought Leadership", href: "/learning/thought-leadership" },
 					{ label: "Brightline", href: "/learning/brightline" },
 					{ label: "PM Journal", href: "/learning/project-management-journal" },
 					{
 						label: "Academic Research",
 						href: "/learning/academic-sponsored-research",
 					},
-				],
-			},
-			{
-				title: "Standards",
-				links: [
-					{ label: "PMBOK Guide", href: "/standards/pmbok" },
-					{ label: "Global Standards", href: "/standards" },
-					{ label: "About Standards", href: "/standards/about" },
 				],
 			},
 		],
@@ -211,10 +203,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 						label: "PMI Infinity",
 						href: "/business-solutions/commercial-partners/pmi-infinity-for-organizations",
 					},
-					{
-						label: "Team Training",
-						href: "/events/pmi-training/pmi-training-team-training",
-					},
 				],
 			},
 			{
@@ -229,23 +217,13 @@ const NAV_ITEMS: readonly NavItem[] = [
 						label: "Government",
 						href: "/business-solutions/government-activities-advocacy",
 					},
-					{ label: "Healthcare", href: "/healthcare" },
 					{ label: "HR", href: "/business-solutions/human-resources" },
-					{ label: "Marketing", href: "/creative-agencies" },
 					{ label: "Non-Profits", href: "/business-solutions/non-profits" },
 				],
 			},
 			{
 				title: "Business",
 				links: [
-					{
-						label: "Training Partner",
-						href: "/business-solutions/become-an-authorized-training-partner",
-					},
-					{
-						label: "Research",
-						href: "/business-solutions/commercial-partners/research-and-insights",
-					},
 					{ label: "Case Studies", href: "/business-solutions/case-studies" },
 					{
 						label: "Newsletter",

@@ -1,5 +1,5 @@
 import { Button } from "@pmigov/ui/components/button";
-import { IconExternalLink } from "@tabler/icons-react";
+import { IconChevronDown, IconExternalLink } from "@tabler/icons-react";
 import { Link } from "@tanstack/react-router";
 
 const FOOTER_LINK_CLASS =
@@ -11,90 +11,151 @@ const EXT_ICON = (
 
 const FOOTER_COLUMNS = [
 	{
-		title: "Quick Links",
-		links: [
-			{ label: "Report PDUs", href: "/report-pdus", external: true },
-			{ label: "Online Courses", href: "/learning/online-courses" },
-			{ label: "PMBOK® Guide", href: "/standards/pmbok" },
-			{ label: "Webinars", href: "/learning/webinars", external: true },
-			{ label: "Events", href: "/events" },
-			{ label: "Store", href: "/store" },
-			{ label: "eLearning Gifts", href: "/learning/elearning-gifts" },
-		],
-	},
-	{
 		title: "Certifications",
 		links: [
 			{
-				label: "Project Management Professional (PMP)®",
+				label: "Certified Associate In Project Management (CAPM)",
+				href: "/certifications/certified-associate-in-project-management-capm",
+			},
+			{
+				label: "Project Management Professional (PMP)",
 				href: "/certifications/project-management-pmp",
 			},
 			{
-				label: "Certified Associate in Project Management (CAPM)®",
-				href: "/certifications/certified-associate-capm",
+				label: "Program Management Professional (PgMP)",
+				href: "/certifications/program-management-pgmp",
 			},
 			{
-				label: "PMI Agile Certified Practitioner (PMI-ACP)®",
+				label: "Portfolio Management Professional (PfMP)",
+				href: "/certifications/portfolio-management-pfmp",
+			},
+			{
+				label: "PMI Construction Professional (PMI-CP)",
+				href: "/certifications/construction",
+			},
+			{
+				label: "PMI Agile Certified Practitioner (PMI-ACP)",
 				href: "/certifications/agile-acp",
 			},
 			{
-				label: "Compare Certifications",
-				href: "/certifications/compare",
+				label: "PMI Risk Management Professional (PMI-RMP)",
+				href: "/certifications/risk-management-rmp",
 			},
 			{
-				label: "Report Exam Misconduct",
-				href: "/certifications/report-misconduct",
-				external: true,
+				label: "PMI PMO Certified Professional (PMI-PMOCP)",
+				href: "/certifications/pmo-certified-professional-pmi-pmocp",
+			},
+			{
+				label: "PMI Professional In Business Analysis (PMI-PBA)",
+				href: "/certifications/business-analysis-pba",
+			},
+			{
+				label: "PMI Scheduling Professional (PMI-SP)",
+				href: "/certifications/scheduling-sp",
+			},
+			{
+				label:
+					"PMI Certified Professional In AI Project Management (PMI-CPMAI)",
+				href: "/certifications/ai-project-management-cpmai",
+			},
+			{
+				label: "Certified Sustainable Project Professional (CSPP)",
+				href: "/certifications/sustainability-cspp",
 			},
 		],
 	},
 	{
-		title: "Membership",
+		title: "Learning",
 		links: [
-			{ label: "Become a Member", href: "/membership" },
-			{ label: "Local Chapters", href: "/membership/chapters" },
-			{ label: "Membership FAQs", href: "/membership/faq" },
+			{ label: "Exam Prep", href: "/learning/exam-prep" },
+			{ label: "Online Courses", href: "/learning/online-courses" },
+			{ label: "Free Courses", href: "/learning/free-online-courses" },
+			{ label: "Instructor Led", href: "/learning/instructor-led-training" },
+			{ label: "Webinars", href: "/learning/webinars" },
+			{ label: "PMI Training", href: "/learning/pmi-training" },
+			{ label: "Academic Programs", href: "/learning/academic-programs" },
+			{ label: "Thought Leadership", href: "/learning/thought-leadership" },
+			{ label: "Brightline", href: "/learning/brightline" },
+			{ label: "PM Journal", href: "/learning/project-management-journal" },
+			{
+				label: "Academic Research",
+				href: "/learning/academic-sponsored-research",
+			},
 		],
 	},
 	{
-		title: "Community",
+		title: "Resources",
 		links: [
-			{
-				label: "Templates",
-				href: "/insights",
-				external: true,
-			},
-			{
-				label: "Blogs",
-				href: "/blog",
-				external: true,
-			},
-			{ label: "Volunteering", href: "/volunteer" },
+			{ label: "PMI Infinity", href: "/infinity" },
+			{ label: "Templates & Insights", href: "/insights" },
+			{ label: "PMI Blog", href: "/blog" },
+			{ label: "Shift Code Podcast", href: "/the-shift-code-podcast" },
+			{ label: "Projectified Podcast", href: "/projectified-podcast" },
+			{ label: "AI Today Podcast", href: "/ai-today-podcast" },
 		],
 	},
 	{
-		title: "Partner with PMI Gov",
+		title: "Events",
 		links: [
+			{ label: "2026 Events", href: "/events" },
 			{
-				label: "Enterprise and Commercial Partners",
-				href: "/business-solutions/commercial-partners",
+				label: "Group Registration",
+				href: "/events/events-group-registration",
+			},
+			{ label: "PMXPO", href: "/events/pmxpo" },
+			{
+				label: "Speaker Opportunities",
+				href: "/events/speaking-opportunities",
+			},
+		],
+	},
+	{
+		title: "PMI Gov for Organizations",
+		links: [
+			{ label: "Partners", href: "/business-solutions/commercial-partners" },
+			{
+				label: "PMP for Orgs",
+				href: "/business-solutions/pmp-project-management-certification",
+			},
+			{ label: "Transformation", href: "/business-solutions/transformation" },
+			{
+				label: "Enterprise Membership",
+				href: "/business-solutions/commercial-partners/enterprise-membership",
 			},
 			{
-				label: "Training Partners",
-				href: "/business-solutions/become-an-authorized-training-partner",
+				label: "Executive Council",
+				href: "/business-solutions/the-global-executive-council",
+			},
+			{ label: "Job Board", href: "/business-solutions/talent-management" },
+			{
+				label: "PMI Infinity",
+				href: "/business-solutions/commercial-partners/pmi-infinity-for-organizations",
+			},
+			{ label: "Academic", href: "/business-solutions/academic-institutions" },
+			{ label: "Construction", href: "/business-solutions/construction" },
+			{
+				label: "Government",
+				href: "/business-solutions/government-activities-advocacy",
+			},
+			{ label: "HR", href: "/business-solutions/human-resources" },
+			{ label: "Non-Profits", href: "/business-solutions/non-profits" },
+			{ label: "Case Studies", href: "/business-solutions/case-studies" },
+			{
+				label: "Newsletter",
+				href: "/business-solutions/enterprise-newsletter",
 			},
 		],
 	},
 	{
 		title: "Organization",
-		links: [{ label: "About Us", href: "/about" }],
+		links: [
+			{ label: "About Us", href: "/about" },
+			{ label: "Become a Member", href: "/membership" },
+		],
 	},
 	{
-		title: "Support",
-		links: [
-			{ label: "Contact Us", href: "/support" },
-			{ label: "Store Help", href: "/store-help" },
-		],
+		title: "Contact",
+		links: [{ label: "Contact Us", href: "/contact" }],
 	},
 ] as const;
 
@@ -151,46 +212,88 @@ function FooterLink({
 	);
 }
 
+function FooterLogo() {
+	return (
+		<>
+			<Link className="inline-flex items-center gap-3" to="/">
+				<img
+					alt="PMI Gov"
+					className="h-10 w-auto"
+					height={40}
+					src="/logo.webp"
+					width={131}
+				/>
+			</Link>
+
+			<div className="border-[#d4cbc3] border-t" />
+
+			<p className="font-bold font-heading text-4xl text-[#200f3b] leading-none">
+				PMI Gov®
+			</p>
+		</>
+	);
+}
+
+function FooterColumnLinks({
+	column,
+}: {
+	column: (typeof FOOTER_COLUMNS)[number];
+}) {
+	return (
+		<ul className="flex flex-col gap-2.5">
+			{column.links.map((link) => (
+				<li key={link.label}>
+					<FooterLink href={link.href} label={link.label} />
+				</li>
+			))}
+		</ul>
+	);
+}
+
 export function Footer() {
 	return (
 		<footer className="border-primary border-t bg-white">
-			<div className="w-full px-6 pt-12 pb-10 md:px-10">
-				<div className="grid grid-cols-2 gap-x-6 gap-y-10 text-left sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
+			<div className="w-full px-6 pt-8 pb-10 md:px-10 md:pt-12">
+				{/* Mobile logo */}
+				<div className="mb-8 flex flex-col gap-6 md:hidden">
+					<FooterLogo />
+				</div>
+
+				<div className="grid grid-cols-1 gap-x-6 text-left sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8">
 					{FOOTER_COLUMNS.map((column) => (
-						<div key={column.title}>
-							<h3 className="mb-4 font-bold text-[#200f3b] text-sm">
-								{column.title}
-							</h3>
-							<ul className="flex flex-col gap-2.5">
-								{column.links.map((link) => (
-									<li key={link.label}>
-										<FooterLink
-											external={link.external}
-											href={link.href}
-											label={link.label}
+						<div
+							className="border-[#d4cbc3] border-t md:border-0"
+							key={column.title}
+						>
+							{/* Mobile accordion */}
+							<div className="md:hidden">
+								<details className="group py-4">
+									<summary className="flex cursor-pointer list-none items-center justify-between font-bold text-[#200f3b] text-sm [&::-webkit-details-marker]:hidden">
+										{column.title}
+										<IconChevronDown
+											aria-hidden="true"
+											className="h-4 w-4 text-[#200f3b]/50 transition-transform group-open:rotate-180"
 										/>
-									</li>
-								))}
-							</ul>
+									</summary>
+									<div className="mt-3">
+										<FooterColumnLinks column={column} />
+									</div>
+								</details>
+							</div>
+
+							{/* Desktop static columns */}
+							<div className="hidden md:block">
+								<h3 className="mb-4 font-bold text-[#200f3b] text-sm">
+									{column.title}
+								</h3>
+								<FooterColumnLinks column={column} />
+							</div>
 						</div>
 					))}
 
-					<div className="col-span-2 flex flex-col gap-6 sm:col-span-3 md:col-span-4 lg:col-span-1">
-						<Link className="inline-flex items-center gap-3" to="/">
-							<img
-								alt="PMI Gov"
-								className="h-10 w-auto"
-								height={40}
-								src="/logo.webp"
-								width={131}
-							/>
-						</Link>
-
-						<div className="border-[#d4cbc3] border-t" />
-
-						<p className="font-bold font-heading text-4xl text-[#200f3b] leading-none">
-							PMI Gov®
-						</p>
+					{/* Desktop logo */}
+					<div className="hidden flex-col gap-6 md:flex">
+						<FooterLogo />
 					</div>
 				</div>
 			</div>
