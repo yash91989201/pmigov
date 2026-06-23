@@ -117,7 +117,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$675",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pmp",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -460,7 +460,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "₹19530",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/capm",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -744,7 +744,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$495",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pmi-acp",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -1034,7 +1034,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$1000",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pgmp",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -1275,7 +1275,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$1000",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pfmp",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -1509,7 +1509,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$499",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pmi-cp",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -1749,7 +1749,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$670",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pmi-rmp",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -2014,7 +2014,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$700",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pmi-pmocp",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -2255,7 +2255,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$555",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pmi-pba",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -2453,7 +2453,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$670",
 			},
 			applyButtonText: "Apply Now",
-			applyButtonHref: "/apply/pmi-sp",
+			applyButtonHref: "/contact",
 			note: "Exam fee will only be required after your application has been accepted and you are ready to schedule your exam.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -2665,7 +2665,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "$899",
 			},
 			applyButtonText: "Buy the Bundle",
-			applyButtonHref: "/apply/pmi-cpmai",
+			applyButtonHref: "/contact",
 			note: "Course and certification exam are included in the bundle.",
 			membershipLink: {
 				text: "Learn More About Membership",
@@ -2876,7 +2876,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				fullPrice: "Varies",
 			},
 			applyButtonText: "Get Started Today",
-			applyButtonHref: "/apply/cspp",
+			applyButtonHref: "/contact",
 			note: "Two bundle options available: CSPP Bundle for Practitioners (requires existing PMI certification) or CSPP Bundle (no experience required).",
 			membershipLink: {
 				text: "Learn More About Membership",
