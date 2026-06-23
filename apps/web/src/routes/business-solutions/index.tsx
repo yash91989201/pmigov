@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/business-solutions/")({
 	component: RouteComponent,
@@ -59,9 +59,9 @@ function RouteComponent() {
 						style={{ color: VIOLET }}
 					>
 						<li>
-							<a className="hover:underline" href="/">
+							<Link className="hover:underline" to="/">
 								Home
-							</a>
+							</Link>
 						</li>
 					</ol>
 				</nav>

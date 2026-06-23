@@ -233,15 +233,14 @@ function RouteComponent() {
 							>
 								In partnership with Purdue University's Krach Institute for Tech
 								Diplomacy, PMI brings the groundbreaking{" "}
-								<a
+								<span
 									className="font-medium underline underline-offset-2"
-									href="https://techdiplomacyacademy.org/pmi-landing-page/"
 									rel="noopener noreferrer"
 									style={{ color: INK }}
 									target="_blank"
 								>
 									Tech Diplomacy Academy
-								</a>{" "}
+								</span>{" "}
 								to our global membership.
 							</p>
 							<p

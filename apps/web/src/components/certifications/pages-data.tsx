@@ -99,7 +99,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -147,7 +147,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					label:
 						"Those with a PMP certification report higher median salaries than those without PMP certification―17% higher on average across the 21 countries surveyed.",
 					source: "PMI",
-					sourceUrl: "/learning/careers",
+					sourceUrl: "/contact",
 				},
 				{
 					value: "1.7M+",
@@ -228,15 +228,15 @@ export const certificationPagesData: CertificationPageType[] = [
 							links: [
 								{
 									text: "CAPM® certification",
-									href: "/certifications/certified-associate-capm",
+									href: "/contact",
 								},
 								{
 									text: "PMP® Exam Prep Course",
-									href: "/courses/pmp-prep",
+									href: "/contact",
 								},
 								{
 									text: "Instructor-Led PMP® course (Available Online and In-Person)",
-									href: "/learning/authorized-training-partners",
+									href: "/contact",
 								},
 							],
 						},
@@ -250,15 +250,15 @@ export const certificationPagesData: CertificationPageType[] = [
 							links: [
 								{
 									text: "CAPM® certification",
-									href: "/certifications/certified-associate-capm",
+									href: "/contact",
 								},
 								{
 									text: "PMP® Exam Prep Course",
-									href: "/courses/pmp-prep",
+									href: "/contact",
 								},
 								{
 									text: "Instructor-Led PMP® course (Available Online and In-Person)",
-									href: "/learning/authorized-training-partners",
+									href: "/contact",
 								},
 							],
 						},
@@ -358,7 +358,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PMP exam",
@@ -372,7 +372,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Developed and validated by PMP certification holders, this official prep course advances your project management skills and prepares you for the PMP Exam.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmp-prep",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -382,7 +382,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Expert training backed by PMI. Get exam-ready with a PMI Authorized Training Partner. Choose online or in-person courses for structured guidance, real-time interaction, and accountability.",
 					tags: ["Live Class"],
 					provider: "Expert training backed by PMI",
-					learnMoreHref: "/learning/authorized-training-partners",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -391,7 +391,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Test your knowledge. Build your confidence. Get ready for exam-day.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmp-practice-exam",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -400,7 +400,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"PMI Study Hall® is a digital learning tool that contains practice questions and exams and gamified activities to make studying effective and enjoyable.",
 					tags: ["Online Tools"],
-					learnMoreHref: "/study-hall/pmp",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -410,7 +410,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Backed by the authority of PMI and shaped by professionals worldwide, the PMBOK® Guide defines the global standard for project management.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/pmbok-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -442,7 +442,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More about Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -545,11 +545,11 @@ export const certificationPagesData: CertificationPageType[] = [
 							links: [
 								{
 									text: "PMI on-demand CAPM Exam Prep Course",
-									href: "/courses/capm-prep",
+									href: "/contact",
 								},
 								{
 									text: "Instructor-Led CAPM® course",
-									href: "/courses/capm-instructor",
+									href: "/contact",
 								},
 							],
 						},
@@ -560,7 +560,7 @@ export const certificationPagesData: CertificationPageType[] = [
 							],
 							button: {
 								text: "Explore Foundational Learning",
-								href: "/learning/foundational",
+								href: "/contact",
 							},
 						},
 					],
@@ -641,7 +641,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the CAPM exam",
@@ -656,7 +656,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"A comprehensive self-paced course that walks you through every domain of the CAPM Exam Content Outline, with practice questions and end-of-domain quizzes.",
 					tags: ["eLearning", "Sponsored"],
 					provider: "Premier Authorized Training Partner",
-					learnMoreHref: "/courses/pmtraining-capm",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -666,7 +666,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"PMI's official study resource with personalized study plans, practice exams, and progress tracking built around the CAPM Exam Content Outline.",
 					tags: ["Online Tools"],
-					learnMoreHref: "/study-hall/capm",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -675,7 +675,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"On-demand training from PMI that covers predictive, agile, and business analysis frameworks—all aligned to current exam objectives.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmi-capm-prep",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -684,7 +684,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Simulate real test-day conditions with a timed practice exam that mirrors the format, difficulty, and domain weighting of the live CAPM exam.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/capm-practice-exam",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -694,7 +694,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Live virtual or in-person classes led by expert instructors, with structured lessons, discussions, and cohort-based study support.",
 					tags: ["Live Class"],
 					provider: "Expert training backed by PMI",
-					learnMoreHref: "/courses/capm-instructor-led",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -704,7 +704,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"The globally recognized PMI standard for project management—foundational reading for every aspiring project professional.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/pmbok-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -726,7 +726,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -852,11 +852,11 @@ export const certificationPagesData: CertificationPageType[] = [
 							links: [
 								{
 									text: "PMI Authorized PMI-ACP Exam Prep Course",
-									href: "/courses/pmi-acp-prep",
+									href: "/contact",
 								},
 								{
 									text: "Authorized Training Partner Prep Course",
-									href: "/learning/authorized-training-partners",
+									href: "/contact",
 								},
 							],
 						},
@@ -942,7 +942,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PMI-ACP exam",
@@ -956,7 +956,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"This official course advances your agile leadership skills and prepares you for the ACP Exam. Validated by PMI-ACPs.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmi-acp-prep",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -966,7 +966,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Expert training backed by PMI. Get exam-ready with a PMI Authorized Training Partner. Choose online or in-person courses for structured guidance, real-time interaction, and accountability.",
 					tags: ["Live Class"],
 					provider: "Expert training backed by PMI",
-					learnMoreHref: "/learning/authorized-training-partners",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -975,7 +975,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"PMI Study Hall® is a digital learning tool that contains content-specific lessons to provide certification candidates with a thorough overview of what to expect on exam day.",
 					tags: ["Online Tools"],
-					learnMoreHref: "/study-hall/pmi-acp",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -984,7 +984,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Developed by agile leaders, this official practice exam will help you prepare to sit for the PMI-ACP exam.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmi-acp-practice-exam",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -994,7 +994,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"A Disciplined Agile® Approach to Optimizing Your Way of Working. A pragmatic application of agile, lean, and traditional techniques for your enterprise-class environment.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/agile-practice-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1016,7 +1016,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -1210,7 +1210,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PgMP exam",
@@ -1225,7 +1225,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"The Standard for Program Management - Fifth Edition continues to be a comprehensive and valued resource for PgMP candidates as well as active certification holders, and practitioners worldwide.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/program-management-fifth-edition",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1235,7 +1235,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Backed by the authority of PMI and shaped by professionals worldwide, the PMBOK® Guide defines the global standard for project management.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/pmbok-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1257,7 +1257,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -1444,7 +1444,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PfMP exam",
@@ -1459,7 +1459,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"An important reference for portfolio managers, as well as project and program managers—regardless of industry or project delivery approach. In today's environment of rapid change and constant disruption, highly-mature portfolio management practices have proven to be a vital tool to organizational success.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/for-portfolio-management",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1469,7 +1469,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Backed by the authority of PMI and shaped by professionals worldwide, the PMBOK® Guide defines the global standard for project management.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/pmbok-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1491,7 +1491,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -1655,7 +1655,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PMI-CP exam",
@@ -1670,7 +1670,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Today's large engineering and construction projects are incredibly complex, raising the requirements for effective communication.",
 					tags: ["eLearning"],
 					provider: "14 PDUs",
-					learnMoreHref: "/courses/pmi-cp-project-communications",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -1680,7 +1680,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Get the required skills to transform the global construction industry and bring large, complex projects to life.",
 					tags: ["eLearning"],
 					provider: "14 PDUs",
-					learnMoreHref: "/courses/pmi-cp-interface-management",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -1689,7 +1689,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description: "Solve the challenges of scope creep and change order.",
 					tags: ["eLearning"],
 					provider: "14 PDUs",
-					learnMoreHref: "/courses/pmi-cp-scope-change-order",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -1699,7 +1699,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"This course will help you nail down new contract and risk management skills.",
 					tags: ["eLearning"],
 					provider: "14 PDUs",
-					learnMoreHref: "/courses/pmi-cp-contract-risk",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -1709,7 +1709,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"You can also complete the four required courses in live classes with expert instructors. Our Authorized Training Partners offer PMI-accredited training online and in-person.",
 					tags: ["Live Class"],
 					provider: "Expert training backed by PMI",
-					learnMoreHref: "/learning/authorized-training-partners",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1731,7 +1731,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -1907,7 +1907,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PMI-RMP exam",
@@ -1921,7 +1921,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Developed and validated by risk management professionals, this official prep course advances your risk management skills and prepares you for the PMI-RMP® exam.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmi-rmp-prep",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -1931,7 +1931,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Get exam-ready with a PMI Authorized Training Partner. Choose from online or in-person courses, gain expert instruction, and stay on track.",
 					tags: ["Live Class"],
 					provider: "Expert training backed by PMI",
-					learnMoreHref: "/learning/authorized-training-partners",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1940,7 +1940,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"PMI Study Hall® is a digital learning tool that contains content-specific lessons to provide certification candidates with a thorough overview of what to expect on exam day.",
 					tags: ["Online Tools"],
-					learnMoreHref: "/study-hall/pmi-rmp",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1951,7 +1951,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						'Focuses on the "what" of risk management and applies risk management principles to the portfolio, program, and project domains.',
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/risk-management-practice-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1961,7 +1961,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Backed by the authority of PMI and shaped by professionals worldwide, the PMBOK® Guide defines the global standard for project management.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/pmbok-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -1970,7 +1970,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Sharpen your skills and reduce exam-day stress with the official PMI-RMP® Practice Exam.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmi-rmp-practice-exam",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -1992,7 +1992,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -2163,7 +2163,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PMI-PMOCP exam",
@@ -2177,7 +2177,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Enhance your PMO leadership and prepare for the PMI-PMOCP Exam with this expert-developed prep course.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmi-pmocp-prep",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -2187,7 +2187,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Expert training backed by PMI. Get exam-ready with a PMI Authorized Training Partner. Choose online or in-person courses for structured guidance, real-time interaction, and accountability.",
 					tags: ["Live Class"],
 					provider: "Expert training backed by PMI",
-					learnMoreHref: "/learning/authorized-training-partners",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -2196,7 +2196,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Assess your readiness and strengthen your preparation with a timed practice exam built to reflect the PMI-PMOCP™ exam experience.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmi-pmocp-practice-exam",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -2205,7 +2205,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"A vital resource for transforming PMOs into strategic, value-driven assets. Drawing on insights from global PMO experts, the guide addresses key challenges like aligning with organizational strategy, demonstrating value, and driving continuous improvement.",
 					tags: ["Publication"],
-					learnMoreHref: "/publications/pmo-practice-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -2215,7 +2215,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Backed by the authority of PMI and shaped by professionals worldwide, the PMBOK® Guide defines the global standard for project management.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/pmbok-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -2237,7 +2237,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -2398,7 +2398,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PMI-PBA exam",
@@ -2413,7 +2413,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Backed by the authority of PMI and shaped by professionals worldwide, the PMBOK® Guide defines the global standard for project management.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/pmbok-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -2435,7 +2435,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -2600,7 +2600,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "How to prepare for the PMI-SP exam",
@@ -2615,7 +2615,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Backed by the authority of PMI and shaped by professionals worldwide, the PMBOK® Guide defines the global standard for project management.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Standard",
-					learnMoreHref: "/publications/pmbok-guide",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -2625,7 +2625,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"This guide provides the latest thinking regarding good and accepted practices in the area of scheduling for a project.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Practice Guide",
-					learnMoreHref: "/publications/scheduling-third-edition",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -2647,7 +2647,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Creating content",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -2793,7 +2793,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "Additional Resources",
@@ -2807,7 +2807,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Explore AI project management and the CPMAI™ methodology in this preview of the PMI-CPMAI™ certification path.",
 					tags: ["eLearning", "Free"],
-					learnMoreHref: "/courses/pmi-cpmai-free-intro",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -2817,7 +2817,7 @@ export const certificationPagesData: CertificationPageType[] = [
 						"Discover a step-by-step methodology to align AI with business goals, embed governance and ethics, and drive adoption across the enterprise.",
 					tags: ["Publication", "Free for Members"],
 					provider: "PMI Practice Guide",
-					learnMoreHref: "/publications/leading-managing-ai-projects",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -2826,7 +2826,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Test your knowledge, track your progress, and feel confident walking into the PMI-CPMAI™ exam.",
 					tags: ["eLearning"],
-					learnMoreHref: "/courses/pmi-cpmai-practice-exam",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -2836,7 +2836,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"The first and only global AI Standard for Project Professionals, built to turn AI uncertainty into structured, responsible practice.",
 					tags: ["Publication", "Free for Members"],
-					learnMoreHref: "/publications/artificial-intelligence-standard",
+					learnMoreHref: "/contact",
 					colorTheme: "gold",
 					image: "/assets/shared/shape-triangle-in-circle.webp",
 				},
@@ -2858,7 +2858,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Creating content",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/maintaining-certification",
+			ctaHref: "/contact",
 		},
 		hero: {
 			breadcrumb: [
@@ -2904,21 +2904,21 @@ export const certificationPagesData: CertificationPageType[] = [
 					label:
 						"Confidence gap between sustainability executives and PMO leaders in meeting sustainability goals.",
 					source: "PMI Thought Leadership (2026)",
-					sourceUrl: "/learning/sustainability",
+					sourceUrl: "/contact",
 				},
 				{
 					value: "59%",
 					label:
 						"Integration gap—most organizations haven't fully embedded sustainability across projects.",
 					source: "PMI Thought Leadership (2026)",
-					sourceUrl: "/learning/sustainability",
+					sourceUrl: "/contact",
 				},
 				{
 					value: "1 in 5",
 					label:
 						"Only 20% of project professionals can confidently deliver sustainability outcomes today.",
 					source: "PMI Thought Leadership (2026)",
-					sourceUrl: "/learning/sustainability",
+					sourceUrl: "/contact",
 				},
 			],
 		},
@@ -2985,7 +2985,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					],
 				},
 			],
-			faqsLink: { text: "View FAQs", href: "/faqs" },
+			faqsLink: { text: "View FAQs", href: "/contact" },
 		},
 		examPrep: {
 			title: "What You'll Learn",
@@ -2999,7 +2999,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Apply five sustainability lenses across 52 impact areas to identify, measure and manage real project outcomes.",
 					tags: ["Core Content"],
-					learnMoreHref: "/standards/gpm-p5-standard",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -3008,7 +3008,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Build audit-ready project documentation aligned to enterprise reporting and disclosure requirements.",
 					tags: ["Core Content"],
-					learnMoreHref: "/courses/cspp-sustainability-management",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -3017,7 +3017,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Turn disruption into opportunity with scenario planning, resilience indicators and adaptive delivery.",
 					tags: ["Core Content"],
-					learnMoreHref: "/courses/cspp-adaptive-governance",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},
@@ -3026,7 +3026,7 @@ export const certificationPagesData: CertificationPageType[] = [
 					description:
 						"Bridge project work to enterprise reporting with frameworks aligned to GRI and ISSB standards.",
 					tags: ["Core Content"],
-					learnMoreHref: "/courses/cspp-sustainability-reporting",
+					learnMoreHref: "/contact",
 					colorTheme: "blue",
 					image: "/assets/shared/card-star-bg-image.webp",
 				},

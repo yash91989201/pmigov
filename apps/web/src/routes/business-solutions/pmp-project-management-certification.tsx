@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 
 export const Route = createFileRoute(
@@ -285,15 +285,15 @@ function RouteComponent() {
 						<nav aria-label="Breadcrumb" className="mb-6">
 							<ol className="flex items-center gap-2 text-sm text-white/60">
 								<li>
-									<a className="hover:text-white" href="/">
+									<Link className="hover:text-white" to="/">
 										Home
-									</a>
+									</Link>
 								</li>
 								<li className="text-white/40">/</li>
 								<li>
-									<a className="hover:text-white" href="/business-solutions">
+									<Link className="hover:text-white" to="/business-solutions">
 										PMI for Organizations
-									</a>
+									</Link>
 								</li>
 								<li className="text-white/40">/</li>
 								<li className="text-white/80">

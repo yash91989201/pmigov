@@ -357,9 +357,8 @@ function TrainingPartnerAd() {
 				>
 					Offer from our training partner
 				</h3>
-				<a
+				<span
 					className="mx-auto block max-w-[970px] overflow-hidden rounded-lg"
-					href="https://www.pmi.org"
 					rel="noopener"
 					target="_blank"
 				>
@@ -370,7 +369,7 @@ function TrainingPartnerAd() {
 						src="https://img.nui.media/banners/media/41/413669/72/724501/1767223343140_PMP_970x90_3.png"
 						width={970}
 					/>
-				</a>
+				</span>
 				<p className="mt-4 text-center text-sm" style={{ color: "#6b5b7b" }}>
 					Advertisement
 				</p>

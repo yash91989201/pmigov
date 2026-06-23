@@ -206,9 +206,9 @@ function RouteComponent() {
 							<P>
 								<strong>3.3 Permission to Use PMI Content.</strong> You may
 								request permission to reproduce PMI Content via the{" "}
-								<a className={linkClass} href="/permissions">
+								<Link className={linkClass} to="/permissions">
 									Permissions
-								</a>{" "}
+								</Link>{" "}
 								section of the Site. We reserve the sole discretion to determine
 								whether, and upon what terms, PMI Content will be licensed.
 							</P>
@@ -217,14 +217,13 @@ function RouteComponent() {
 								this site and/or Mobile App may not be used in any advertising
 								or publicity without PMI's prior express written permission. You
 								agree to be bound by and to follow the terms of{" "}
-								<a
+								<span
 									className={linkClass}
-									href="https://www.pmi.org/-/media/pmi/documents/public/pdf/about/press-media/trademark-usage-guidelines-new.pdf"
 									rel="noopener noreferrer"
 									target="_blank"
 								>
 									PMI's Trademark Usage Guidelines
-								</a>
+								</span>
 								.
 							</P>
 						</Section>
@@ -242,9 +241,9 @@ function RouteComponent() {
 							<P>
 								<strong>4.2 Linking to PMI.</strong> You may obtain permission
 								to link to the Site by agreeing to adhere to the terms of the{" "}
-								<a className={linkClass} href="/linking">
+								<Link className={linkClass} to="/linking">
 									Linking Agreement
-								</a>
+								</Link>
 								.
 							</P>
 						</Section>

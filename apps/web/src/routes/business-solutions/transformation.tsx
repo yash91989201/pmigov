@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 
 export const Route = createFileRoute("/business-solutions/transformation")({
@@ -107,15 +107,15 @@ function RouteComponent() {
 						style={{ color: INK }}
 					>
 						<li>
-							<a className="hover:underline" href="/">
+							<Link className="hover:underline" to="/">
 								Home
-							</a>
+							</Link>
 						</li>
 						<li aria-hidden>/</li>
 						<li>
-							<a className="hover:underline" href="/business-solutions">
+							<Link className="hover:underline" to="/business-solutions">
 								PMI for Organizations
-							</a>
+							</Link>
 						</li>
 						<li aria-hidden>/</li>
 						<li className="opacity-70">Business Transformation</li>
@@ -180,16 +180,15 @@ function RouteComponent() {
 							transformation.
 						</p>
 						<div className="pt-6">
-							<a
+							<span
 								className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full px-6 font-medium text-white transition hover:opacity-90"
-								href="https://www.brightline.org/resources/transformation-compass/"
 								rel="noopener noreferrer"
 								style={{ background: DARK_BTN }}
 								target="_blank"
 							>
 								Learn More
 								<ExternalIcon />
-							</a>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -308,16 +307,15 @@ function RouteComponent() {
 								through strategic initiative management. Learn how to better
 								close the strategy-execution gap.
 							</p>
-							<a
+							<span
 								className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full px-6 font-medium text-white transition hover:opacity-90"
-								href="https://www.brightline.org/"
 								rel="noopener noreferrer"
 								style={{ background: DARK_BTN }}
 								target="_blank"
 							>
 								Visit Brightline
 								<ExternalIcon />
-							</a>
+							</span>
 						</div>
 						<div className="overflow-hidden rounded-2xl">
 							<img

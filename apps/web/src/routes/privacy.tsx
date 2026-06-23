@@ -72,12 +72,9 @@ function RouteComponent() {
 								PMI Gov
 							</a>{" "}
 							("<strong>US Site</strong>"), Mobile App and our China website{" "}
-							<a
-								className="underline underline-offset-2 hover:opacity-70"
-								href="https://www.pmichina.org/"
-							>
+							<span className="underline underline-offset-2 hover:opacity-70">
 								www.pmichina.org
-							</a>{" "}
+							</span>{" "}
 							("<strong>China Site</strong>", together with the US Site and
 							Mobile App "<strong>Sites</strong>") with the best products and
 							services available and recognize that building a long-term
@@ -372,14 +369,13 @@ function RouteComponent() {
 											the China Site as a reference to PMI China.
 										</td>
 										<td className="border border-[#262626] bg-white px-3 py-2 align-top">
-											<a
+											<span
 												className="underline underline-offset-2 hover:opacity-70"
-												href="https://tongji.baidu.com/web/help/article?id=330&type=0"
 												rel="noopener noreferrer"
 												target="_blank"
 											>
 												Privacy Policy
-											</a>
+											</span>
 										</td>
 									</tr>
 								</tbody>

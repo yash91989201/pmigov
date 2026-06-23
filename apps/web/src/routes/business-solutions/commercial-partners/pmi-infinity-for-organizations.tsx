@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute(
 	"/business-solutions/commercial-partners/pmi-infinity-for-organizations"
@@ -241,9 +241,9 @@ function RouteComponent() {
 							].map((crumb, i, arr) => (
 								<li className="flex items-center gap-1.5" key={crumb.label}>
 									{crumb.href ? (
-										<a className="hover:text-white" href={crumb.href}>
+										<Link className="hover:text-white" to={crumb.href}>
 											{crumb.label}
-										</a>
+										</Link>
 									) : (
 										<span className="text-white">{crumb.label}</span>
 									)}

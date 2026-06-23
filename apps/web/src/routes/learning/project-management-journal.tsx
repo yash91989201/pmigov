@@ -157,15 +157,14 @@ function CurrentIssueSection() {
 				</div>
 
 				<div className="mt-10">
-					<a
+					<span
 						className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
-						href="https://journals.sagepub.com/toc/pmxa/current"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
 						Preview the Latest Issue
 						<IconArrowRight aria-hidden="true" className="size-4" />
-					</a>
+					</span>
 				</div>
 			</div>
 		</section>

@@ -164,7 +164,7 @@ function CertificationCard({ cert }: { cert: Certification }) {
 				</p>
 				<a
 					className="inline-flex w-fit items-center rounded-full px-6 py-2.5 font-medium text-sm transition-opacity hover:opacity-90"
-					href={`/certifications/${cert.id}`}
+					href="/contact"
 					style={{ backgroundColor: buttonBg, color: buttonText }}
 				>
 					Learn More

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import type React from "react";
 import { useEffect, useRef, useState } from "react";
 
@@ -189,15 +189,15 @@ function RouteComponent() {
 					<div className="mx-auto max-w-screen-xl">
 						<ol className="flex flex-wrap items-center gap-1.5 font-medium text-sm text-white/90">
 							<li>
-								<a className="hover:underline" href="/">
+								<Link className="hover:underline" to="/">
 									Home
-								</a>
+								</Link>
 							</li>
 							<li aria-hidden>/</li>
 							<li>
-								<a className="hover:underline" href="/business-solutions">
+								<Link className="hover:underline" to="/business-solutions">
 									PMI for Organizations
-								</a>
+								</Link>
 							</li>
 							<li aria-hidden>/</li>
 							<li className="opacity-80">
