@@ -293,7 +293,9 @@ function RouteComponent() {
 							</BreadcrumbItem>
 							<BreadcrumbSeparator />
 							<BreadcrumbItem>
-								<BreadcrumbLink render={<Link to="/learning" />}>
+								<BreadcrumbLink
+									render={<Link to="/learning/academic-programs" />}
+								>
 									Learning
 								</BreadcrumbLink>
 							</BreadcrumbItem>
@@ -335,24 +337,6 @@ function RouteComponent() {
 							</div>
 						))}
 					</div>
-				</div>
-			</section>
-
-			{/* Steps to Advancement */}
-			<section className="scroll-mt-12 py-16 lg:py-24" id="steps">
-				<div className="mx-auto max-w-3xl px-6 text-center lg:px-4">
-					<h2 className="font-aeonik font-bold text-3xl text-[#200f3b] lg:text-4xl">
-						Advance your project management career with PMI
-					</h2>
-					<p className="mx-auto mt-6 max-w-2xl text-gray-600 text-lg">
-						From planning your next move to finding your next job, PMI digital
-						tools will help you take the next step in your career.
-					</p>
-				</div>
-				<div className="mt-12 flex flex-col gap-8 lg:mt-16">
-					{PROMO_CARDS.map((card) => (
-						<PromoCard key={card.number} {...card} />
-					))}
 				</div>
 			</section>
 
