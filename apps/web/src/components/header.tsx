@@ -126,10 +126,6 @@ const NAV_ITEMS: readonly NavItem[] = [
 		label: "Resources",
 		groups: [
 			{
-				title: "Connect",
-				links: [{ label: "PMI Infinity", href: "/infinity" }],
-			},
-			{
 				title: "Discover",
 				links: [
 					{ label: "Templates & Insights", href: "/insights" },
