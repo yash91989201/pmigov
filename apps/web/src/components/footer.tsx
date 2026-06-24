@@ -160,11 +160,12 @@ const FOOTER_COLUMNS = [
 ] as const;
 
 const LEGAL_LINKS = [
-	{ label: "Accessibility", href: "/accessibility" },
+	{ label: "Refund Policy", href: "/refund-policy" },
 	{ label: "Privacy", href: "/privacy" },
 	{ label: "Sitemap", href: "/sitemap" },
-	{ label: "Terms of use", href: "/terms" },
+	{ label: "Terms of Use", href: "/terms-of-use" },
 	{ label: "Purchasing Terms", href: "/purchasing-terms" },
+	{ label: "Advertising & Sponsorship", href: "/advertising" },
 ] as const;
 
 function FooterLink({
