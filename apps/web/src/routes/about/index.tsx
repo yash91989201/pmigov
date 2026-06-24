@@ -28,6 +28,13 @@ const boardMembers: BoardMember[] = [
 		bio: "Dhruv Singh Yadav manages member accounts and coordinates financial records, ensuring smooth handling of account-related activities for the PMIGOV.",
 		imageUrl: "",
 	},
+	{
+		id: "3",
+		name: "Kaptan",
+		role: "Finance Manager",
+		bio: "Kaptan oversees financial planning and reporting for the chapter, ensuring budgetary discipline and transparency across all programs and initiatives.",
+		imageUrl: "",
+	},
 ];
 
 function AboutComponent() {
