@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 const certificationBadges = [
 	"PMOCP™",
 	"PMI-ACP®",
@@ -56,13 +54,6 @@ export function SecondaryCta() {
 					courses, digital tools, virtual events, and thought leadership
 					insights to accelerate your career.
 				</p>
-				<Link
-					className="mt-8 inline-flex items-center rounded-full px-10 py-4 font-bold text-white text-xl transition-opacity hover:opacity-90 md:mt-10 md:px-12 md:py-5 md:text-2xl"
-					style={{ backgroundColor: "#200f3b" }}
-					to="/account-registration"
-				>
-					Register Now
-				</Link>
 			</div>
 		</section>
 	);

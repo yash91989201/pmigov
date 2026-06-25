@@ -12,24 +12,6 @@ import { Link } from "@tanstack/react-router";
 
 const networkItems = [
 	{
-		id: "connect",
-		title: "Connect and network",
-		description:
-			"Our chapter events and monthly meetings are perfect opportunities to meet other industry leaders, broaden your professional circle, and gain fresh perspective and ideas.",
-		href: "/membership/chapters",
-		image: "/assets/home/connect-network.webp",
-		imageAlt: "PMI chapter members networking together",
-	},
-	{
-		id: "give-back",
-		title: "Give back",
-		description:
-			"Make a difference in your community. By volunteering your skills, expertise, and time for your chapter's social good activities, you can drive change where it matters most.",
-		href: "/volunteer",
-		image: "/assets/home/give-back.webp",
-		imageAlt: "Volunteers packing supplies for community outreach",
-	},
-	{
 		id: "level-up",
 		title: "Level up",
 		description:

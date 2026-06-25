@@ -41,8 +41,8 @@ interface ResourceTabData {
 		backgroundImage?: string;
 		backgroundStyle?: string;
 		badges: ResourceBadge[];
-		ctaHref: string;
-		ctaLabel: string;
+		ctaHref?: string;
+		ctaLabel?: string;
 		darkBackground?: boolean;
 		description: string;
 		title: string;
@@ -50,8 +50,8 @@ interface ResourceTabData {
 	listItems: ResourceListItem[];
 	secondary: {
 		badges: ResourceBadge[];
-		ctaHref: string;
-		ctaLabel: string;
+		ctaHref?: string;
+		ctaLabel?: string;
 		description: string;
 		title: string;
 	};
@@ -75,21 +75,8 @@ const tabContent: Record<TabValue, ResourceTabData> = {
 				"The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
 			description:
 				"The first and only global AI Standard for Project Professionals, built to turn AI uncertainty into structured, responsible practice.",
-			ctaLabel: "Learn More",
-			ctaHref: "/standards/ai",
 		},
-		listItems: [
-			{
-				badges: [{ label: "Article", memberOnly: true }],
-				title: "Enabling Project Management Transformation with GenAI",
-				href: "/learning/genai-transformation",
-			},
-			{
-				badges: [{ label: "eLearning" }, { label: "Certification" }],
-				title: "PMI-CPMAI™ is your license to lead AI",
-				href: "/certifications/pmi-cpmai",
-			},
-		],
+		listItems: [],
 	},
 	agile: {
 		featured: {
@@ -98,8 +85,6 @@ const tabContent: Record<TabValue, ResourceTabData> = {
 			title: "GenAI and Agile: Amplifying Human-Centered Collaboration",
 			description:
 				"Explore how GenAI strengthens agile teams by supporting trust, surfacing risks, and enabling breakthroughs—while keeping human collaboration at the center of project success.",
-			ctaLabel: "Read the Report",
-			ctaHref: "/learning/agile/genai-collaboration",
 		},
 		secondary: {
 			badges: [{ label: "Podcast" }, { label: "Discussion" }],
@@ -109,18 +94,7 @@ const tabContent: Record<TabValue, ResourceTabData> = {
 			ctaLabel: "Listen Now",
 			ctaHref: "/projectified-podcast",
 		},
-		listItems: [
-			{
-				badges: [{ label: "Report" }, { label: "Thought Leadership" }],
-				title: "Navigating the Future of Work with an Agile Mindset",
-				href: "/learning/agile/future-of-work",
-			},
-			{
-				badges: [{ label: "Podcast" }, { label: "Discussion" }],
-				title: "How AI Is Shaping Agility",
-				href: "/learning/agile/ai-shaping-agility",
-			},
-		],
+		listItems: [],
 	},
 	careers: {
 		featured: {
@@ -140,20 +114,7 @@ const tabContent: Record<TabValue, ResourceTabData> = {
 			ctaLabel: "Listen Now",
 			ctaHref: "/projectified-podcast",
 		},
-		listItems: [
-			{
-				badges: [{ label: "Article", memberOnly: true }],
-				title:
-					"How Next-Gen Project Professionals Deliver Positive Social Impact",
-				href: "/learning/careers/social-impact",
-			},
-			{
-				badges: [{ label: "Article", memberOnly: true }],
-				title:
-					"How Talent Development Can Boost Engagement and Retain Top Talent",
-				href: "/learning/careers/talent-development",
-			},
-		],
+		listItems: [],
 	},
 	sustainability: {
 		featured: {
@@ -162,30 +123,14 @@ const tabContent: Record<TabValue, ResourceTabData> = {
 			title: "Sustainable Project Management: From Planning to Delivery",
 			description:
 				"Every project can be led and managed more sustainably. Guests discuss why project professionals should build sustainability into every project and their advice to help others do the same.",
-			ctaLabel: "Listen Now",
-			ctaHref: "/projectified-podcast/sustainable-pm",
 		},
 		secondary: {
 			badges: [{ label: "Blog" }, { label: "Certification" }],
 			title: "How the GPM-b™ Can Boost Your Career",
 			description:
 				"The GPM-b™ gives you the tools, knowledge, and credibility to lead with purpose. Learn why and how to get your certification.",
-			ctaLabel: "Learn More",
-			ctaHref: "/certifications/gpm-b",
 		},
-		listItems: [
-			{
-				badges: [{ label: "Blog" }],
-				title: "Your Guide to Sustainability in Project Management",
-				href: "/learning/sustainability/guide",
-			},
-			{
-				badges: [{ label: "Blog" }],
-				title:
-					"Driving Sustainability in Construction: A Project Leadership Perspective",
-				href: "/learning/sustainability/construction",
-			},
-		],
+		listItems: [],
 	},
 };
 
@@ -264,12 +209,14 @@ function FeaturedResourceCard({
 				>
 					{featured.description}
 				</p>
-				<a
-					className={`inline-flex w-fit rounded-full px-6 py-3 font-medium text-sm transition-opacity hover:opacity-90 md:text-base ${isLightBg ? "bg-[#200f3b] text-white" : "bg-white text-[#200f3b]"}`}
-					href={featured.ctaHref}
-				>
-					{featured.ctaLabel}
-				</a>
+				{featured.ctaHref && featured.ctaLabel ? (
+					<a
+						className={`inline-flex w-fit rounded-full px-6 py-3 font-medium text-sm transition-opacity hover:opacity-90 md:text-base ${isLightBg ? "bg-[#200f3b] text-white" : "bg-white text-[#200f3b]"}`}
+						href={featured.ctaHref}
+					>
+						{featured.ctaLabel}
+					</a>
+				) : null}
 			</div>
 		</article>
 	);
@@ -291,37 +238,41 @@ function ResourceTabPanel({ data }: { data: ResourceTabData }) {
 					<p className="mb-6 text-[#6b5b7b] text-sm leading-relaxed md:text-base">
 						{data.secondary.description}
 					</p>
-					<a
-						className="inline-flex rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
-						href={data.secondary.ctaHref}
-					>
-						{data.secondary.ctaLabel}
-					</a>
+					{data.secondary.ctaHref && data.secondary.ctaLabel ? (
+						<a
+							className="inline-flex rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
+							href={data.secondary.ctaHref}
+						>
+							{data.secondary.ctaLabel}
+						</a>
+					) : null}
 				</article>
 
-				<ItemGroup className="gap-0">
-					{data.listItems.map((item) => (
-						<Item
-							className="rounded-none border-0 border-[#d4cbc3] border-t px-0 py-6"
-							key={item.href}
-						>
-							<ItemContent className="gap-3">
-								<ResourceBadges badges={item.badges} />
-								<ItemTitle className="line-clamp-none font-semibold text-[#200f3b] text-base md:text-lg">
-									<Link className="hover:underline" to={item.href}>
-										{item.title}
-									</Link>
-								</ItemTitle>
-							</ItemContent>
-							<ItemActions>
-								<IconArrowRight
-									aria-hidden="true"
-									className="size-5 shrink-0 text-[#200f3b]"
-								/>
-							</ItemActions>
-						</Item>
-					))}
-				</ItemGroup>
+				{data.listItems.length > 0 ? (
+					<ItemGroup className="gap-0">
+						{data.listItems.map((item) => (
+							<Item
+								className="rounded-none border-0 border-[#d4cbc3] border-t px-0 py-6"
+								key={item.href}
+							>
+								<ItemContent className="gap-3">
+									<ResourceBadges badges={item.badges} />
+									<ItemTitle className="line-clamp-none font-semibold text-[#200f3b] text-base md:text-lg">
+										<Link className="hover:underline" to={item.href}>
+											{item.title}
+										</Link>
+									</ItemTitle>
+								</ItemContent>
+								<ItemActions>
+									<IconArrowRight
+										aria-hidden="true"
+										className="size-5 shrink-0 text-[#200f3b]"
+									/>
+								</ItemActions>
+							</Item>
+						))}
+					</ItemGroup>
+				) : null}
 			</div>
 		</div>
 	);

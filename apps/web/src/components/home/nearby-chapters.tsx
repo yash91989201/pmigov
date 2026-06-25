@@ -1,6 +1,3 @@
-import { IconArrowRight } from "@tabler/icons-react";
-import { Link } from "@tanstack/react-router";
-
 export function NearbyChapters() {
 	return (
 		<section style={{ backgroundColor: "#f8f5f0" }}>
@@ -23,13 +20,6 @@ export function NearbyChapters() {
 							Connect with like-minded professionals who shape the future one
 							project at a time.
 						</p>
-						<Link
-							className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-6 py-2.5 font-medium text-[#1c1008] text-sm transition-opacity hover:opacity-90 md:px-7 md:py-3"
-							to="/membership/chapters"
-						>
-							View Chapters
-							<IconArrowRight aria-hidden="true" className="size-4 md:size-5" />
-						</Link>
 					</div>
 				</div>
 			</div>
