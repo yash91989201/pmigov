@@ -35,7 +35,7 @@ const ORG_ROWS = [
 		body: "Our Authorized Training Partner Program makes it easy for organizations to get high-quality, PMI-developed training and certification exam prep, customized to your business needs. Help employees prepare for and maintain top certifications like PMP®, CAPM®, PMI-ACP®, and PMI-CP™ that elevate their skills and maximize your organization's project success.",
 		link: {
 			label: "Explore our Authorized Training Partner Program",
-			href: "/business-solutions/become-an-authorized-training-partner",
+			href: "/contact",
 		},
 		img: "//www.pmi.org/-/media/pmi/headless-images/pmi-for-organizations/general-landing_pmi-for-orgs.png?h=600&iar=0&w=600&rev=003e8c0a805742faabbc140fbe4f0c45",
 		alt: "Professional at laptop",
@@ -43,7 +43,7 @@ const ORG_ROWS = [
 	{
 		heading: "Connect & Network in our Global Executive Council",
 		body: "The PMI Global Executive Council unites leaders from top organizations worldwide to shape the future of project management. The Council drives transformation in an ever-changing world by collaborating on innovative practices and creating enriching learning and networking opportunities.",
-		link: { label: "Join Now", href: "/business-solutions/how-can-we-help" },
+		link: { label: "Join Now", href: "/contact" },
 		img: "//www.pmi.org/-/media/pmi/headless-images/landing---microsites/shrm25/global-exec-council.jpg?h=508&iar=0&w=900&rev=1b5e173e8ca049c397aecda0d6ea1d54",
 		alt: "Global Executive Council networking",
 	},
@@ -65,13 +65,13 @@ const REPORTS = [
 		title:
 			"Built to Thrive: PMOs That Elevate Innovation and Power Transformation",
 		body: "This report explores how high-performing PMOs help their organizations gain a competitive edge and what PMO leaders are doing to make it happen.",
-		href: "/learning/thought-leadership/project-success",
+		href: "/learning/thought-leadership",
 	},
 	{
 		badge: "Report",
 		title: "Maximizing Project Success",
 		body: "Learn what project success is and what drives it in our latest report highlighting how project professionals can deliver more value and make a lasting impact on the world.",
-		href: "/learning/thought-leadership/project-success",
+		href: "/learning/thought-leadership",
 	},
 ];
 
@@ -138,7 +138,7 @@ function RouteComponent() {
 						</p>
 						<a
 							className="inline-flex h-12 items-center rounded-full px-6 font-medium text-base text-white transition hover:opacity-90"
-							href="/business-solutions/how-can-we-help"
+							href="/contact"
 							style={{ background: DARK_BTN }}
 						>
 							Contact Us
@@ -454,7 +454,7 @@ function RouteComponent() {
 							<div className="grid grid-cols-1 gap-6 md:grid-cols-2">
 								{REPORTS.map((report) => (
 									<div
-										className="flex flex-col justify-between rounded-2xl border p-8"
+										className="rounded-2xl border p-8"
 										key={report.title}
 										style={{ background: CARD_BG, borderColor: `${INK}18` }}
 									>
@@ -472,19 +472,12 @@ function RouteComponent() {
 												{report.title}
 											</h3>
 											<p
-												className="mb-8 text-base leading-relaxed"
+												className="text-base leading-relaxed"
 												style={{ color: BODY }}
 											>
 												{report.body}
 											</p>
 										</div>
-										<a
-											className="inline-flex h-11 w-fit items-center rounded-full px-5 font-medium text-sm text-white transition hover:opacity-90"
-											href={report.href}
-											style={{ background: DARK_BTN }}
-										>
-											Read Report
-										</a>
 									</div>
 								))}
 							</div>
@@ -561,7 +554,7 @@ function RouteComponent() {
 						</p>
 						<a
 							className="inline-flex h-12 items-center rounded-full px-6 font-medium text-base text-white transition hover:opacity-90"
-							href="/business-solutions/how-can-we-help"
+							href="/contact"
 							style={{ background: DARK_BTN }}
 						>
 							Contact Us Today

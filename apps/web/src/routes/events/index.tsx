@@ -311,15 +311,13 @@ function RouteComponent() {
 									<p className="mb-4 font-aeonik text-base text-gray-600">
 										{ev.date}
 									</p>
-									<a
+									<Link
 										className="mt-auto inline-flex items-center gap-0.5 font-aeonik font-medium text-lg hover:underline"
-										href={ev.href}
-										rel="noreferrer"
 										style={{ color: HD }}
-										target="_blank"
+										to="/contact"
 									>
 										Register Now {CHEVRON_R}
-									</a>
+									</Link>
 								</div>
 							))}
 						</div>
@@ -568,10 +566,8 @@ function RouteComponent() {
 									</p>
 									<a
 										className="inline-flex h-12 items-center gap-2 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-white/60"
-										href="/about/event-sponsorship"
-										rel="noreferrer"
+										href="/contact"
 										style={{ borderColor: HD, color: HD }}
-										target="_blank"
 									>
 										View Sponsorship Opportunities {ARROW_R}
 									</a>
@@ -621,7 +617,7 @@ function RouteComponent() {
 							<Link
 								className="inline-flex h-12 items-center gap-2 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-gray-50"
 								style={{ borderColor: HD, color: HD }}
-								to={"/events/pmi-training" as never}
+								to="/contact"
 							>
 								Learn About PMI Training {ARROW_R}
 							</Link>
@@ -652,10 +648,8 @@ function RouteComponent() {
 									</h3>
 									<a
 										className="inline-flex items-center gap-0.5 font-aeonik font-medium text-base hover:underline"
-										href="/events/pmi-training"
-										rel="noreferrer"
+										href="/contact"
 										style={{ color: HD }}
-										target="_blank"
 									>
 										Learn More {CHEVRON_R}
 									</a>

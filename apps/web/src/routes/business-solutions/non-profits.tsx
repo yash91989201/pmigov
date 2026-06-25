@@ -76,7 +76,7 @@ function RouteComponent() {
 					</p>
 					<a
 						className="inline-flex h-12 items-center rounded-full px-6 font-medium text-base text-white transition hover:opacity-90"
-						href="/business-solutions/how-can-we-help"
+						href="/contact"
 						style={{ background: DARK_BTN }}
 					>
 						Let's work together

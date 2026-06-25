@@ -20,7 +20,7 @@ const OPPORTUNITIES = [
 			</>
 		),
 		linkText: "Become a Partner",
-		href: "/business-solutions/become-an-authorized-training-partner",
+		href: "/contact",
 	},
 	{
 		img: "/images/business-solutions/talent-management-business-solutions.jpg",
@@ -204,10 +204,8 @@ function RouteComponent() {
 				</p>
 				<a
 					className="inline-block rounded border px-5 py-2.5 font-semibold text-sm transition hover:bg-gray-100"
-					href="/gac/"
-					rel="noreferrer"
+					href="/contact"
 					style={{ borderColor: VIOLET, color: VIOLET }}
-					target="_blank"
 				>
 					Find a Program
 				</a>
@@ -243,7 +241,7 @@ function RouteComponent() {
 						</p>
 						<a
 							className="inline-block font-bold text-base hover:underline"
-							href="/business-solutions/white-papers"
+							href="/contact"
 							style={{ color: VIOLET }}
 						>
 							Explore White Papers
@@ -261,7 +259,7 @@ function RouteComponent() {
 						</p>
 						<a
 							className="inline-block rounded border px-5 py-2.5 font-semibold text-sm transition hover:bg-gray-200"
-							href="/business-solutions/how-can-we-help"
+							href="/contact"
 							style={{ borderColor: VIOLET, color: VIOLET }}
 						>
 							Contact Us

@@ -152,7 +152,7 @@ const INSIGHTS = [
 		title: "The Construction Project Management Talent Gap",
 		description:
 			"Discover how to close construction’s growing project management talent gap and learn the key skills, barriers, and actions needed to stay competitive.",
-		href: "/learning/thought-leadership/construction-project-management-talent-gap",
+		href: "/learning/thought-leadership",
 		img: "/images/business-solutions/construction/insights-joindiscussion.jpg",
 		cta: "Read Now",
 	},
@@ -171,7 +171,7 @@ const INSIGHTS = [
 			"Megaprojects: Challenges, Opportunities, and the Role of the Project Profession",
 		description:
 			"Megaprojects reshape economies, but often miss the mark. Explore the challenges, hidden opportunities, and why project professionals are key to success.",
-		href: "/learning/thought-leadership/megaprojects-challenges-opportunities-and-the-role-of-the-project-profession",
+		href: "/learning/thought-leadership",
 		img: "/images/business-solutions/construction/insights-megaprojects.jpg",
 		cta: "Read Now",
 	},
@@ -451,7 +451,7 @@ function RouteComponent() {
 								Our{" "}
 								<a
 									className="underline hover:no-underline"
-									href="/learning/thought-leadership/construction-project-management-talent-gap"
+									href="/learning/thought-leadership"
 									style={{ color: INK }}
 								>
 									2026 Construction Project Management Talent Gap report

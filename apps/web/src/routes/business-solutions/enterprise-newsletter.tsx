@@ -254,7 +254,7 @@ function RouteComponent() {
 									<span style={{ color: "#323130" }}>
 										<a
 											className="font-semibold underline"
-											href="/privacy-policy"
+											href="/privacy"
 											style={{ color: INK }}
 										>
 											View our privacy policy

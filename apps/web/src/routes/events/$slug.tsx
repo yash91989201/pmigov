@@ -6,7 +6,7 @@ import {
 	BreadcrumbPage,
 	BreadcrumbSeparator,
 } from "@pmigov/ui/components/breadcrumb";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, Navigate } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 
 export const Route = createFileRoute("/events/$slug")({
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/events/$slug")({
 });
 
 /* ── Design tokens ────────────────────────────────────────────────── */
-const PMI_DARK = "#200f3b";
+
 const PMI_NAV_BG = "#2a1750";
 const HEADING_DARK = "#1a2c5b";
 const CYAN = "#05bfe0";
@@ -337,7 +337,7 @@ function PmxpoPage() {
 					<div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
 						<a
 							className="inline-flex h-12 items-center rounded-full bg-white px-8 font-aeonik font-semibold text-base transition hover:bg-white/90"
-							href="/events/pmxpo/register"
+							href="/contact"
 							style={{ color: HEADING_DARK }}
 						>
 							Register Now for Free
@@ -510,7 +510,7 @@ function PmxpoPage() {
 								</ul>
 								<a
 									className="inline-flex h-11 items-center gap-2 rounded-full border border-gray-800 px-6 font-aeonik font-semibold text-sm transition hover:bg-gray-50"
-									href="/events/pmxpo/register"
+									href="/contact"
 									style={{ color: HEADING_DARK }}
 								>
 									Register for PMXPO 2026
@@ -565,7 +565,7 @@ function PmxpoPage() {
 							</p>
 							<a
 								className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-6 py-2.5 font-aeonik font-semibold text-sm transition hover:bg-white/90"
-								href="/events/pmxpo/agenda"
+								href="/contact"
 								style={{ color: HEADING_DARK }}
 							>
 								Explore Agenda
@@ -615,7 +615,7 @@ function PmxpoPage() {
 							</p>
 							<a
 								className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-6 py-2.5 font-aeonik font-semibold text-sm transition hover:bg-white/90"
-								href="/events/pmxpo/speakers"
+								href="/contact"
 								style={{ color: HEADING_DARK }}
 							>
 								View All Speakers
@@ -801,7 +801,7 @@ function PmxpoPage() {
 								</p>
 								<a
 									className="inline-flex h-11 items-center rounded-full bg-white px-8 font-aeonik font-semibold text-sm transition hover:bg-white/90"
-									href="/events/pmxpo/register"
+									href="/contact"
 									style={{ color: HEADING_DARK }}
 								>
 									Register Now
@@ -827,7 +827,7 @@ function PmxpoPage() {
 								Still need help?{" "}
 								<a
 									className="underline underline-offset-4 hover:opacity-70"
-									href="/membership/faq"
+									href="/contact"
 									style={{ color: HEADING_DARK }}
 								>
 									Contact us
@@ -849,32 +849,8 @@ function PmxpoPage() {
 }
 
 /* ── Generic fallback ─────────────────────────────────────────────── */
-function GenericEventPage({ slug }: { slug: string }) {
-	const title = slug
-		.split("-")
-		.map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-		.join(" ");
-	return (
-		<main className="overflow-x-hidden" id="main-layout">
-			<div
-				className="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center"
-				style={{ background: PMI_DARK }}
-			>
-				<h1 className="mt-6 font-aeonik font-bold text-4xl text-white sm:text-5xl">
-					{title}
-				</h1>
-				<p className="mt-4 font-aeonik text-lg text-white/60">
-					This page is coming soon.
-				</p>
-				<Link
-					className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 font-aeonik text-white hover:bg-white/10"
-					to="/events"
-				>
-					← Back to Events
-				</Link>
-			</div>
-		</main>
-	);
+function GenericEventPage() {
+	return <Navigate replace to="/contact" />;
 }
 
 /* ── Router ───────────────────────────────────────────────────────── */
@@ -888,5 +864,5 @@ function RouteComponent() {
 	if (Page) {
 		return <Page />;
 	}
-	return <GenericEventPage slug={slug} />;
+	return <GenericEventPage />;
 }

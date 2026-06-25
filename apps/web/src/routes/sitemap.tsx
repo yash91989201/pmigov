@@ -394,7 +394,7 @@ const sections: { heading: string; columns: SubSection[][] }[] = [
 						},
 						{
 							label: "Training Partners",
-							href: "/business-solutions/become-an-authorized-training-partner",
+							href: "/contact",
 						},
 						{
 							label: "Government",

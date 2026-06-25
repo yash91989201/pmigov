@@ -59,7 +59,8 @@
       "Bash(npx --yes playwright --version)",
       "Bash(yt-dlp --version)",
       "Bash(node -e ' *)",
-      "Bash(npx biome *)"
+      "Bash(npx biome *)",
+      "Bash(grep -n \"404\\\\|NotFound\\\\|notFound\\\\|splat\\\\|\\\\$\\\\.\" /Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/__root.tsx)"
     ]
   },
   "hooks": {

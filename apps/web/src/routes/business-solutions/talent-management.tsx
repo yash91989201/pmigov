@@ -40,7 +40,7 @@ const STATS = [
 				More Project Professionals needed by 2035 to{" "}
 				<a
 					className="underline hover:no-underline"
-					href="/learning/thought-leadership/global-project-management-talent-gap"
+					href="/learning/thought-leadership"
 				>
 					fill the global talent gap
 				</a>
@@ -93,7 +93,7 @@ const INSIGHT_LINKS = [
 	{
 		tag: "Article",
 		title: "How PMOs Can Build a Talent Pipeline",
-		href: "/learning/project-management-offices",
+		href: "/learning/thought-leadership",
 	},
 ];
 
@@ -400,7 +400,7 @@ function RouteComponent() {
 						{/* Featured card */}
 						<a
 							className="group flex flex-col justify-between overflow-hidden rounded-2xl transition hover:shadow-lg"
-							href="/learning/thought-leadership/global-project-management-talent-gap"
+							href="/learning/thought-leadership"
 							style={{ background: CARD, minHeight: 440 }}
 						>
 							<div
@@ -467,7 +467,7 @@ function RouteComponent() {
 								</p>
 								<a
 									className="inline-flex h-11 w-fit items-center rounded-full px-6 font-medium text-sm text-white"
-									href="/learning/careers/earning-power-salary-survey"
+									href="/learning/thought-leadership"
 									style={{ background: DARK_BTN }}
 								>
 									Read Now

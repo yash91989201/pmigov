@@ -25,7 +25,7 @@ const CONTENT_ROWS = [
 			</>
 		),
 		cta: "View Research",
-		href: "/learning/thought-leadership/leading-ai-driven-business-transformation",
+		href: "/learning/thought-leadership",
 		external: false,
 	},
 	{

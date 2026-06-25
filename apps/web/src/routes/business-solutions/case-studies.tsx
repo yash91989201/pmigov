@@ -166,7 +166,7 @@ function RouteComponent() {
 								</p>
 								<a
 									className="inline-flex h-12 items-center rounded-full px-6 font-medium text-sm text-white transition hover:opacity-90"
-									href="/business-solutions/case-studies/mayo-clinic"
+									href="/contact"
 									style={{ background: DARK_BTN }}
 								>
 									Learn More
@@ -215,7 +215,7 @@ function RouteComponent() {
 								</div>
 								<a
 									className="mt-2 inline-flex h-12 w-fit items-center rounded-full px-6 font-medium text-sm text-white transition hover:opacity-90"
-									href={cs.href}
+									href="/contact"
 									style={{ background: DARK_BTN }}
 								>
 									Learn More
@@ -225,16 +225,6 @@ function RouteComponent() {
 					</div>
 
 					{/* Explore CTA */}
-					<div className="mt-10">
-						<a
-							className="inline-flex h-12 items-center gap-2 rounded-full border px-6 font-medium text-base transition hover:bg-black/5"
-							href="/learning/library"
-							style={{ borderColor: INK, color: INK }}
-						>
-							Explore Case Studies
-							<span aria-hidden>→</span>
-						</a>
-					</div>
 				</section>
 
 				{/* ── Partner with PMI ─────────────────────────────────────────── */}
@@ -258,7 +248,7 @@ function RouteComponent() {
 							</p>
 							<a
 								className="inline-flex h-12 items-center rounded-full px-6 font-medium text-sm text-white transition hover:opacity-90"
-								href="/business-solutions/how-can-we-help"
+								href="/contact"
 								style={{ background: DARK_BTN }}
 							>
 								Partner with PMI

@@ -10,22 +10,17 @@ const PURPLE = "#6629b2";
 
 const LEFT_NAV = [
 	{
-		label: "Become an Authorized Training Partner",
-		href: "/business-solutions/become-an-authorized-training-partner",
-	},
-	{
 		label: "Solutions for Software Developers",
 		href: "/business-solutions/agile-technical-solutions",
 		active: true,
 	},
 	{ label: "Talent Management", href: "/business-solutions/talent-management" },
 	{ label: "Case Studies", href: "/business-solutions/case-studies" },
-	{ label: "White Papers", href: "/business-solutions/white-papers" },
 	{
 		label: "Government Activities & Advocacy",
 		href: "/business-solutions/government-activities-advocacy",
 	},
-	{ label: "How Can We Help?", href: "/business-solutions/how-can-we-help" },
+	{ label: "How Can We Help?", href: "/contact" },
 ];
 
 const COURSES = [
@@ -34,28 +29,28 @@ const COURSES = [
 		img: "https://www.pmi.org/-/media/pmi/other-images/business-solutions/cropped/seminar-group-meeting-cropped.jpg?h=819&iar=0&w=800&rev=10f73c86a3894b45b3df5e0e0361556a",
 		alt: "Seminar-Group-Meeting-cropped",
 		body: "Learn to analyze problems and create high-quality solutions using a shared language of design.",
-		href: "/disciplined-agile/design-patterns-thinking",
+		href: "/contact",
 	},
 	{
 		title: "Advanced Software Design",
 		img: "https://www.pmi.org/-/media/pmi/other-images/business-solutions/cropped/team-sticky-notes-wall-cropped.jpg?h=819&iar=0&w=800&rev=8252d0e1658f464d9d12425711771923",
 		alt: "team-sticky-notes-wall-cropped",
 		body: "Solve more complex problems with a deeper application of patterns.",
-		href: "/disciplined-agile/advanced-software-design",
+		href: "/contact",
 	},
 	{
 		title: "Sustainable Test-Driven Development",
 		img: "https://www.pmi.org/-/media/pmi/other-images/business-solutions/cropped/young-professionals-cropped.jpg?h=819&iar=0&w=800&rev=bf6ae45d52df43e29e4f427701ab39fd",
 		alt: "young-professionals-cropped",
 		body: "Learn to write maintainable tests that drive analysis, design, and flexible evolution.",
-		href: "/disciplined-agile/sustainable-test-driven-development",
+		href: "/contact",
 	},
 	{
 		title: "Acceptance Test-Driven Development",
 		img: "https://www.pmi.org/-/media/pmi/other-images/business-solutions/cropped/teamworkinginbreakoutroom-cropped.jpg?h=819&iar=0&w=800&rev=954abf899c664cbfa46996974b0b9e41",
 		alt: "TeamWorkingInBreakoutRoom-cropped",
 		body: "Learn to collaborate effectively across the organization, and with all audiences, using acceptance tests.",
-		href: "/disciplined-agile/acceptance-test-driven-development",
+		href: "/contact",
 	},
 ];
 

@@ -275,7 +275,7 @@ function RouteComponent() {
 								<a
 									aria-label="Contact Us"
 									className="inline-flex h-12 items-center gap-2 rounded-full border border-white/50 px-6 font-medium text-base text-white transition hover:bg-white/10"
-									href="/business-solutions/how-can-we-help"
+									href="/contact"
 								>
 									Contact Us
 									{/* biome-ignore lint/a11y/noSvgWithoutTitle: decorative icon */}
@@ -473,7 +473,7 @@ function RouteComponent() {
 
 								<a
 									className="inline-flex h-11 items-center gap-2 rounded-full border px-5 font-medium text-sm transition hover:bg-gray-50"
-									href="/trust-center"
+									href="/privacy"
 									style={{ borderColor: INK, color: INK }}
 								>
 									Visit the PMI Infinity Trust Center
@@ -599,7 +599,7 @@ function RouteComponent() {
 							</a>
 							<a
 								className="inline-flex h-12 items-center gap-2 rounded-full border border-white/50 px-6 font-medium text-base text-white transition hover:bg-white/10"
-								href="/business-solutions/how-can-we-help"
+								href="/contact"
 							>
 								Contact Us
 							</a>

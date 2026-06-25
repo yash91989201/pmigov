@@ -186,7 +186,7 @@ function RouteComponent() {
 						</p>
 						<a
 							className="inline-flex h-12 w-fit items-center rounded-full px-6 font-medium text-white transition hover:opacity-90"
-							href="/business-solutions/how-can-we-help"
+							href="/contact"
 							style={{ background: DARK_BTN }}
 						>
 							Book a Meeting
@@ -627,7 +627,7 @@ function RouteComponent() {
 						</ul>
 						<a
 							className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full border px-6 font-medium transition hover:bg-black/5"
-							href="/business-solutions/become-an-authorized-training-partner"
+							href="/contact"
 							style={{ borderColor: INK, color: INK }}
 						>
 							Become an ATP

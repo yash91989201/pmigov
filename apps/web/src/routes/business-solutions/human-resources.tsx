@@ -51,7 +51,7 @@ const TAILORED_SOLUTIONS = [
 		title: "PMI Team Training",
 		body: "Upskill your workforce and empower your team to lead with expert-led project management and agile training.",
 		cta: "Train Your Team",
-		href: "/events/pmi-training/pmi-training-team-training",
+		href: "/events",
 		img: "//www.pmi.org/-/media/pmi/headless-images/landing---microsites/shrm25/team-training.jpg?h=508&iar=0&w=900&rev=c0a2a222638e4290a4305cdc06d1cc8f",
 		alt: "Team Training",
 	},
@@ -94,7 +94,7 @@ const CONNECT_CARDS = [
 		title: "Project Management Talent Gap",
 		body: "Explore our research on the growing talent gap and how organizations are addressing skills shortages in project management.",
 		cta: "Read the Research",
-		href: "/learning/thought-leadership/pulse/talent-gap",
+		href: "/learning/thought-leadership",
 		img: "//www.pmi.org/-/media/pmi/headless-images/landing---microsites/human-resources/project-management-talent-gap.jpg?h=633&iar=0&w=1128&rev=ed727d56a02448e9aa8c087119157fdc",
 		alt: "Project Management Talent Gap",
 	},
@@ -572,7 +572,7 @@ function RouteComponent() {
 									you about your inquiry.{" "}
 									<a
 										className="font-semibold underline"
-										href="/privacy-policy"
+										href="/privacy"
 										style={{ color: INK }}
 									>
 										View our privacy policy
