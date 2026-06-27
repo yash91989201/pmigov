@@ -313,8 +313,9 @@ function RouteComponent() {
 									</p>
 									<Link
 										className="mt-auto inline-flex items-center gap-0.5 font-aeonik font-medium text-lg hover:underline"
+										resetScroll
 										style={{ color: HD }}
-										to="/contact"
+										to={ev.href}
 									>
 										Register Now {CHEVRON_R}
 									</Link>
@@ -428,15 +429,14 @@ function RouteComponent() {
 										Note: PMI chapters are not eligible for group discount
 										rates.
 									</p>
-									<a
+									<Link
 										className="inline-flex h-12 items-center gap-2 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-white/40"
-										href="/events/pmxpo"
-										rel="noreferrer"
+										resetScroll
 										style={{ borderColor: HD, color: HD }}
-										target="_blank"
+										to="/events/events-group-registration"
 									>
 										Register Your Team {ARROW_R}
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -564,13 +564,14 @@ function RouteComponent() {
 										Get direct access to more than 120,000 highly-engaged
 										Project Professionals at PMI global events.
 									</p>
-									<a
+									<Link
 										className="inline-flex h-12 items-center gap-2 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-white/60"
-										href="/contact"
+										resetScroll
 										style={{ borderColor: HD, color: HD }}
+										to="/contact"
 									>
 										View Sponsorship Opportunities {ARROW_R}
-									</a>
+									</Link>
 								</div>
 							</div>
 							{/* Speaking */}
@@ -616,8 +617,9 @@ function RouteComponent() {
 							</p>
 							<Link
 								className="inline-flex h-12 items-center gap-2 rounded-full border-2 px-8 font-aeonik font-semibold text-base transition hover:bg-gray-50"
+								resetScroll
 								style={{ borderColor: HD, color: HD }}
-								to="/contact"
+								to="/learning/pmi-training"
 							>
 								Learn About PMI Training {ARROW_R}
 							</Link>
@@ -646,13 +648,6 @@ function RouteComponent() {
 									>
 										{item.date}
 									</h3>
-									<a
-										className="inline-flex items-center gap-0.5 font-aeonik font-medium text-base hover:underline"
-										href="/contact"
-										style={{ color: HD }}
-									>
-										Learn More {CHEVRON_R}
-									</a>
 								</div>
 							))}
 						</div>

@@ -46,6 +46,7 @@ export function NewsletterSignup() {
 						</ul>
 						<Link
 							className="inline-flex w-fit items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
+							resetScroll
 							to="/contact"
 						>
 							Sign Up

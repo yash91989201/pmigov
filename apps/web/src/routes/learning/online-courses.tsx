@@ -30,32 +30,37 @@ const newlyAddedCourses = [
 		description:
 			"Build Agile leadership capabilities and prepare for the PMI-ACP® certification exam with this official, expert-validated course.",
 		title: "PMI-ACP® Exam Prep Course",
+		href: "/certifications/agile-acp",
 	},
 	{
 		badge: "eLearning",
 		description:
 			"Sharpen your risk management skills and reduce exam-day stress with the official PMI-RMP® Practice Exam.",
 		title: "PMI-RMP® Practice Exam",
+		href: "/certifications/risk-management-rmp",
 	},
 	{
 		badge: "Online Tool",
 		description:
 			"PMI Study Hall® is a digital learning tool that contains practice questions and gamified activities to make studying effective and enjoyable.",
 		title: "PMI Study Hall® Essentials",
+		href: "/learning/exam-prep",
 	},
 	{
 		badge: "eLearning",
 		description:
 			"Enhance your PMO leadership and prepare for the PMI-PMOCP™ Exam with this expert-developed prep course.",
 		title: "PMI-PMOCP™ Exam Prep Course",
+		href: "/certifications/pmo-certified-professional-pmi-pmocp",
 	},
 	{
 		badge: "eLearning",
 		description:
 			"Developed by agile leaders, this official practice exam will help you prepare to sit for the PMI-ACP® exam.",
 		title: "PMI-ACP® Practice Exam",
+		href: "/certifications/agile-acp",
 	},
-] as const;
+];
 
 const courseCategories = [
 	{
@@ -63,56 +68,65 @@ const courseCategories = [
 		title: "Agile & Scrum",
 		description:
 			"Master Agile methodologies, Scrum frameworks, and iterative project delivery approaches.",
+		href: "/certifications/agile-acp",
 	},
 	{
 		icon: IconCertificate,
 		title: "PMP® Certification Prep",
 		description:
 			"Comprehensive exam preparation aligned to the current PMP exam content outline.",
+		href: "/certifications/project-management-pmp",
 	},
 	{
 		icon: IconRocket,
 		title: "Leadership & Influence",
 		description:
 			"Develop the leadership skills to inspire teams, manage stakeholders, and drive change.",
+		href: "/learning/pmi-training",
 	},
 	{
 		icon: IconBook,
 		title: "Business Agility",
 		description:
 			"Learn to adapt quickly to market changes and lead organizations through transformation.",
+		href: "/certifications/agile-acp",
 	},
 	{
 		icon: IconCertificate,
 		title: "CAPM® Certification Prep",
 		description:
 			"Build foundational project management knowledge and prepare for the CAPM exam.",
+		href: "/certifications/certified-associate-in-project-management-capm",
 	},
 	{
 		icon: IconRocket,
 		title: "Strategic Project Management",
 		description:
 			"Align projects with organizational strategy and deliver meaningful business value.",
+		href: "/certifications/project-management-pmp",
 	},
 	{
 		icon: IconBook,
 		title: "Risk Management",
 		description:
 			"Identify, assess, and mitigate project risks using proven frameworks and tools.",
+		href: "/certifications/risk-management-rmp",
 	},
 	{
 		icon: IconCertificate,
 		title: "PMI-ACP® Certification Prep",
 		description:
 			"Prepare for the Agile Certified Practitioner exam with hands-on practice and expert guidance.",
+		href: "/certifications/agile-acp",
 	},
 	{
 		icon: IconRocket,
 		title: "Digital Transformation",
 		description:
 			"Lead digital initiatives and leverage emerging technologies to modernize project delivery.",
+		href: "/learning/pmi-training",
 	},
-] as const;
+];
 
 function NewlyAddedCarousel() {
 	const [api, setApi] = useState<CarouselApi>();
@@ -178,7 +192,8 @@ function NewlyAddedCarousel() {
 										</p>
 										<Link
 											className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
-											to="/contact"
+											resetScroll
+											to={course.href}
 										>
 											Learn More
 											<IconArrowRight aria-hidden="true" className="size-4" />
@@ -271,7 +286,8 @@ function ExamPrepBanner() {
 						<div>
 							<Link
 								className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90"
-								to="/contact"
+								resetScroll
+								to="/learning/exam-prep"
 							>
 								Explore the Course
 								<IconArrowRight aria-hidden="true" className="size-4" />
@@ -344,7 +360,8 @@ function CourseCategories() {
 							</p>
 							<Link
 								className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
-								to="/contact"
+								resetScroll
+								to={category.href}
 							>
 								Learn More
 								<IconArrowRight aria-hidden="true" className="size-4" />
@@ -357,7 +374,8 @@ function CourseCategories() {
 					<div className="mx-auto max-w-4xl text-center">
 						<Link
 							className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
-							to="/contact"
+							resetScroll
+							to="/certifications"
 						>
 							Explore All Online Courses
 							<IconArrowRight aria-hidden="true" className="size-4" />
@@ -402,7 +420,8 @@ function InstructorLedCourses() {
 					<div>
 						<Link
 							className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
-							to="/contact"
+							resetScroll
+							to="/learning/instructor-led-training"
 						>
 							Find a Course
 							<IconArrowRight aria-hidden="true" className="size-4" />
@@ -464,7 +483,8 @@ function MembershipCtaSection() {
 						<div>
 							<Link
 								className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90 md:text-base"
-								to="/contact"
+								resetScroll
+								to="/membership"
 							>
 								Become a Member
 								<IconArrowRight aria-hidden="true" className="size-4" />

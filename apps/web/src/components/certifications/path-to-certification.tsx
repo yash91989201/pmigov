@@ -3,6 +3,7 @@ import {
 	IconArrowRight,
 	IconChevronRight,
 } from "@tabler/icons-react";
+import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import type { CertificationPageType } from "./pages-data";
 
@@ -86,24 +87,26 @@ export function PathToCertification({
 											<ul className="mt-2 flex flex-col gap-2">
 												{section.links.map((link, lIndex) => (
 													<li key={lIndex.toString()}>
-														<a
+														<Link
 															className="text-[#007ba7] underline underline-offset-2 hover:text-[#1d1d35]"
-															href={link.href}
+															resetScroll
+															to={link.href}
 														>
 															{link.text}
-														</a>
+														</Link>
 													</li>
 												))}
 											</ul>
 										)}
 										{section.button && (
-											<a
+											<Link
 												className="mt-2 inline-flex w-fit items-center gap-2 rounded-full border border-[#1d1d35] px-6 py-2.5 font-medium text-[#1d1d35] transition-colors hover:bg-[#1d1d35] hover:text-white"
-												href={section.button.href}
+												resetScroll
+												to={section.button.href}
 											>
 												{section.button.text}
 												<IconArrowRight aria-hidden="true" className="size-4" />
-											</a>
+											</Link>
 										)}
 									</div>
 								</div>
@@ -113,13 +116,14 @@ export function PathToCertification({
 
 					{/* Footer */}
 					<div className="mt-8 flex items-center justify-between">
-						<a
+						<Link
 							className="inline-flex items-center gap-1 font-medium text-[#1d1d35] hover:underline"
-							href={faqsLink.href}
+							resetScroll
+							to={faqsLink.href}
 						>
 							{faqsLink.text}
 							<IconChevronRight aria-hidden="true" className="size-4" />
-						</a>
+						</Link>
 
 						<div className="flex items-center gap-4">
 							<button

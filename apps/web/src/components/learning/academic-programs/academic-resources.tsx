@@ -13,6 +13,7 @@ import type { JSX } from "react";
 
 interface ResourceCard {
 	description: string;
+	href: string;
 	icon: JSX.Element;
 	link: { label: string };
 	title: string;
@@ -24,6 +25,7 @@ const resources: ResourceCard[] = [
 		title: "Academic Resources",
 		description:
 			"Comprehensive resources for faculty, students, and researchers in project management.",
+		href: "/learning/online-courses",
 		link: { label: "Explore Resources" },
 	},
 	{
@@ -31,6 +33,7 @@ const resources: ResourceCard[] = [
 		title: "PMI Chapter Student Clubs",
 		description:
 			"PMI Chapter Student Clubs bridge the gap between higher education and the professional world by connecting students with local PMI chapters.",
+		href: "/membership",
 		link: { label: "Learn More" },
 	},
 	{
@@ -38,6 +41,7 @@ const resources: ResourceCard[] = [
 		title: "Student resource hub",
 		description:
 			"Browse student-focused tools, resources, and content to support your project management journey.",
+		href: "/learning/online-courses",
 		link: { label: "Visit the Hub" },
 	},
 	{
@@ -45,6 +49,7 @@ const resources: ResourceCard[] = [
 		title: "Curriculum and teaching resources",
 		description:
 			"Teaching project management? Our curriculum and resources can be used to support existing courses or introduce new ones.",
+		href: "/learning/foundations-of-project-management",
 		link: { label: "Access Resources" },
 	},
 	{
@@ -52,6 +57,7 @@ const resources: ResourceCard[] = [
 		title: "Academic scholarships",
 		description:
 			"Find PMI-funded scholarships for undergraduate and graduate study in project management and related fields.",
+		href: "/contact",
 		link: { label: "Explore Scholarships" },
 	},
 	{
@@ -59,6 +65,7 @@ const resources: ResourceCard[] = [
 		title: "Academic research",
 		description:
 			"Discover PMI-sponsored published research, current research projects, and funding opportunities.",
+		href: "/learning/academic-sponsored-research",
 		link: { label: "Learn More" },
 	},
 	{
@@ -66,6 +73,7 @@ const resources: ResourceCard[] = [
 		title: "Research and academic awards",
 		description:
 			"We honor excellence in teaching, studies, academic research, and publishing. Nominations open yearly.",
+		href: "/contact",
 		link: { label: "View Awards" },
 	},
 	{
@@ -73,13 +81,14 @@ const resources: ResourceCard[] = [
 		title: "Programs for academic institutions",
 		description:
 			"Leverage our solutions for higher education to set your students and academic offerings apart from the rest.",
+		href: "/contact",
 		link: { label: "Learn More" },
 	},
 ];
 
 function ResourceCard({ card }: { card: ResourceCard }) {
 	return (
-		<Link className="block" to="/contact">
+		<Link className="block" resetScroll to={card.href}>
 			<article className="group flex h-full flex-col rounded-2xl border border-[#d4cbc3] bg-white p-6 transition-shadow hover:shadow-lg md:p-8">
 				<div
 					className="mb-4 flex size-12 items-center justify-center rounded-full bg-[#f0ebe5]"

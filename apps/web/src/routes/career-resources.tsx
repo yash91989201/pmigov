@@ -139,7 +139,7 @@ function StatItem({
 	);
 }
 
-function PromoCard({
+function _PromoCard({
 	number,
 	title,
 	description,
@@ -206,14 +206,6 @@ function TabContent({ data }: { data: (typeof TAB_DATA)[number] }) {
 				<p className="mt-3 text-gray-300 text-sm lg:text-base">
 					{data.featured.description}
 				</p>
-				<div className="mt-5">
-					<Button
-						className="rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] hover:bg-gray-100"
-						size="lg"
-					>
-						{data.featured.cta}
-					</Button>
-				</div>
 			</div>
 
 			{/* Right column */}
@@ -232,19 +224,11 @@ function TabContent({ data }: { data: (typeof TAB_DATA)[number] }) {
 					<h4 className="font-aeonik font-medium text-white text-xl lg:text-2xl">
 						{data.secondary.title}
 					</h4>
-					<div className="mt-5 flex items-center gap-2">
-						<Button
-							className="rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] hover:bg-gray-100"
-							size="lg"
-						>
-							{data.secondary.cta}
-						</Button>
-						{data.secondary.memberOnly && (
-							<span className="ml-2 bg-gradient-to-r from-[#4f17a8] via-[#7C3AED] to-[#FF610F] bg-clip-text font-semibold text-sm text-transparent">
-								★ Free for Members
-							</span>
-						)}
-					</div>
+					{data.secondary.memberOnly && (
+						<span className="mt-3 inline-block bg-linear-to-r from-[#4f17a8] via-[#7C3AED] to-[#FF610F] bg-clip-text font-semibold text-sm text-transparent">
+							★ Free for Members
+						</span>
+					)}
 				</div>
 
 				{/* Simple cards */}
@@ -257,11 +241,10 @@ function TabContent({ data }: { data: (typeof TAB_DATA)[number] }) {
 							<span className="font-medium text-gray-500 text-xs">
 								{card.badge}
 							</span>
-							<h5 className="font-aeonik font-medium text-[#200f3b] text-base group-hover:underline lg:text-lg">
+							<h5 className="font-aeonik font-medium text-[#200f3b] text-base lg:text-lg">
 								{card.title}
 							</h5>
 						</div>
-						<IconArrowRight className="size-5 shrink-0 text-gray-400" />
 					</div>
 				))}
 			</div>

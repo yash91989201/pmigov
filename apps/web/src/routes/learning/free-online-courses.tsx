@@ -8,11 +8,11 @@ export const Route = createFileRoute("/learning/free-online-courses")({
 const featuredCourse = {
 	description:
 		"With the right skill set and embrace of AI, you can do more than ever before.",
-	href: "/contact",
+	href: "/certifications/ai-project-management-cpmai",
 	image:
 		"https://www.pmi.org/-/media/pmi/headless-images/learning/free-online-courses/generative-ai-lesson.png?h=663&iar=0&w=828&rev=cadbf9c10a5f456caa03ef6e6774a2ce&sc_lang=en",
 	title: "Generative AI Overview for Project Managers",
-} as const;
+};
 
 const freeCourses = [
 	{
@@ -21,6 +21,7 @@ const freeCourses = [
 		badges: ["eLearning", "Free for Members"],
 		description:
 			"Apply M.O.R.E. and practice the behaviors that power better decisions and stronger project results.",
+		href: "/learning/online-courses",
 		title: "PMI® Essentials: M.O.R.E. In Action",
 	},
 	{
@@ -29,6 +30,7 @@ const freeCourses = [
 		badges: ["eLearning", "Free"],
 		description:
 			"Start your PMP® journey now with the free introductory course. Get what you need to apply and prepare for certification.",
+		href: "/certifications/project-management-pmp",
 		title: "Free Introduction: PMP®",
 	},
 	{
@@ -37,6 +39,7 @@ const freeCourses = [
 		badges: ["Free"],
 		description:
 			"Discover a clear, practical pattern-based approach to plan, assess and navigate AI projects with confidence.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "PMI® Essentials: Seven AI Project Patterns",
 	},
 	{
@@ -45,6 +48,7 @@ const freeCourses = [
 		badges: ["eLearning", "Free"],
 		description:
 			"Strategically combine AI tools, understand prompting techniques, and implement automation in your workflows.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Practical Application of Generative AI for Project Managers",
 	},
 	{
@@ -53,6 +57,7 @@ const freeCourses = [
 		badges: ["eLearning"],
 		description:
 			"Get to know Disciplined Agile® with this quick and cost-effective introductory eLearning course.",
+		href: "/certifications/agile-acp",
 		title: "Disciplined Agile® Essentials",
 	},
 	{
@@ -61,6 +66,7 @@ const freeCourses = [
 		badges: ["eLearning", "Free"],
 		description:
 			"Gain a basic understanding of Generative AI (GenAI) in project management. Explore different tools and its applications for enhanced project outcomes.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Generative AI Overview for Project Managers",
 	},
 	{
@@ -69,6 +75,7 @@ const freeCourses = [
 		badges: ["eLearning", "Free for Members"],
 		description:
 			"Explore data characteristics, governance, ethical considerations, and risks with GenAI, and how to implement GenAI within your organization.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Data Landscape of GenAI for Project Managers",
 	},
 	{
@@ -77,6 +84,7 @@ const freeCourses = [
 		badges: ["eLearning", "Free"],
 		description:
 			"Get the knowledge and skills to talk with Large Language Models (LLMs) such as ChatGPT effectively. Generate the most valuable, customized, and insightful responses.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Talking to AI: Prompt Engineering for Project Managers",
 	},
 	{
@@ -85,6 +93,7 @@ const freeCourses = [
 		badges: ["Free for Members"],
 		description:
 			"Build stronger collaboration between project and product professionals to enhance delivery effectiveness and alignment.",
+		href: "/learning/online-courses",
 		title: "Product x Project Management: The Collaboration Playbook",
 	},
 	{
@@ -93,6 +102,7 @@ const freeCourses = [
 		badges: ["eLearning", "Free"],
 		description:
 			"Explore AI project management and the CPMAI™ methodology in this preview of the PMI-CPMAI™ certification path.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Free Introduction: PMI-CPMAI™",
 	},
 	{
@@ -101,6 +111,7 @@ const freeCourses = [
 		badges: ["eLearning", "Free"],
 		description:
 			"Expand beyond traditional project success and deliver value worth the effort and expense by delivering M.O.R.E.",
+		href: "/learning/online-courses",
 		title: "PMI Essentials M.O.R.E. Maximizing Project Success",
 	},
 	{
@@ -109,9 +120,10 @@ const freeCourses = [
 		badges: ["eLearning", "Free for Members"],
 		description:
 			"Explore practical ways to harness AI in agile delivery and organization-wide, while keeping agile values at the core.",
+		href: "/certifications/agile-acp",
 		title: "AI in Agile Delivery",
 	},
-] as const;
+];
 
 function HeroSection() {
 	return (
@@ -163,6 +175,7 @@ function FeaturedCourseSection() {
 						<div>
 							<Link
 								className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
+								resetScroll
 								to={featuredCourse.href}
 							>
 								Learn More
@@ -209,7 +222,8 @@ function CourseCard({ course }: { course: (typeof freeCourses)[number] }) {
 				</p>
 				<Link
 					className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
-					to="/contact"
+					resetScroll
+					to={course.href}
 				>
 					Learn More
 					<IconArrowRight aria-hidden="true" className="size-4" />
@@ -235,7 +249,7 @@ function CourseGridSection() {
 						style={{ color: "#6b5b7b" }}
 					>
 						We offer a number of free courses to suit a wide variety of passions
-						and career paths. Choose one or choose them all — there’s no limit
+						and career paths. Choose one or choose them all — there's no limit
 						to what you can learn.
 					</p>
 				</div>
@@ -249,6 +263,7 @@ function CourseGridSection() {
 				<div className="mt-12 text-center">
 					<Link
 						className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
+						resetScroll
 						to="/learning/online-courses"
 					>
 						Explore All Online Courses
@@ -292,7 +307,8 @@ function KickoffSection() {
 						<div>
 							<Link
 								className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
-								to="/contact"
+								resetScroll
+								to="/learning/foundations-of-project-management"
 							>
 								Learn More
 								<IconArrowRight aria-hidden="true" className="size-4" />
@@ -335,7 +351,8 @@ function MembershipCtaSection() {
 					<div>
 						<Link
 							className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90 md:text-base"
-							to="/contact"
+							resetScroll
+							to="/membership"
 						>
 							Become a Member
 							<IconArrowRight aria-hidden="true" className="size-4" />

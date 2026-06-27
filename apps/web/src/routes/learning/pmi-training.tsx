@@ -56,6 +56,16 @@ const LEVEL_OPTIONS = [
 	"Advanced",
 ];
 
+const TOPIC_HREFS: Record<string, string> = {
+	"Agile & Hybrid": "/certifications/agile-acp",
+	"AI in Project Management": "/certifications/ai-project-management-cpmai",
+	"Business Acumen": "/certifications/project-management-pmp",
+	"Leadership & Communication": "/certifications/project-management-pmp",
+	"PMP® Exam Prep": "/certifications/project-management-pmp",
+	"Project Management Fundamentals":
+		"/certifications/certified-associate-in-project-management-capm",
+};
+
 const SESSIONS = [
 	{
 		date: "20–23 July 2026",
@@ -184,13 +194,14 @@ function ScheduleCardSection() {
 								including dates and locations.
 							</p>
 						</div>
-						<a
+						<Link
 							className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
-							href="/contact"
+							resetScroll
+							to="/contact"
 						>
 							<IconDownload aria-hidden="true" className="size-4" />
 							Download Schedule
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -429,6 +440,14 @@ function TrainingFilterSection() {
 											{session.topic}
 										</span>
 									</div>
+									<Link
+										className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#200f3b] px-5 py-2 font-medium text-sm text-white transition-opacity hover:opacity-90"
+										resetScroll
+										to={TOPIC_HREFS[session.topic] ?? "/certifications"}
+									>
+										Learn More
+										<IconArrowRight aria-hidden="true" className="size-4" />
+									</Link>
 								</div>
 							</article>
 						))}
@@ -456,13 +475,14 @@ function TeamTrainingSection() {
 							organization&apos;s goals.
 						</p>
 						<div>
-							<a
+							<Link
 								className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90"
-								href="/contact"
+								resetScroll
+								to="/learning/instructor-led-training"
 							>
 								Explore Team Training
 								<IconArrowRight aria-hidden="true" className="size-4" />
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className="hidden lg:block">
@@ -496,14 +516,15 @@ function InfoSection() {
 						<p className="mb-6" style={{ color: MUTED }}>
 							If you have questions, please view our FAQs page.
 						</p>
-						<a
+						<Link
 							className="inline-flex items-center gap-1 font-medium hover:underline"
-							href="/contact"
+							resetScroll
 							style={{ color: PURPLE }}
+							to="/contact"
 						>
 							View FAQs
 							<IconArrowRight aria-hidden="true" className="size-4" />
-						</a>
+						</Link>
 					</div>
 
 					<div className="rounded-2xl bg-[#f8f5f0] p-8">
@@ -518,14 +539,15 @@ function InfoSection() {
 							organization&apos;s goals. We drafted a letter to help in your
 							first step.
 						</p>
-						<a
+						<Link
 							className="inline-flex items-center gap-1 font-medium hover:underline"
-							href="/contact"
+							resetScroll
 							style={{ color: PURPLE }}
+							to="/contact"
 						>
 							Make the Case to Your Boss
 							<IconArrowRight aria-hidden="true" className="size-4" />
-						</a>
+						</Link>
 					</div>
 
 					<div className="rounded-2xl bg-[#f8f5f0] p-8">
@@ -540,14 +562,15 @@ function InfoSection() {
 							topics: AI-Early Career Professionals, Giga & Mega Projects,
 							Business Acumen ONLY can be submitted via the email link below.
 						</p>
-						<a
+						<Link
 							className="inline-flex items-center gap-1 font-medium hover:underline"
-							href="/contact"
+							resetScroll
 							style={{ color: PURPLE }}
+							to="/contact"
 						>
 							Email Us
 							<IconArrowRight aria-hidden="true" className="size-4" />
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -582,6 +605,7 @@ function MembershipSection() {
 						<div className="mt-6">
 							<Link
 								className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90"
+								resetScroll
 								to="/membership"
 							>
 								Explore Membership

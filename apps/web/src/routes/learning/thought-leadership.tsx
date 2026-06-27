@@ -10,6 +10,7 @@ const trendingInsights = [
 		badge: "eBook",
 		description:
 			"Discover GenAI benefits, best practices, and what factors facilitate optimum GenAI adoption.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Leadership That Lasts",
 		subtitle: "Building Sustainable Value in a Changing World",
 	},
@@ -17,16 +18,18 @@ const trendingInsights = [
 		badge: "Report",
 		description:
 			"PMI research surfaces a 42-point confidence gap between sustainability executives and PMO leaders, and six friction points where strategy weakens.",
+		href: "/certifications/sustainability-cspp",
 		subtitle: "Six friction points between vision and delivery",
 		title: "Executing Sustainability Strategy: When Ambition Meets Reality",
 	},
-] as const;
+];
 
 const deeperDiveInsights = [
 	{
 		badge: "Report",
 		description:
 			"This year's Pulse of the Profession explores complexity: its origin, impact, and how proactive project professionals can navigate it.",
+		href: "/certifications/project-management-pmp",
 		subtitle: "From Navigating Tasks to Navigating Systems",
 		title: "Pulse of the Profession® 2026: Driving Success in Complex Projects",
 	},
@@ -34,6 +37,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Build your M.O.R.E. capability to move beyond managing projects to delivering value and increasing project success.",
+		href: "/certifications/project-management-pmp",
 		subtitle: "A Playbook to Apply M.O.R.E.",
 		title: "From Vision to Practice",
 	},
@@ -41,6 +45,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Discover how to close construction's growing project management talent gap and learn the key skills, barriers, and actions needed to stay competitive.",
+		href: "/certifications/construction",
 		subtitle: "Needs, Challenges and Opportunities",
 		title: "The Construction Project Management Talent Gap",
 	},
@@ -48,6 +53,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"PMI's research reveals how Project Management Offices can deliver greater strategic value and spotlights the critical PMO capabilities driving real impact.",
+		href: "/certifications/pmo-certified-professional-pmi-pmocp",
 		subtitle: "What must-have capabilities elevate PMO performance?",
 		title:
 			"Bridging the Gap: Positioning PMOs as Indispensable Partners in Strategy Execution",
@@ -56,6 +62,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"PMI's new research reveals what today's project professionals must do to drive success in a dynamic project landscape, and how they can amplify their impact.",
+		href: "/certifications/project-management-pmp",
 		subtitle: "Unlock transformative value for your teams and organization",
 		title: "Step Up: Redefining the Path to Project Success with M.O.R.E.",
 	},
@@ -63,6 +70,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Our latest research reveals how GenAI can enhance authentic agility, drive breakthroughs, and help teams collaborate for real business impact.",
+		href: "/certifications/agile-acp",
 		subtitle: "How AI unlocks agility's true business value",
 		title: "GenAI and Agile: Amplifying Human-Centered Collaboration",
 	},
@@ -70,6 +78,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Project Managers are more vital than ever. New research highlights growing global demand for project management, shaping the future of work.",
+		href: "/certifications/project-management-pmp",
 		subtitle: "Up to 30 million project professionals needed by 2035",
 		title: "Global Project Management Talent Gap",
 	},
@@ -77,6 +86,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Diverse, inclusive teams deliver stronger innovation, retention, and results. See evidence, real-world examples, and practical steps to enhance performance.",
+		href: "/certifications/project-management-pmp",
 		subtitle: "Unlock the value of inclusive, diverse teams",
 		title: "Broader Perspectives, Stronger Outcomes",
 	},
@@ -84,6 +94,7 @@ const deeperDiveInsights = [
 		badge: "Article",
 		description:
 			"Access GenAI's full value by moving beyond pilots and building the support structures and culture needed for lasting impact.",
+		href: "/certifications/ai-project-management-cpmai",
 		subtitle: "The need for organizational support",
 		title: "Enabling Project Management Transformation with GenAI",
 	},
@@ -91,6 +102,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Explore how organizations are transforming sustainability initiatives with AI. Learn why leadership, data, and strategic alignment are essential to scaling global impact and performance.",
+		href: "/certifications/sustainability-cspp",
 		subtitle: "How sustainability benefits from AI integration",
 		title: "Sustainability in the Age of AI: The Integration Imperative",
 	},
@@ -98,6 +110,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Enterprise agility is a must-have for organizations to survive and thrive in today's increasingly volatile, constantly changing business environment.",
+		href: "/certifications/agile-acp",
 		subtitle: "Enterprise agility is your competitive advantage",
 		title: "A New Era for Enterprise Agility",
 	},
@@ -105,6 +118,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Sustainability is realized at the project level. Assess current state, build capacity, and scale context-based practices to deliver real impact.",
+		href: "/certifications/sustainability-cspp",
 		subtitle: "As Part of PMI-GPM Joint Venture",
 		title: "The Project Sustainability Reporting Guide",
 	},
@@ -113,6 +127,7 @@ const deeperDiveInsights = [
 		badgeSub: "Free",
 		description:
 			"Explore our innovative insights creating a shared definition of project success, emphasizing value and impact — not just execution — to drive sustainable growth and elevate the project profession.",
+		href: "/certifications/project-management-pmp",
 		subtitle: "",
 		title: "Maximizing Project Success",
 	},
@@ -120,6 +135,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Our latest report reveals the critical need for project and product management cohesion to drive success.",
+		href: "/certifications/project-management-pmp",
 		subtitle: "In Partnership with Agile Alliance",
 		title: "Collaborations Between Project and Product Management",
 	},
@@ -127,6 +143,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Discover how business acumen transforms you from tactical troubleshooter to strategic value creator, elevating projects beyond scope, budget, and schedule.",
+		href: "/certifications/project-management-pmp",
 		subtitle: "Empowering Project Professionals as Strategic Partners",
 		title: "Pulse Report 2025: Boosting Business Acumen",
 	},
@@ -134,6 +151,7 @@ const deeperDiveInsights = [
 		badge: "Report",
 		description:
 			"Move beyond the basics of AI. Learn how project professionals are using Generative AI to drive smarter decisions, improve efficiency, and lead strategic transformation.",
+		href: "/certifications/ai-project-management-cpmai",
 		subtitle: "From Quick Wins to Leading the Transformation",
 		title: "The Project Professional's GenAI Journey",
 	},
@@ -142,10 +160,11 @@ const deeperDiveInsights = [
 		badgeSub: "Free for Members",
 		description:
 			"Take a data-driven look at how AI Trailblazers are sparking innovation, boosting productivity, and reshaping organizations.",
+		href: "/certifications/ai-project-management-cpmai",
 		subtitle: "",
 		title: "Transforming Project Management with Gen-Al Innovation",
 	},
-] as const;
+];
 
 const publications = [
 	{
@@ -153,15 +172,17 @@ const publications = [
 		badgeSub: "Free for Members",
 		description:
 			"A peer-reviewed academic publication on project management techniques, research, theories and applications.",
+		href: "/learning/project-management-journal",
 		title: "Project Management Journal®",
 	},
 	{
 		badge: "Publication",
 		description:
 			"PMI-sponsored academic research offers industry insights and trends, enabling stakeholders to make informed decisions.",
+		href: "/learning/academic-sponsored-research",
 		title: "Academic Sponsored Research",
 	},
-] as const;
+];
 
 function HeroSection() {
 	return (
@@ -233,9 +254,10 @@ function TrendingSection() {
 							</p>
 							<Link
 								className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
-								to="/contact"
+								resetScroll
+								to={insight.href}
 							>
-								{insight.badge === "eBook" ? "Learn More" : "Get Report"}
+								Learn More
 								<IconArrowRight aria-hidden="true" className="size-4" />
 							</Link>
 						</div>
@@ -273,14 +295,8 @@ function SalarySurveySection() {
 						<div className="flex flex-wrap gap-4">
 							<Link
 								className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90"
-								to="/contact"
-							>
-								Download the Report
-								<IconArrowRight aria-hidden="true" className="size-4" />
-							</Link>
-							<Link
-								className="inline-flex items-center gap-2 rounded-full border border-[#200f3b] bg-white px-6 py-3 font-medium text-[#200f3b] text-sm transition-opacity hover:opacity-90"
-								to="/contact"
+								resetScroll
+								to="/membership"
 							>
 								Explore PMI Membership
 								<IconArrowRight aria-hidden="true" className="size-4" />
@@ -360,9 +376,10 @@ function DeeperDiveSection() {
 							</p>
 							<Link
 								className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
-								to="/contact"
+								resetScroll
+								to={insight.href}
 							>
-								{insight.badge === "Article" ? "Learn More" : "Get Report"}
+								Learn More
 								<IconArrowRight aria-hidden="true" className="size-4" />
 							</Link>
 						</div>
@@ -423,7 +440,8 @@ function PublicationsSection() {
 							</p>
 							<Link
 								className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
-								to="/contact"
+								resetScroll
+								to={pub.href}
 							>
 								Learn More
 								<IconArrowRight aria-hidden="true" className="size-4" />
@@ -468,7 +486,8 @@ function BrightlineSection() {
 					<div>
 						<Link
 							className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90 md:text-base"
-							to="/contact"
+							resetScroll
+							to="/learning/brightline"
 						>
 							Visit Brightline
 							<IconArrowRight aria-hidden="true" className="size-4" />

@@ -23,6 +23,7 @@ export function GacSection() {
 						</p>
 						<Link
 							className="inline-flex w-fit items-center rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
+							resetScroll
 							to="/contact"
 						>
 							Discover GAC

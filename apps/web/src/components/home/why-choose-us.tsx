@@ -14,6 +14,7 @@ interface Certification {
 	experience: string;
 	id: number;
 	shape: "pentagon" | "circle" | "triangle";
+	slug: string;
 	title: string;
 	variant: "light" | "dark-teal" | "dark-purple";
 }
@@ -28,6 +29,7 @@ const certifications: Certification[] = [
 			"Invigorate your career with the gold standard certification for leading AI projects and driving real business impact.",
 		variant: "light",
 		shape: "pentagon",
+		slug: "ai-project-management-cpmai",
 	},
 	{
 		id: 2,
@@ -38,6 +40,7 @@ const certifications: Certification[] = [
 			"This certification demonstrates an understanding of the foundational project management skills that project teams demand.",
 		variant: "dark-teal",
 		shape: "circle",
+		slug: "certified-associate-in-project-management-capm",
 	},
 	{
 		id: 3,
@@ -48,6 +51,7 @@ const certifications: Certification[] = [
 			"The PMP validates skills and knowledge in managing & directing people, processes, and priorities for a project team from start to finish.",
 		variant: "dark-purple",
 		shape: "triangle",
+		slug: "project-management-pmp",
 	},
 	{
 		id: 4,
@@ -58,6 +62,7 @@ const certifications: Certification[] = [
 			"This certification validates your ability to engage stakeholders, apply agile approaches, and lead teams.",
 		variant: "light",
 		shape: "pentagon",
+		slug: "agile-acp",
 	},
 	{
 		id: 5,
@@ -68,6 +73,7 @@ const certifications: Certification[] = [
 			"Demonstrate your skills to spot threats early, master risk management, and lead projects to success.",
 		variant: "light",
 		shape: "pentagon",
+		slug: "risk-management-rmp",
 	},
 	{
 		id: 6,
@@ -78,6 +84,7 @@ const certifications: Certification[] = [
 			"Learn new and advanced practices to set up, assess, manage and improve value-oriented PMOs.",
 		variant: "light",
 		shape: "pentagon",
+		slug: "pmo-certified-professional-pmi-pmocp",
 	},
 ];
 
@@ -111,12 +118,12 @@ function CertificationCard({ cert }: { cert: Certification }) {
 	}
 
 	const textColor = isDark ? "#ffffff" : "#200f3b";
-	const badgeColor =
-		cert.variant === "dark-teal"
-			? "#5eead4"
-			: cert.variant === "dark-purple"
-				? "#c4b5fd"
-				: textColor;
+	let badgeColor = textColor;
+	if (cert.variant === "dark-teal") {
+		badgeColor = "#5eead4";
+	} else if (cert.variant === "dark-purple") {
+		badgeColor = "#c4b5fd";
+	}
 	const buttonBg = isDark ? "#ffffff" : "#200f3b";
 	const buttonText = isDark ? "#200f3b" : "#ffffff";
 
@@ -164,7 +171,7 @@ function CertificationCard({ cert }: { cert: Certification }) {
 				</p>
 				<a
 					className="inline-flex w-fit items-center rounded-full px-6 py-2.5 font-medium text-sm transition-opacity hover:opacity-90"
-					href="/contact"
+					href={`/certifications/${cert.slug}`}
 					style={{ backgroundColor: buttonBg, color: buttonText }}
 				>
 					Learn More

@@ -64,13 +64,6 @@ function RouteComponent() {
 								new ways of working, organizational project management, and the
 								future of the profession.
 							</p>
-							<Link
-								className="inline-flex items-center gap-2 rounded-full bg-pmi-text-primary px-6 py-3 font-aeonik font-semibold text-base text-white transition hover:opacity-90"
-								to="/blog"
-							>
-								Explore the Blog
-								<IconArrowRight aria-hidden="true" className="size-4" />
-							</Link>
 						</div>
 						{/* ponytail: image placeholder — swap to actual PMI url once asset is mirrored locally */}
 						<div
@@ -93,13 +86,6 @@ function RouteComponent() {
 						project professionals, thought leaders, and executives about the
 						trends and topics shaping the project management landscape.
 					</p>
-					<Link
-						className="inline-flex items-center gap-2 rounded-full bg-pmi-text-primary px-6 py-3 font-aeonik font-semibold text-base text-white transition hover:opacity-90"
-						to="/projectified-podcast"
-					>
-						Tune In Now
-						<IconArrowRight aria-hidden="true" className="size-4" />
-					</Link>
 				</div>
 			</section>
 
@@ -115,6 +101,7 @@ function RouteComponent() {
 					</p>
 					<Link
 						className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 font-aeonik font-semibold text-base text-pmi-text-primary transition hover:bg-white/90"
+						resetScroll
 						to="/membership"
 					>
 						Become a Member

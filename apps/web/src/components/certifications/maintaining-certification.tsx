@@ -1,4 +1,5 @@
 import { IconArrowRight } from "@tabler/icons-react";
+import { Link } from "@tanstack/react-router";
 import type { CertificationPageType } from "./pages-data";
 
 interface MaintainingCertificationProps {
@@ -36,13 +37,14 @@ export function MaintainingCertification({
 								</li>
 							))}
 						</ul>
-						<a
+						<Link
 							className="inline-flex w-fit items-center gap-2 rounded-full border border-[#1d1d35] px-6 py-2.5 font-medium text-[#1d1d35] transition-colors hover:bg-[#1d1d35] hover:text-white"
-							href={ctaHref}
+							resetScroll
+							to={ctaHref}
 						>
 							{ctaText}
 							<IconArrowRight aria-hidden="true" className="size-4" />
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

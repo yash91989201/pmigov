@@ -9,34 +9,40 @@ const featuredWebinars = [
 	{
 		description:
 			"When does AI stop helping and start harming? Look at potential uses of AI that could lead to project challenges or, even, failure.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Project HEADWAY: What AI Cannot Do for Project Managers",
 	},
 	{
 		description:
 			"Learn how to harness the power of prompting to enhance decision-making, strategic thinking, and communication.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Lead Smarter with AI: Prompting Skills for Leaders",
 	},
 	{
 		description:
 			'Explore "artificial integrity," the concept that AI must reflect human values and societal norms for safety and responsibility.',
+		href: "/certifications/ai-project-management-cpmai",
 		title: "Can Machines Demonstrate Artificial Integrity?",
 	},
 	{
 		description:
 			"Explore how AI is reshaping project management. Gain insights, trends, and tips to lead and adapt in today's evolving landscape.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "AI Briefing: Strategic Trends Every PM Should Know",
 	},
 	{
 		description:
 			"Boost project success with GenAI. Get hands-on skills to streamline workflows, boost productivity, and elevate your practice.",
+		href: "/certifications/ai-project-management-cpmai",
 		title: "A Project Manager's AI Playbook for Project Success",
 	},
 	{
 		description:
 			"Watch an expert Q&A on building business acumen to boost strategy, confidence, and impact in complex project environments.",
+		href: "/certifications/project-management-pmp",
 		title: "Mastering Business Acumen: Q&A with Project Experts",
 	},
-] as const;
+];
 
 function HeroSection() {
 	return (
@@ -105,7 +111,8 @@ function FeaturedWebinarsSection() {
 							</p>
 							<Link
 								className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
-								to="/contact"
+								resetScroll
+								to={webinar.href}
 							>
 								Watch Now
 								<IconArrowRight aria-hidden="true" className="size-4" />
@@ -117,7 +124,8 @@ function FeaturedWebinarsSection() {
 				<div className="mt-12 text-center">
 					<Link
 						className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
-						to="/contact"
+						resetScroll
+						to="/learning/online-courses"
 					>
 						View All Webinars
 						<IconArrowRight aria-hidden="true" className="size-4" />
@@ -147,6 +155,7 @@ function ContactUsSection() {
 					</p>
 					<Link
 						className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
+						resetScroll
 						to="/contact"
 					>
 						Submit Your Ideas
@@ -188,7 +197,8 @@ function MembershipCtaSection() {
 					<div>
 						<Link
 							className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90 md:text-base"
-							to="/contact"
+							resetScroll
+							to="/membership"
 						>
 							Become a Member
 							<IconArrowRight aria-hidden="true" className="size-4" />
@@ -212,7 +222,8 @@ function TrainingPartnerAd() {
 				</h3>
 				<Link
 					className="mx-auto block max-w-[970px] overflow-hidden rounded-lg"
-					to="/contact"
+					resetScroll
+					to="/learning/instructor-led-training"
 				>
 					<img
 						alt="Advertisement"

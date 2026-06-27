@@ -28,8 +28,9 @@ export function FoundationsSection() {
 						</p>
 						<Link
 							className="inline-flex w-fit items-center rounded-full bg-white px-6 py-3 font-medium text-sm transition-opacity hover:opacity-90 md:text-base"
+							resetScroll
 							style={{ color: "#200f3b" }}
-							to="/contact"
+							to="/learning/foundations-of-project-management"
 						>
 							Learn More
 						</Link>

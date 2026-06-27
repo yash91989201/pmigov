@@ -99,7 +99,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -228,15 +228,15 @@ export const certificationPagesData: CertificationPageType[] = [
 							links: [
 								{
 									text: "CAPM® certification",
-									href: "/contact",
+									href: "/certifications/certified-associate-in-project-management-capm",
 								},
 								{
 									text: "PMP® Exam Prep Course",
-									href: "/contact",
+									href: "/learning/exam-prep",
 								},
 								{
 									text: "Instructor-Led PMP® course (Available Online and In-Person)",
-									href: "/contact",
+									href: "/learning/instructor-led-training",
 								},
 							],
 						},
@@ -250,15 +250,15 @@ export const certificationPagesData: CertificationPageType[] = [
 							links: [
 								{
 									text: "CAPM® certification",
-									href: "/contact",
+									href: "/certifications/certified-associate-in-project-management-capm",
 								},
 								{
 									text: "PMP® Exam Prep Course",
-									href: "/contact",
+									href: "/learning/exam-prep",
 								},
 								{
 									text: "Instructor-Led PMP® course (Available Online and In-Person)",
-									href: "/contact",
+									href: "/learning/instructor-led-training",
 								},
 							],
 						},
@@ -442,7 +442,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More about Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -545,11 +545,11 @@ export const certificationPagesData: CertificationPageType[] = [
 							links: [
 								{
 									text: "PMI on-demand CAPM Exam Prep Course",
-									href: "/contact",
+									href: "/learning/exam-prep",
 								},
 								{
 									text: "Instructor-Led CAPM® course",
-									href: "/contact",
+									href: "/learning/instructor-led-training",
 								},
 							],
 						},
@@ -560,7 +560,7 @@ export const certificationPagesData: CertificationPageType[] = [
 							],
 							button: {
 								text: "Explore Foundational Learning",
-								href: "/contact",
+								href: "/learning/foundations-of-project-management",
 							},
 						},
 					],
@@ -726,7 +726,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -1016,7 +1016,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -1257,7 +1257,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -1491,7 +1491,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -1731,7 +1731,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -1992,7 +1992,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -2237,7 +2237,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -2435,7 +2435,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Content creating",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -2647,7 +2647,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Creating content",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [
@@ -2858,7 +2858,7 @@ export const certificationPagesData: CertificationPageType[] = [
 				"Creating content",
 			],
 			ctaText: "Learn More About Maintaining",
-			ctaHref: "/contact",
+			ctaHref: "/certifications/certification-resources",
 		},
 		hero: {
 			breadcrumb: [

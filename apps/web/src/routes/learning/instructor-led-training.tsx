@@ -114,7 +114,8 @@ function HeroSection() {
 				<div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
 					<Link
 						className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90"
-						to="/contact"
+						resetScroll
+						to="/certifications"
 					>
 						Find a Course
 						<IconArrowRight aria-hidden="true" className="size-4" />
@@ -216,7 +217,8 @@ function WhyChooseSection() {
 							<div className="mt-6">
 								<Link
 									className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90"
-									to="/contact"
+									resetScroll
+									to="/certifications"
 								>
 									Search Courses
 									<IconArrowRight aria-hidden="true" className="size-4" />
@@ -243,6 +245,7 @@ function WhyChooseSection() {
 					additional courses on their own websites. Use our complete{" "}
 					<Link
 						className="inline-flex items-center gap-1 font-medium underline underline-offset-2"
+						resetScroll
 						style={{ color: "#200f3b" }}
 						to="/contact"
 					>
@@ -400,6 +403,7 @@ function TeamTrainingSection() {
 						<div>
 							<Link
 								className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#200f3b] transition-opacity hover:opacity-90"
+								resetScroll
 								to="/contact"
 							>
 								Request Custom Proposal
@@ -465,6 +469,7 @@ function BecomeAtpSection() {
 				</p>
 				<Link
 					className="inline-flex items-center gap-2 rounded-full bg-[#200f3b] px-6 py-3 font-medium text-sm text-white transition-opacity hover:opacity-90 md:text-base"
+					resetScroll
 					to="/contact"
 				>
 					Learn More

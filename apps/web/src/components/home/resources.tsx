@@ -66,8 +66,6 @@ const tabContent: Record<TabValue, ResourceTabData> = {
 			title: "Unlock the Power of Infinity™",
 			description:
 				"Exclusive to members and powered by AI, PMI Infinity™ is your project management coach designed to boost project success.",
-			ctaLabel: "Explore Infinity",
-			ctaHref: "/infinity",
 		},
 		secondary: {
 			badges: [{ label: "Publication", memberOnly: true }],
@@ -91,8 +89,6 @@ const tabContent: Record<TabValue, ResourceTabData> = {
 			title: "How to Lead Teams Through Change",
 			description:
 				"Change is constant. This episode explores how project leaders can use AI, agile mindsets, and effective change practices to adapt quickly, empower teams, and seize new opportunities.",
-			ctaLabel: "Listen Now",
-			ctaHref: "/projectified-podcast",
 		},
 		listItems: [],
 	},
@@ -103,16 +99,12 @@ const tabContent: Record<TabValue, ResourceTabData> = {
 			title: "Unlock Your Potential with Career Navigator",
 			description:
 				"Take a free assessment to discover your strengths, explore career paths, and build a personalized plan for your next step in project management.",
-			ctaLabel: "Take the Career Navigator",
-			ctaHref: "/career-navigator",
 		},
 		secondary: {
 			badges: [{ label: "Podcast" }],
 			title: "How to Lead Teams Through Change",
 			description:
 				"Change is constant. This episode explores how project leaders can use AI, agile mindsets, and effective change practices to adapt quickly, empower teams, and seize new opportunities.",
-			ctaLabel: "Listen Now",
-			ctaHref: "/projectified-podcast",
 		},
 		listItems: [],
 	},

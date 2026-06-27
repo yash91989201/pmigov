@@ -1,4 +1,3 @@
-import { IconArrowRight } from "@tabler/icons-react";
 import type { CertificationPageType } from "./pages-data";
 
 interface CourseCardProps {
@@ -55,14 +54,6 @@ export function CourseCard({ course }: CourseCardProps) {
 				<p className="text-slate-600 text-sm leading-relaxed">
 					{course.description}
 				</p>
-
-				<a
-					className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
-					href={course.learnMoreHref}
-				>
-					Learn More
-					<IconArrowRight aria-hidden="true" className="size-4" />
-				</a>
 			</div>
 		</article>
 	);
