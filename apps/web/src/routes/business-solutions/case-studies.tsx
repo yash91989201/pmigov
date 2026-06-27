@@ -164,13 +164,6 @@ function RouteComponent() {
 									Mayo Clinic leveraged PMI educational resources and a shared
 									playbook for governance, risk management, and hybrid delivery.
 								</p>
-								<a
-									className="inline-flex h-12 items-center rounded-full px-6 font-medium text-sm text-white transition hover:opacity-90"
-									href="/contact"
-									style={{ background: DARK_BTN }}
-								>
-									Learn More
-								</a>
 							</div>
 						</div>
 					</div>
@@ -213,13 +206,6 @@ function RouteComponent() {
 										{cs.body}
 									</p>
 								</div>
-								<a
-									className="mt-2 inline-flex h-12 w-fit items-center rounded-full px-6 font-medium text-sm text-white transition hover:opacity-90"
-									href="/contact"
-									style={{ background: DARK_BTN }}
-								>
-									Learn More
-								</a>
 							</div>
 						))}
 					</div>

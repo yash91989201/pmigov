@@ -1088,7 +1088,7 @@ function RouteComponent() {
 						</h2>
 					</div>
 					<div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-						{INSIGHTS.map(({ tag, title, description, href, img, cta }) => (
+						{INSIGHTS.map(({ tag, title, description, img }) => (
 							<div
 								className="group relative flex h-[30rem] flex-col overflow-hidden rounded-xl border bg-white transition hover:shadow-lg sm:h-[34.5rem]"
 								key={title}
@@ -1129,20 +1129,6 @@ function RouteComponent() {
 										>
 											{description}
 										</p>
-									</div>
-									<div className="mt-2">
-										<a
-											className="inline-flex h-11 items-center justify-center rounded-full bg-black px-6 font-medium text-sm text-white transition after:absolute after:inset-0 hover:bg-black/90 active:scale-95"
-											href={href}
-											rel={
-												href.startsWith("http")
-													? "noopener noreferrer"
-													: undefined
-											}
-											target={href.startsWith("http") ? "_blank" : undefined}
-										>
-											{cta}
-										</a>
 									</div>
 								</div>
 							</div>

@@ -788,13 +788,14 @@ function RouteComponent() {
 									<p className="mb-6 font-aeonik text-[#200f3b]/70 text-sm leading-6">
 										{type.description}
 									</p>
-									<a
+									<Link
 										className="inline-block w-fit rounded-full px-6 py-3 font-aeonik font-semibold text-white transition hover:opacity-90"
-										href={type.href}
+										resetScroll
 										style={{ background: PMI_DARK }}
+										to={type.href}
 									>
 										Learn More
-									</a>
+									</Link>
 								</div>
 							</div>
 						))}
@@ -820,9 +821,10 @@ function RouteComponent() {
 								professional circle and gain fresh perspectives from Project
 								Professionals near you.
 							</p>
-							<a
+							<Link
 								className="inline-flex h-12 items-center gap-2.5 rounded-full border border-white px-6 font-aeonik font-semibold text-white transition hover:bg-white/10"
-								href="/membership/chapters"
+								resetScroll
+								to="/membership/chapters"
 							>
 								Explore Chapters
 								<svg
@@ -837,7 +839,7 @@ function RouteComponent() {
 										fill="currentColor"
 									/>
 								</svg>
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

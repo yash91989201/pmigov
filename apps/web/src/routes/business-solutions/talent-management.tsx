@@ -13,8 +13,6 @@ const DARK_BTN = "#1c1330"; // --fill-off-black-darkest
 const STATS_BG = "#2c1d57"; // dark purple stats banner
 const STATS_ACCENT = "#a07cff"; // bright violet stat numbers
 
-const POST_JOB_URL = "/business-solutions/talent-management";
-const PRICING_URL = "/business-solutions/talent-management";
 const JOB_SEARCH_URL = "/business-solutions/talent-management";
 
 const TABS = [
@@ -97,7 +95,7 @@ const INSIGHT_LINKS = [
 	},
 ];
 
-function ExternalIcon() {
+function _ExternalIcon() {
 	return (
 		<svg
 			aria-hidden="true"
@@ -224,27 +222,6 @@ function RouteComponent() {
 							Have a project position to fill? Reach and recruit qualified,
 							often PMI-certified, candidates on the PMI<sup>®</sup> Job Board.
 						</p>
-						<div className="flex flex-wrap items-center gap-4">
-							<a
-								className="inline-flex h-12 w-fit items-center rounded-full px-6 font-medium text-white transition hover:opacity-90"
-								href={POST_JOB_URL}
-								rel="noopener noreferrer"
-								style={{ background: DARK_BTN }}
-								target="_blank"
-							>
-								Post a Job
-							</a>
-							<a
-								className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full border px-6 font-medium transition hover:bg-black/5"
-								href={PRICING_URL}
-								rel="noopener noreferrer"
-								style={{ borderColor: INK, color: INK }}
-								target="_blank"
-							>
-								See Pricing Options
-								<ArrowIcon />
-							</a>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -312,16 +289,6 @@ function RouteComponent() {
 									<li key={b}>{b}</li>
 								))}
 							</ul>
-							<a
-								className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full border px-6 font-medium transition hover:bg-black/5"
-								href={POST_JOB_URL}
-								rel="noopener noreferrer"
-								style={{ borderColor: INK, color: INK }}
-								target="_blank"
-							>
-								Post a Job
-								<ExternalIcon />
-							</a>
 						</div>
 					</div>
 				</div>

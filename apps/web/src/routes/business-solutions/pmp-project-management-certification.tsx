@@ -186,16 +186,19 @@ const LEARN_MORE = [
 		title: "Investing in PMP-Certified Teams Strengthens Performance",
 		body: "See how PMP certification directly connects to business outcomes such as speed, quality, and risk reduction.",
 		img: "/images/business-solutions/agile.jpg",
+		href: "/certifications/project-management-pmp",
 	},
 	{
 		title: "How Organizations Can Elevate Project Management Training",
 		body: "Explore proven approaches to building scalable, modern project management learning programs for your organization.",
 		img: "/images/business-solutions/knowledge-networking.jpg",
+		href: "/learning/pmi-training",
 	},
 	{
 		title: "Validating Workforce Skill When Hiring",
 		body: "Certifications like PMP help organizations assess and validate project management skills in candidates.",
 		img: "/images/business-solutions/talent-management-business-solutions.jpg",
+		href: "/certifications",
 	},
 ];
 
@@ -875,25 +878,6 @@ function RouteComponent() {
 									<p className="mb-4 text-gray-600 text-sm leading-relaxed">
 										{cs.body}
 									</p>
-									<a
-										aria-disabled="true"
-										className="inline-flex items-center gap-1 font-semibold text-gray-900 text-sm hover:underline"
-										href="/"
-										onClick={(e) => e.preventDefault()}
-									>
-										Read the Case Study
-										{/* biome-ignore lint/a11y/noSvgWithoutTitle: decorative icon */}
-										<svg
-											fill="none"
-											height="16"
-											stroke="currentColor"
-											strokeWidth="2"
-											viewBox="0 0 24 24"
-											width="16"
-										>
-											<path d="M9 18l6-6-6-6" />
-										</svg>
-									</a>
 								</div>
 								{cs.img ? (
 									<div className="overflow-hidden rounded-xl">
@@ -944,11 +928,10 @@ function RouteComponent() {
 							<p className="mb-3 flex-1 text-gray-600 text-sm leading-relaxed">
 								{card.body}
 							</p>
-							<a
-								aria-disabled="true"
+							<Link
 								className="inline-flex items-center gap-1 font-semibold text-gray-900 text-sm hover:underline"
-								href="/"
-								onClick={(e) => e.preventDefault()}
+								resetScroll
+								to={card.href}
 							>
 								Learn More
 								{/* biome-ignore lint/a11y/noSvgWithoutTitle: decorative icon */}
@@ -962,7 +945,7 @@ function RouteComponent() {
 								>
 									<path d="M9 18l6-6-6-6" />
 								</svg>
-							</a>
+							</Link>
 						</div>
 					))}
 				</div>

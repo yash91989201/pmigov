@@ -180,15 +180,14 @@ function RouteComponent() {
 							transformation.
 						</p>
 						<div className="pt-6">
-							<span
+							<Link
 								className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full px-6 font-medium text-white transition hover:opacity-90"
-								rel="noopener noreferrer"
+								resetScroll
 								style={{ background: DARK_BTN }}
-								target="_blank"
+								to="/learning/brightline"
 							>
 								Learn More
-								<ExternalIcon />
-							</span>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -307,15 +306,14 @@ function RouteComponent() {
 								through strategic initiative management. Learn how to better
 								close the strategy-execution gap.
 							</p>
-							<span
+							<Link
 								className="inline-flex h-12 w-fit items-center gap-2.5 rounded-full px-6 font-medium text-white transition hover:opacity-90"
-								rel="noopener noreferrer"
+								resetScroll
 								style={{ background: DARK_BTN }}
-								target="_blank"
+								to="/learning/brightline"
 							>
 								Visit Brightline
-								<ExternalIcon />
-							</span>
+							</Link>
 						</div>
 						<div className="overflow-hidden rounded-2xl">
 							<img
