@@ -315,7 +315,9 @@ function ExamCard({ item }: { item: ExamItem }) {
 					<img
 						alt={item.title}
 						className="h-full w-full object-cover"
+						height={192}
 						src={item.image}
+						width={400}
 					/>
 				</div>
 			)}
@@ -343,7 +345,7 @@ function RouteComponent() {
 			{/* Hero */}
 			<div className="bg-gradient-to-r from-blue-600 to-indigo-700 py-16 text-white">
 				<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-					<h1 className="mb-4 font-bold text-4xl">
+					<h1 className="mb-4 font-bold text-4xl md:text-5xl lg:text-6xl">
 						Conquer exam day with confidence
 					</h1>
 					<p className="max-w-3xl text-xl opacity-90">
@@ -359,7 +361,7 @@ function RouteComponent() {
 					{EXAM_PREP_DATA.map((section) => (
 						<div key={section.id}>
 							<div className="mb-6">
-								<h2 className="mb-2 font-bold text-3xl text-gray-900">
+								<h2 className="mb-2 font-bold text-3xl text-gray-900 md:text-4xl">
 									{section.title}
 								</h2>
 								<p className="max-w-4xl text-gray-600 text-lg">

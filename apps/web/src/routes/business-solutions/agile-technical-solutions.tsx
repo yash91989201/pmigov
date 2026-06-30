@@ -191,7 +191,7 @@ function RouteComponent() {
 					</nav>
 
 					{/* Main content — col-lg-10, border-start */}
-					<div className="min-w-0 flex-1 border-gray-200 border-l pl-6 lg:pl-8">
+					<div className="min-w-0 flex-1 lg:border-l lg:pl-8">
 						{/* ── Wide row: intro col-md-8 | why da col-md-4 ─────── */}
 						<div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-12">
 							<div className="md:col-span-8">

@@ -479,7 +479,7 @@ function RouteComponent() {
 				<div
 					className="overflow-hidden px-8 py-14 text-white lg:px-16 lg:py-20"
 					style={{
-						borderRadius: "min(50vw, 360px)",
+						borderRadius: "min(40vw, 360px)",
 						background:
 							"radial-gradient(120% 95% at 50% 0%, #e0590f 0%, #7a2da6 28%, #3a1f6b 55%, #1f1248 100%)",
 					}}
@@ -802,16 +802,15 @@ function CertCarousel() {
 				<ul
 					className="flex gap-4 transition-transform duration-300"
 					style={{
-						transform: `translateX(calc(-${idx} * (372px + 1rem)))`,
+						transform: `translateX(calc(-${idx} * (min(372px, calc(100vw - 3rem)) + 1rem)))`,
 					}}
 				>
 					{CERTS.map((cert) => {
 						const isDark = cert.theme === "dark";
 						return (
 							<li
-								className="flex-shrink-0"
+								className="w-[min(372px,calc(100vw-3rem))] flex-shrink-0"
 								key={cert.id}
-								style={{ width: 372 }}
 							>
 								<a
 									className="relative flex h-full min-h-[480px] flex-col justify-between overflow-hidden rounded-xl p-6 no-underline transition-opacity hover:opacity-95 lg:min-h-[552px]"

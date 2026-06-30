@@ -221,7 +221,7 @@ function CourseCard({ course }: { course: (typeof freeCourses)[number] }) {
 					{course.description}
 				</p>
 				<Link
-					className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
+					className="mt-auto inline-flex min-h-[44px] w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628] md:min-h-0"
 					resetScroll
 					to={course.href}
 				>

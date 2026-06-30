@@ -491,13 +491,16 @@ function RouteComponent() {
 
 				{/* Stats row with vertical dividers */}
 				<div className="mx-auto max-w-screen-xl px-6 pb-16 lg:px-4 lg:pb-20">
-					<div className="grid grid-cols-3 divide-x divide-white/20">
+					<div className="grid grid-cols-1 divide-y divide-white/20 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
 						{[
 							{ stat: "73%", label: "Of projects exceed budgets" },
 							{ stat: "72%", label: "Of projects face delays" },
 							{ stat: "$127M", label: "Wasted per $1B spent" },
 						].map(({ stat, label }) => (
-							<div className="px-6 first:pl-0 last:pr-0 lg:px-10" key={stat}>
+							<div
+								className="px-6 py-4 first:pt-0 last:pb-0 sm:py-0 sm:last:pr-0 sm:first:pl-0 lg:px-10"
+								key={stat}
+							>
 								<p
 									className="mb-2 font-semibold text-4xl leading-none lg:text-6xl"
 									style={{ color: WARNING }}
@@ -1090,7 +1093,7 @@ function RouteComponent() {
 					<div className="grid grid-cols-1 gap-6 md:grid-cols-2">
 						{INSIGHTS.map(({ tag, title, description, img }) => (
 							<div
-								className="group relative flex h-[30rem] flex-col overflow-hidden rounded-xl border bg-white transition hover:shadow-lg sm:h-[34.5rem]"
+								className="group relative flex min-h-[30rem] flex-col overflow-hidden rounded-xl border bg-white transition hover:shadow-lg sm:min-h-[34.5rem]"
 								key={title}
 								style={{ borderColor: INK }}
 							>

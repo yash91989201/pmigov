@@ -125,7 +125,7 @@ export function CertificationDetails({
 							<h3 className="mb-4 font-semibold text-[#1d1d35] text-base">
 								Languages
 							</h3>
-							<ul className="grid grid-cols-2 gap-x-8 gap-y-2 text-base text-slate-700 sm:grid-cols-3">
+							<ul className="grid grid-cols-1 gap-x-8 gap-y-2 text-base text-slate-700 sm:grid-cols-2 md:grid-cols-3">
 								{aboutExam.languages.map((lang) => (
 									<li className="flex items-start gap-2" key={lang}>
 										<span

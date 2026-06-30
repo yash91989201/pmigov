@@ -191,7 +191,7 @@ function NewlyAddedCarousel() {
 											{course.description}
 										</p>
 										<Link
-											className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
+											className="mt-auto inline-flex min-h-[44px] w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628] md:min-h-0"
 											resetScroll
 											to={course.href}
 										>
@@ -212,7 +212,7 @@ function NewlyAddedCarousel() {
 						(dot) => (
 							<button
 								aria-label={`Go to slide ${dot.id + 1}`}
-								className="h-2 rounded-full transition-all"
+								className="min-h-[44px] min-w-[44px] rounded-full transition-all md:h-2 md:min-h-0 md:min-w-0"
 								key={dot.id}
 								onClick={() => api?.scrollTo(dot.id)}
 								style={{
@@ -229,7 +229,7 @@ function NewlyAddedCarousel() {
 				<div className="flex gap-4">
 					<button
 						aria-label="Previous slide"
-						className="text-2xl text-[#6b5b7b] transition-opacity hover:opacity-70 disabled:opacity-30"
+						className="flex min-h-[44px] min-w-[44px] items-center justify-center text-2xl text-[#6b5b7b] transition-opacity hover:opacity-70 disabled:opacity-30 md:min-h-0 md:min-w-0"
 						disabled={!canScrollPrev}
 						onClick={() => api?.scrollPrev()}
 						type="button"
@@ -238,7 +238,7 @@ function NewlyAddedCarousel() {
 					</button>
 					<button
 						aria-label="Next slide"
-						className="text-2xl text-[#6b5b7b] transition-opacity hover:opacity-70 disabled:opacity-30"
+						className="flex min-h-[44px] min-w-[44px] items-center justify-center text-2xl text-[#6b5b7b] transition-opacity hover:opacity-70 disabled:opacity-30 md:min-h-0 md:min-w-0"
 						disabled={!canScrollNext}
 						onClick={() => api?.scrollNext()}
 						type="button"
@@ -359,7 +359,7 @@ function CourseCategories() {
 								{category.description}
 							</p>
 							<Link
-								className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628]"
+								className="mt-auto inline-flex min-h-[44px] w-fit items-center gap-2 rounded-full bg-[#1d1d35] px-5 py-2 font-medium text-sm text-white transition-colors hover:bg-[#0a1628] md:min-h-0"
 								resetScroll
 								to={category.href}
 							>

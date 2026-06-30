@@ -97,10 +97,7 @@ function VideoSection() {
 
 	return (
 		<section className="mx-auto max-w-screen-xl px-6 pb-20 lg:px-4">
-			<div
-				className="relative overflow-hidden"
-				style={{ borderRadius: "9999px 9999px 9999px 24px" }}
-			>
+			<div className="relative overflow-hidden rounded-3xl lg:rounded-[9999px_9999px_9999px_24px]">
 				<video
 					className="h-auto w-full object-cover"
 					controls={playing}

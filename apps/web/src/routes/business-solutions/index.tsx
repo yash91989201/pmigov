@@ -71,20 +71,16 @@ function RouteComponent() {
 			</div>
 
 			{/* ── Hero ─────────────────────────────────────────────────────── */}
-			<div
-				className="relative w-full overflow-hidden"
-				style={{ minHeight: 340 }}
-			>
+			<div className="relative w-full overflow-hidden lg:min-h-[340px]">
 				<img
 					alt="Project manager addressing company"
-					className="h-full w-full object-cover object-right"
+					className="h-[260px] w-full object-cover object-right sm:h-[340px] lg:absolute lg:inset-0 lg:h-full lg:max-h-[420px]"
 					height={420}
 					src="/images/business-solutions/project-manager-addressing-company.jpg"
-					style={{ minHeight: 340, maxHeight: 420 }}
 					width={1600}
 				/>
 				<div
-					className="absolute top-0 bottom-0 left-0 flex max-w-md flex-col justify-center px-10 py-10"
+					className="relative w-full px-6 py-8 lg:absolute lg:top-0 lg:bottom-0 lg:left-0 lg:flex lg:max-w-md lg:flex-col lg:justify-center lg:px-10 lg:py-10"
 					style={{ background: "rgba(79,23,168,0.85)" }}
 				>
 					<h2 className="mb-3 font-bold text-2xl text-white lg:text-3xl">

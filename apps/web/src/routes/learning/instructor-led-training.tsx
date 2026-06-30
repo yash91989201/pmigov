@@ -345,7 +345,7 @@ function TestimonialsCarousel() {
 						{Array.from({ length: snapCount }, (_, i) => i).map((dot) => (
 							<button
 								aria-label={`Go to slide ${dot + 1}`}
-								className="h-2 rounded-full transition-all"
+								className="min-h-[44px] min-w-[44px] rounded-full transition-all md:h-2 md:min-h-0 md:min-w-0"
 								key={dot}
 								onClick={() => api?.scrollTo(dot)}
 								style={{
@@ -359,7 +359,7 @@ function TestimonialsCarousel() {
 					<div className="flex gap-4">
 						<button
 							aria-label="Previous testimonial"
-							className="text-2xl text-[#6b5b7b] transition-opacity hover:opacity-70 disabled:opacity-30"
+							className="flex min-h-[44px] min-w-[44px] items-center justify-center text-2xl text-[#6b5b7b] transition-opacity hover:opacity-70 disabled:opacity-30 md:min-h-0 md:min-w-0"
 							disabled={currentIndex === 0}
 							onClick={() => api?.scrollPrev()}
 							type="button"
@@ -368,7 +368,7 @@ function TestimonialsCarousel() {
 						</button>
 						<button
 							aria-label="Next testimonial"
-							className="text-2xl text-[#6b5b7b] transition-opacity hover:opacity-70 disabled:opacity-30"
+							className="flex min-h-[44px] min-w-[44px] items-center justify-center text-2xl text-[#6b5b7b] transition-opacity hover:opacity-70 disabled:opacity-30 md:min-h-0 md:min-w-0"
 							disabled={currentIndex === snapCount - 1}
 							onClick={() => api?.scrollNext()}
 							type="button"

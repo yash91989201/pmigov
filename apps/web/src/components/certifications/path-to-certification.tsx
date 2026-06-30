@@ -26,7 +26,7 @@ export function PathToCertification({
 					</h2>
 
 					{/* Step Indicator */}
-					<div className="mb-10 flex flex-col gap-0 md:mb-12 md:flex-row">
+					<div className="mb-10 flex flex-col items-start gap-4 md:mb-12 md:flex-row md:flex-wrap md:gap-0">
 						{steps.map((step, index) => (
 							<button
 								className={`flex w-full items-center gap-3 border-b-2 pt-3 pb-3 text-left transition-colors md:flex-1 md:flex-col md:items-center md:border-r md:border-b-0 md:pt-0 md:pb-0 md:text-center md:last:border-r-0 ${

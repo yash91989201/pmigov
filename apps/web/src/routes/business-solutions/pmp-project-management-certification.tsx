@@ -343,10 +343,10 @@ function RouteComponent() {
 				className="sticky top-0 z-30 w-full border-gray-200 border-b bg-white"
 				ref={navRef}
 			>
-				<div className="mx-auto flex max-w-screen-xl items-center justify-center gap-0 px-4">
+				<div className="mx-auto flex max-w-screen-xl items-center justify-center gap-0 overflow-x-auto px-4">
 					{NAV_TABS.map((tab) => (
 						<button
-							className="flex h-20 max-w-44 flex-col items-center justify-end pb-6 text-center font-semibold text-sm transition"
+							className="flex h-20 max-w-44 flex-shrink-0 flex-col items-center justify-end whitespace-nowrap pb-6 text-center font-semibold text-sm transition"
 							key={tab.id}
 							onClick={() => scrollTo(tab.id)}
 							style={{

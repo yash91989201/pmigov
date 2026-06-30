@@ -104,10 +104,7 @@ function RouteComponent() {
 			{/* ── Testimonial ───────────────────────────────────────────────── */}
 			<section className="mx-auto max-w-screen-xl px-6 py-16 lg:px-4 lg:py-20">
 				<div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
-					<div
-						className="overflow-hidden"
-						style={{ borderRadius: "9999px 24px 24px 9999px" }}
-					>
+					<div className="overflow-hidden rounded-3xl lg:rounded-[9999px_24px_24px_9999px]">
 						<img
 							alt="Crystal Taylor, PMP"
 							className="aspect-video w-full object-cover"
