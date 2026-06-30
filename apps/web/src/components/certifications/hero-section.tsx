@@ -26,17 +26,19 @@ export function HeroSection({ hero }: HeroSectionProps) {
 			<div className="relative mx-auto max-w-6xl px-6 py-10 md:px-10 md:py-14">
 				<nav className="mb-10 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white/60">
 					{hero.breadcrumb.map((item, index) => (
-						<span className="flex items-center gap-2" key={item.label}>
+						<span className="flex min-w-0 items-center gap-2" key={item.label}>
 							{index > 0 && <span aria-hidden="true">/</span>}
 							{item.href ? (
 								<a
-									className="transition-colors hover:text-white"
+									className="wrap-break-word transition-colors hover:text-white"
 									href={item.href}
 								>
 									{item.label}
 								</a>
 							) : (
-								<span className="text-white/80">{item.label}</span>
+								<span className="wrap-break-word text-white/80">
+									{item.label}
+								</span>
 							)}
 						</span>
 					))}
@@ -94,7 +96,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
 								</p>
 							</div>
 							<a
-								className="ml-auto inline-flex rounded-full bg-white px-8 py-3 font-medium text-[#0a1628] transition-colors hover:bg-white/90"
+								className="inline-flex w-full justify-center rounded-full bg-white px-8 py-3 font-medium text-[#0a1628] transition-colors hover:bg-white/90 sm:ml-auto sm:w-auto sm:justify-start"
 								href={hero.applyButtonHref}
 							>
 								{hero.applyButtonText}

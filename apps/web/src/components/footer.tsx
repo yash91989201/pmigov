@@ -86,12 +86,8 @@ const FOOTER_COLUMNS = [
 	{
 		title: "Resources",
 		links: [
-			{ label: "PMI Infinity", href: "/infinity" },
 			{ label: "Templates & Insights", href: "/insights" },
-			{ label: "PMI Blog", href: "/blog" },
-			{ label: "Shift Code Podcast", href: "/the-shift-code-podcast" },
-			{ label: "Projectified Podcast", href: "/projectified-podcast" },
-			{ label: "AI Today Podcast", href: "/ai-today-podcast" },
+			{ label: "Career Resources", href: "/career-resources" },
 		],
 	},
 	{

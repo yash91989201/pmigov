@@ -60,7 +60,9 @@
       "Bash(yt-dlp --version)",
       "Bash(node -e ' *)",
       "Bash(npx biome *)",
-      "Bash(grep -n \"404\\\\|NotFound\\\\|notFound\\\\|splat\\\\|\\\\$\\\\.\" /Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/__root.tsx)"
+      "Bash(grep -n \"404\\\\|NotFound\\\\|notFound\\\\|splat\\\\|\\\\$\\\\.\" /Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/__root.tsx)",
+      "Bash(grep -n \"p-10\\\\|p-14\" /Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/certifications/certification-resources/\\\\$slug.tsx 2>/dev/null; grep -n \"p-8\\\\|p-10\" /Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/components/certifications/path-to-certification.tsx)",
+      "Read(//Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/certifications/certification-resources/**)"
     ]
   },
   "hooks": {

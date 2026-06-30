@@ -266,7 +266,7 @@ function RouteComponent() {
 			{/* CTA */}
 			<section className="bg-[#f8f5f0] py-16 md:py-20">
 				<div className="mx-auto max-w-6xl px-6 md:px-10">
-					<div className="grid gap-8 rounded-2xl bg-[#200f3b] p-10 md:grid-cols-2 md:items-center md:gap-12 md:p-14">
+					<div className="grid gap-8 rounded-2xl bg-[#200f3b] p-6 sm:p-10 md:grid-cols-2 md:items-center md:gap-12 md:p-14">
 						<div>
 							<h2 className="mb-4 font-bold font-heading text-3xl text-white leading-tight md:text-4xl">
 								Start earning PDUs today

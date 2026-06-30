@@ -26,10 +26,10 @@ export function PathToCertification({
 					</h2>
 
 					{/* Step Indicator */}
-					<div className="mb-10 flex flex-wrap items-start gap-4 md:mb-12 md:gap-0">
+					<div className="mb-10 flex flex-col gap-0 md:mb-12 md:flex-row">
 						{steps.map((step, index) => (
 							<button
-								className={`flex flex-1 items-start gap-3 border-b-2 pb-4 text-left transition-colors last:border-r-0 md:flex-col md:items-center md:border-r md:border-b-0 md:pb-0 md:text-center ${
+								className={`flex w-full items-center gap-3 border-b-2 pt-3 pb-3 text-left transition-colors md:flex-1 md:flex-col md:items-center md:border-r md:border-b-0 md:pt-0 md:pb-0 md:text-center md:last:border-r-0 ${
 									activeStep === index
 										? "border-[#1d1d35]"
 										: "border-slate-300 hover:border-slate-400"
@@ -61,7 +61,7 @@ export function PathToCertification({
 					</div>
 
 					{/* Tab Content */}
-					<div className="w-full bg-white p-8 shadow-sm md:p-10">
+					<div className="w-full bg-white p-5 shadow-sm sm:p-8 md:p-10">
 						<h3 className="mb-8 font-heading font-semibold text-2xl text-[#1d1d35] md:text-3xl">
 							{tabs[activeStep].heading}
 						</h3>

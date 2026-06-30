@@ -13,7 +13,7 @@ export function CertificationPageTemplate({
 	data,
 }: CertificationPageTemplateProps) {
 	return (
-		<main className="bg-[#0a1628]">
+		<main className="overflow-x-hidden bg-[#0a1628]">
 			<HeroSection hero={data.hero} />
 			<CertificationDetails
 				aboutExam={data.aboutExam}

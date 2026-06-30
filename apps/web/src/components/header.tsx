@@ -329,7 +329,7 @@ function PrimaryNav({ onOpenMobile }: { onOpenMobile: () => void }) {
 									{item.label}
 								</NavigationMenuTrigger>
 								<NavigationMenuContent className="!rounded-none !shadow-none !ring-0 !border-0">
-									<div className="w-[800px] p-6">
+									<div className="w-[min(800px,calc(100vw-2rem))] p-6">
 										{item.label === "Certifications" && (
 											<h2 className="mb-4 font-bold text-gray-900 text-lg">
 												Professional Certification
