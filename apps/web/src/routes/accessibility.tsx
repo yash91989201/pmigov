@@ -46,11 +46,11 @@ function RouteComponent() {
 				}}
 			>
 				<div className="mx-auto max-w-screen-xl px-6 py-6 lg:px-4 lg:py-10">
-					<div className="space-y-4 text-pmi-text-primary">
-						<h3 className="font-aeonik font-semibold text-2xl">
+					<div className="space-y-5 font-aeonik text-pmi-text-primary">
+						<h3 className="font-semibold text-lg">
 							Accessibility at the Project Management Institute
 						</h3>
-						<p className="font-aeonik leading-7">
+						<p className="text-lg leading-7">
 							The Project Management Institute (PMI) is committed to providing
 							an inclusive digital experience that is accessible to all people,
 							including those with disabilities. We strive to meet the Web
@@ -59,14 +59,14 @@ function RouteComponent() {
 							also supports our compliance with international accessibility laws
 							such as Section 508 (U.S.) and EN 301 549 (EU).
 						</p>
-						<p className="font-aeonik leading-7">
+						<p className="leading-7">
 							We are continuously working to improve the accessibility of our
 							websites, learning platforms, applications, and digital content.
 							Our goal is to remove barriers, provide equitable access, and
 							support full participation for all users.
 						</p>
-						<p className="font-aeonik font-semibold">Need Help?</p>
-						<p className="font-aeonik leading-7">
+						<h3 className="font-semibold text-lg">Need Help?</h3>
+						<p className="leading-7">
 							If you encounter any accessibility barriers or need support
 							accessing PMI digital content, please{" "}
 							<a
@@ -78,10 +78,10 @@ function RouteComponent() {
 							. We welcome feedback and will respond promptly to address your
 							concerns.
 						</p>
-						<p className="font-aeonik font-semibold">
+						<h3 className="font-semibold text-lg">
 							Certification Exam Accommodations
-						</p>
-						<p className="font-aeonik leading-7">
+						</h3>
+						<p className="leading-7">
 							PMI offers testing accommodations for certification candidates
 							with disabilities. For more information or to submit an
 							accommodation request, please visit our{" "}

@@ -1,7 +1,6 @@
 FROM oven/bun:1 AS build
 WORKDIR /app
 ENV SKIP_ENV_VALIDATION=1
-ENV BETTER_AUTH_SECRET=build-time-placeholder-secret-not-used-at-runtime
 
 COPY . .
 RUN --mount=type=cache,target=/root/.bun/install/cache bun install
@@ -16,7 +15,6 @@ RUN rm -rf node_modules apps/*/node_modules packages/*/node_modules \
 
 ENV NODE_ENV=production
 ENV SKIP_ENV_VALIDATION=
-ENV BETTER_AUTH_SECRET=
 ENV HOST=0.0.0.0
 ENV PORT=3001
 EXPOSE 3001
