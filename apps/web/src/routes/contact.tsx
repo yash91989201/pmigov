@@ -162,7 +162,7 @@ function ContactComponent() {
 										<p className="mb-1 font-bold text-gray-400 text-sm uppercase tracking-wider">
 											Call Us
 										</p>
-										<p className="font-semibold text-lg">+91 98765 43210</p>
+										<p className="font-semibold text-lg">+91 80640 55040</p>
 										<p className="text-gray-500 text-sm">
 											Mon-Fri, 9am - 5pm IST
 										</p>
