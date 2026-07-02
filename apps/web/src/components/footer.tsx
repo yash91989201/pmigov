@@ -84,13 +84,6 @@ const FOOTER_COLUMNS = [
 		],
 	},
 	{
-		title: "Resources",
-		links: [
-			{ label: "Templates & Insights", href: "/insights" },
-			{ label: "Career Resources", href: "/career-resources" },
-		],
-	},
-	{
 		title: "Events",
 		links: [
 			{ label: "2026 Events", href: "/events" },

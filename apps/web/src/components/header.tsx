@@ -126,10 +126,36 @@ const NAV_ITEMS: readonly NavItem[] = [
 		label: "Resources",
 		groups: [
 			{
-				title: "Discover",
+				title: "Connect and Contribute",
+				links: [{ label: "PMI Infinity AI Tool", href: "/infinity" }],
+			},
+			{
+				title: "Discover and Learn",
 				links: [
-					{ label: "Templates & Insights", href: "/insights" },
+					{ label: "Templates and Insights", href: "/insights" },
+					{ label: "The PMI Blog", href: "/blog" },
+					{
+						label: "The Shift Code™ Podcast",
+						href: "/the-shift-code-podcast",
+					},
+					{
+						label: "Projectified® Podcast",
+						href: "/projectified-podcast",
+					},
+					{ label: "AI Today Podcast", href: "/ai-today-podcast" },
+				],
+			},
+			{
+				title: "Grow Your Career",
+				links: [
+					{
+						label: "PMI Job Board",
+						href: "https://jobs.pmi.org/",
+						external: true,
+					},
 					{ label: "Career Resources", href: "/career-resources" },
+					{ label: "Career Navigator", href: "/career-navigator" },
+					{ label: "Military", href: "/military" },
 				],
 			},
 		],

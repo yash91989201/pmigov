@@ -62,7 +62,14 @@
       "Bash(npx biome *)",
       "Bash(grep -n \"404\\\\|NotFound\\\\|notFound\\\\|splat\\\\|\\\\$\\\\.\" /Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/__root.tsx)",
       "Bash(grep -n \"p-10\\\\|p-14\" /Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/certifications/certification-resources/\\\\$slug.tsx 2>/dev/null; grep -n \"p-8\\\\|p-10\" /Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/components/certifications/path-to-certification.tsx)",
-      "Read(//Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/certifications/certification-resources/**)"
+      "Read(//Users/ashishpandey/Work/WorkHolo/pmigov/apps/web/src/routes/certifications/certification-resources/**)",
+      "Bash(curl -sL \"https://www.pmi.org/-/media/pmi/headless-images/landing---microsites/official-mobile-app/download_on_the_app_store_badge_us-uk_rgb_blk_092917-1.png?iar=0&w=150\" -o app-store-badge.png)",
+      "Bash(curl -sL \"https://www.pmi.org/-/media/pmi/headless-images/landing---microsites/official-mobile-app/getitongoogleplay_badge_web_color_english-1.png?iar=0&w=169\" -o google-play-badge.png)",
+      "Bash(wait)",
+      "Bash(curl -sL \"https://www.pmi.org/-/media/pmi/headless-images/resources/infinity-tool/row-bg-darkcyan.png?iar=0&w=2880\" -o stats-bg.png)",
+      "Bash(curl -sL \"https://www.pmi.org/-/media/pmi/headless-images/landing---microsites/official-mobile-app/download_on_the_app_store_badge_us-uk_rgb_blk_092917-1.png\" -o app-store-badge.png)",
+      "Bash(curl -sL \"https://www.pmi.org/-/media/pmi/headless-images/the-pmi-blog/elevating-project-management-training-hero.jpeg\" -o \"pm-training.jpg\")",
+      "Bash(curl -sL \"https://www.pmi.org/-/media/pmi/headless-images/the-pmi-blog/why-change-efforts-stall-bcg-hero.jpeg\" -o \"change-stall-bcg.jpg\")"
     ]
   },
   "hooks": {
